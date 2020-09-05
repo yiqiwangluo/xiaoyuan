@@ -1,6 +1,6 @@
 {
 	"pages": [{
-		"path": "pages/index/index", // 首页
+		"path": "pages/index/home_page/index", // 首页
 		"style": {
 			// 首页顶部的标题
 			"navigationBarTitleText": "校园e卡通"
