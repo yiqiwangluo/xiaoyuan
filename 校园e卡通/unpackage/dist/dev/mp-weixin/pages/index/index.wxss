@@ -1,37 +1,79 @@
-
-.content {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.flexCenter.data-v-57280228 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.topCard .topCard_head .school_image.data-v-57280228 {
+  width: 668rpx;
+  height: 432rpx;
 }
-.text-area {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.topCard .topCard_body.data-v-57280228 {
+  height: 328rpx;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.topCard .topCard_body .topCard_body_left .wallet_box.data-v-57280228 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.topCard .topCard_body .topCard_body_left .wallet_box .electronic_wallet_text.data-v-57280228 {
+  letter-spacing: 2rpx;
+  margin-top: 23rpx;
+}
+.topCard .topCard_body .topCard_body_left .wallet_image.data-v-57280228 {
+  width: 100rpx;
+  height: 100rpx;
+}
+.topCard .topCard_body .topCard_body_right.data-v-57280228 {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.topCard .topCard_body .topCard_body_right .qrCode_box.data-v-57280228,
+.topCard .topCard_body .topCard_body_right .idCard_box.data-v-57280228 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.topCard .topCard_body .topCard_body_right .qrCode_box > view.data-v-57280228,
+.topCard .topCard_body .topCard_body_right .idCard_box > view.data-v-57280228 {
+  margin-left: 24rpx;
+}
+.topCard .topCard_body .topCard_body_right .idCard_image.data-v-57280228 {
+  width: 74rpx;
+  height: 61rpx;
+}
+.topCard .topCard_body .topCard_body_right .qrCode_image.data-v-57280228 {
+  width: 63rpx;
+  height: 62rpx;
+}
+.studentUnion_enroll_box .studentUnion_enroll_image.data-v-57280228 {
+  width: 706rpx;
+  height: 319rpx;
+}
+.my_movable.data-v-57280228 {
+  width: 100vw;
+  height: auto;
+}
+.service.data-v-57280228,
+.service_image.data-v-57280228 {
+  width: 100rpx;
+  height: 100rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  z-index: 100;
+  left: 628rpx;
+  top: 26%;
 }
 
