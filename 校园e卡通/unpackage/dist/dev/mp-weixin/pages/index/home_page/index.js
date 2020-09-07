@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 19));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 26));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 35));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 42));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -247,11 +247,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       school_card_list: [
       {
         icon: '../../static/images/index_images/balance.png',
-        title: '卡片余额' },
+        title: '卡片余额',
+        url: '/pages/school-card-list/card-balance/card-balance' },
 
       {
         icon: '../../static/images/index_images/Cash_flow_inquiry.png',
-        title: '流水查询' },
+        title: '流水查询',
+        url: '/pages/school-card-list/flow-query/flow-query' },
 
       {
         icon: '../../static/images/index_images/recharge.png',

@@ -30,8 +30,7 @@
   width: 496rpx;
   height: 55rpx;
   background-color: #f3f4f6;
-  -webkit-border-radius: 24rpx;
-          border-radius: 24rpx;
+  border-radius: 24rpx;
   margin-left: 18rpx;
 }
 .topNav .search_box .search_image.data-v-79cd7d1d {
