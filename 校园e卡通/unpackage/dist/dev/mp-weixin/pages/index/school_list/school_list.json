@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "学校列表"
+  "navigationBarTitleText": "学校列表",
+  "usingComponents": {
+    "school-card": "/components/school_list-components/school_card"
+  }
 }
