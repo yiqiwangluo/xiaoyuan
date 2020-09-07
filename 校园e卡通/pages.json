@@ -26,6 +26,12 @@
 				"navigationBarTitleText": "流水查询" // 顶部标题
 			}
         }
+        ,{
+            "path" : "pages/school-card-list/change-password/change-password",
+            "style" : {
+				"navigationBarTitleText": "修改查询密码" // 顶部标题
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

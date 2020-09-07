@@ -128,7 +128,8 @@ export default {
 				},
 				{
 					icon: '../../static/images/index_images/change_password.png',
-					title: '修改密码'
+					title: '修改密码',
+					url:'/pages/school-card-list/change-password/change-password'
 				}
 			],
 			// 缴费服务列表
