@@ -7,7 +7,7 @@
 		<!-- 模块主体 -->
 		<view class="card_body">
 			<!-- 模块子项 -->
-			<view :class="['card_item', list_data.length % 2 === 0 ? '' : 'card_item_specal']" v-for="(item, index) in list_data" :key="index">
+			<view :class="['card_item', list_data.length % 2 === 0 ? '' : 'card_item_specal']" v-for="(item, index) in list_data" :key="index" @click="natigateToNewPage(item.url)">
 				<!-- 子项的icon图标 -->
 				<image :src="item.icon" class="item_image"></image>
 				<!-- 子项的文字 -->
@@ -39,6 +39,17 @@ export default {
 		list_data: {
 			type: Array,
 			require: true
+		}
+	},
+	methods: {
+		// 跳转到指定页面
+		natigateToNewPage(url) {
+			uni.navigateTo({
+				url,
+				fail(err) {
+					console.log(err)
+				}
+			});
 		}
 	}
 };

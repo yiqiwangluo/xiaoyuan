@@ -1,15 +1,24 @@
 {
-	"pages": [{
-		"path": "pages/index/home_page/index", // 首页
-		"style": {
-			// 首页顶部的标题
-			"navigationBarTitleText": "校园e卡通"
+	"pages": [
+		// 首页
+		{
+			"path": "pages/index/home_page/index",
+			"style": {
+				"navigationBarTitleText": "校园e卡通" // 顶部的标题
+			}
+		},
+		// 学校列表页
+		{
+			"path": "pages/index/school_list/school_list",
+			"style": {
+				"navigationBarTitleText": "学校列表" // 顶部标题
+			}
 		}
-	}],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "校园e卡通",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#F8F8F8"
 	}
 }

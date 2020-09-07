@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ./card.vue */ 19));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ./card.vue */ 19));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -154,7 +154,20 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     // 模块数据
     list_data: {
       type: Array,
-      require: true } } };exports.default = _default;
+      require: true } },
+
+
+  methods: {
+    // 跳转到指定页面
+    natigateToNewPage: function natigateToNewPage(url) {
+      uni.navigateTo({
+        url: url,
+        fail: function fail(err) {
+          console.log(err);
+        } });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
