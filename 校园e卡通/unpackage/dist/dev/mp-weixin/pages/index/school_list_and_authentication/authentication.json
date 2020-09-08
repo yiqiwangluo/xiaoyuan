@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "校园e码通身份验证",
+  "usingComponents": {
+    "form-card": "/components/school_list-components/form_card",
+    "my-prompt": "/components/school_list-components/my_prompt"
+  }
+}

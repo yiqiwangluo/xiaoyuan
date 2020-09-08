@@ -110,11 +110,13 @@ export default {
 			school_card_list: [
 				{
 					icon: '../../static/images/index_images/balance.png',
-					title: '卡片余额'
+					title: '卡片余额',
+					url:'/pages/school-card-list/card-balance/card-balance'
 				},
 				{
 					icon: '../../static/images/index_images/Cash_flow_inquiry.png',
-					title: '流水查询'
+					title: '流水查询',
+					url:'/pages/school-card-list/flow-query/flow-query'
 				},
 				{
 					icon: '../../static/images/index_images/recharge.png',
@@ -126,7 +128,8 @@ export default {
 				},
 				{
 					icon: '../../static/images/index_images/change_password.png',
-					title: '修改密码'
+					title: '修改密码',
+					url:'/pages/school-card-list/change-password/change-password'
 				}
 			],
 			// 缴费服务列表

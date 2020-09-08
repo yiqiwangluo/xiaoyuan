@@ -1,7 +1,12 @@
 {
   "pages": [
+    "pages/index/school_list_and_authentication/school_list",
     "pages/index/home_page/index",
-    "pages/index/school_list/school_list"
+    "pages/index/school_list_and_authentication/authentication",
+    "pages/index/school_list/school_list",
+    "pages/school-card-list/card-balance/card-balance",
+    "pages/school-card-list/flow-query/flow-query",
+    "pages/school-card-list/change-password/change-password"
   ],
   "subPackages": [],
   "window": {
@@ -10,5 +15,6 @@
     "navigationBarBackgroundColor": "#FFFFFF",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap41.json"
 }

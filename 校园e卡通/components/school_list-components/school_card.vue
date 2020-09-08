@@ -66,6 +66,10 @@ export default {
 	}
 	// 学校信息
 	.school_msg {
+		height: 87rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		margin-left: 23rpx;
 		// 学校名称
 		.school_name {
