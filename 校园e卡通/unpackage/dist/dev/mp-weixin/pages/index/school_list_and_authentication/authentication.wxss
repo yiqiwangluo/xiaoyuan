@@ -1,0 +1,81 @@
+.authentication_box.data-v-5c5faaeb {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+.authentication_box .school_msg_box.data-v-5c5faaeb {
+  width: 645rpx;
+  height: 416rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 56rpx;
+  border-radius: 17rpx;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+  margin-bottom: 22rpx;
+}
+.authentication_box .school_msg_box .school_msg.data-v-5c5faaeb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-left: 29rpx;
+  margin-top: 21rpx;
+}
+.authentication_box .school_msg_box .school_msg .school_logo_box.data-v-5c5faaeb {
+  width: 74rpx;
+  height: 74rpx;
+  background-color: #ffffff;
+}
+.authentication_box .school_msg_box .school_msg .school_logo_box image.data-v-5c5faaeb {
+  width: 60rpx;
+  height: 41rpx;
+  margin: 16rpx auto;
+  display: block;
+}
+.authentication_box .school_msg_box .school_msg .school_name.data-v-5c5faaeb {
+  margin-left: 26rpx;
+}
+.authentication_box .school_msg_box .verify_state.data-v-5c5faaeb {
+  text-align: center;
+  letter-spacing: 1rpx;
+  margin-bottom: 37rpx;
+}
+.authentication_box .form_box.data-v-5c5faaeb {
+  width: 650rpx;
+  margin: 0 auto;
+}
+.authentication_box .protocol.data-v-5c5faaeb {
+  width: 693rpx;
+  height: 75rpx;
+  margin: 0 auto;
+}
+.authentication_box .protocol .checkbox_box.data-v-5c5faaeb {
+  display: inline-block;
+}
+.authentication_box .btn.data-v-5c5faaeb {
+  width: 706rpx;
+  height: 80rpx;
+  border-radius: 24rpx;
+  background-color: #286fc9;
+  color: #ffffff;
+  margin-top: 43rpx;
+}
+.authentication_box .btn.data-v-5c5faaeb:active {
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+}
+

@@ -1,0 +1,1 @@
+<view class="form_card_box data-v-00d4721e"><image src="{{icon}}" class="data-v-00d4721e"></image><input type="{{inputType||text}}" placeholder="{{placeholder}}" data-event-opts="{{[['input',[['valueChange',['$event']]]]]}}" value="{{value}}" bindinput="__e" class="data-v-00d4721e"/></view>
