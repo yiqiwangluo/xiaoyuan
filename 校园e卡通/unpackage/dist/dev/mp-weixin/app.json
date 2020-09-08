@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/home_page/index",
-    "pages/index/school_list/school_list",
+    "pages/index/school_list_and_authentication/school_list",
+    "pages/index/school_list_and_authentication/authentication",
     "pages/school-card-list/card-balance/card-balance",
     "pages/school-card-list/flow-query/flow-query",
     "pages/school-card-list/change-password/change-password"
