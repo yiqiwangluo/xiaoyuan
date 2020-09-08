@@ -9,9 +9,16 @@
 		},
 		// 学校列表页
 		{
-			"path": "pages/index/school_list/school_list",
+			"path": "pages/index/school_list_and_authentication/school_list",
 			"style": {
 				"navigationBarTitleText": "学校列表" // 顶部标题
+			}
+		},
+		// 身份认证页
+		{
+			"path": "pages/index/school_list_and_authentication/authentication",
+			"style": {
+				"navigationBarTitleText": "校园e码通身份验证"
 			}
 		}
 	    ,{
@@ -32,6 +39,28 @@
 				"navigationBarTitleText": "修改查询密码" // 顶部标题
 			}
         }
+		,{
+		    "path" : "pages/waterElectricity/electricity",
+		    "style" : {
+				"navigationBarTitleText": "缴电费",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				}
+			}
+		}
+		,{
+		    "path" : "pages/waterElectricity/water",
+		    "style" : {
+				"navigationBarTitleText": "缴水费",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				}
+			}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
