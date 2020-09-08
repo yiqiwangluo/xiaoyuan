@@ -136,11 +136,13 @@ export default {
 			pay_serve_list: [
 				{
 					icon: '../../static/images/index_images/electric_charge.png',
-					title: '电费'
+					title: '电费',
+					url:'/pages/waterElectricity/electricity'
 				},
 				{
 					icon: '../../static/images/index_images/water_rate.png',
-					title: '水费'
+					title: '水费',
+					url:'/pages/waterElectricity/water'
 				},
 				{
 					icon: '../../static/images/index_images/pay.png',

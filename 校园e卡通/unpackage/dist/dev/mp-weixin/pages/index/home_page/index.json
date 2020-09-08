@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "校园e卡通",
-  "usingComponents": {
-    "card": "/components/index-components/card",
-    "module-card": "/components/index-components/module_list"
-  }
-}
