@@ -5,6 +5,28 @@
 			// 首页顶部的标题
 			"navigationBarTitleText": "校园e卡通"
 		}
+	},
+	,{
+	    "path" : "pages/waterElectricity/electricity",
+	    "style" : {
+			"navigationBarTitleText": "缴电费",
+			"app-plus": {
+				"titleNView": {
+					"backgroundColor": "#fff"
+				}
+			}
+		}
+	}
+	,{
+	    "path" : "pages/waterElectricity/water",
+	    "style" : {
+			"navigationBarTitleText": "缴水费",
+			"app-plus": {
+				"titleNView": {
+					"backgroundColor": "#fff"
+				}
+			}
+		}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
