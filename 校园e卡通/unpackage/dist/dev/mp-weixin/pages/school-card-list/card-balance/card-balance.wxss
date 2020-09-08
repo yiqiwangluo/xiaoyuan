@@ -3,10 +3,12 @@
   height: 200rpx;
   background-color: #2d7ce0;
   /* 不支持线性的时候显示 */
+  background-image: -webkit-gradient(linear, left top, right top, from(#2d7ce0), to(#45a3e7));
   background-image: -webkit-linear-gradient(left, #2d7ce0, #45a3e7);
   background-image: linear-gradient(to right, #2d7ce0, #45a3e7);
   margin: 25rpx auto;
-  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  -webkit-border-radius: 10rpx 10rpx 10rpx 10rpx;
+          border-radius: 10rpx 10rpx 10rpx 10rpx;
 }
 .card .card-center.data-v-392b6a9b {
   padding-top: 45rpx;

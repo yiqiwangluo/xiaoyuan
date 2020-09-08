@@ -70,7 +70,8 @@
 .service_image.data-v-b562f768 {
   width: 100rpx;
   height: 100rpx;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   z-index: 100;
   left: 628rpx;
   top: 26%;
