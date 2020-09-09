@@ -39,6 +39,12 @@
 				"navigationBarTitleText": "卡片挂失" // 顶部标题
 			}
 		}
+		,{
+		    "path" : "pages/school-card-list/card-recharge/card-recharge",
+		    "style" : {
+				"navigationBarTitleText": "校园卡充值" // 顶部标题
+			}
+		}
         ,{
             "path" : "pages/school-card-list/change-password/change-password",
             "style" : {
@@ -67,6 +73,7 @@
 				}
 			}
 		}
+        
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
