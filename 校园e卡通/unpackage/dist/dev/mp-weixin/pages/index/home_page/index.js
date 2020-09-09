@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 58));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -261,7 +261,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
       {
         icon: '../../static/images/index_images/report_loss.png',
-        title: '卡片挂失' },
+        title: '卡片挂失',
+        url: '/pages/school-card-list/card-lost/card-lost' },
 
       {
         icon: '../../static/images/index_images/change_password.png',

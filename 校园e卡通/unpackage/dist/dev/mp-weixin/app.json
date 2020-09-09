@@ -5,6 +5,7 @@
     "pages/index/school_list_and_authentication/authentication",
     "pages/school-card-list/card-balance/card-balance",
     "pages/school-card-list/flow-query/flow-query",
+    "pages/school-card-list/card-lost/card-lost",
     "pages/school-card-list/change-password/change-password",
     "pages/waterElectricity/electricity",
     "pages/waterElectricity/water"
@@ -16,5 +17,6 @@
     "navigationBarBackgroundColor": "#FFFFFF",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap47.json"
 }

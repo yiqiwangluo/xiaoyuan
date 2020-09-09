@@ -33,6 +33,12 @@
 				"navigationBarTitleText": "流水查询" // 顶部标题
 			}
         }
+		,{
+		    "path" : "pages/school-card-list/card-lost/card-lost",
+		    "style" : {
+				"navigationBarTitleText": "卡片挂失" // 顶部标题
+			}
+		}
         ,{
             "path" : "pages/school-card-list/change-password/change-password",
             "style" : {
