@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/index-components/card":1,"components/index-components/module_list":1,"components/school_list-components/school_card":1,"components/school_list-components/form_card":1,"components/school_list-components/my_prompt":1};
+/******/ 		var cssChunks = {"components/index-components/card":1,"components/index-components/module_list":1,"components/school_list-components/school_card":1,"components/school_card-components/nav_card":1,"components/school_list-components/form_card":1,"components/school_list-components/my_prompt":1,"components/electric_wallet-components/list_card":1,"components/electric_wallet-components/transaction_card":1,"components/electric_wallet-components/bank_card_list":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/index-components/card":"components/index-components/card","components/index-components/module_list":"components/index-components/module_list","components/school_list-components/school_card":"components/school_list-components/school_card","components/school_list-components/form_card":"components/school_list-components/form_card","components/school_list-components/my_prompt":"components/school_list-components/my_prompt"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/index-components/card":"components/index-components/card","components/index-components/module_list":"components/index-components/module_list","components/school_list-components/school_card":"components/school_list-components/school_card","components/school_card-components/nav_card":"components/school_card-components/nav_card","components/school_list-components/form_card":"components/school_list-components/form_card","components/school_list-components/my_prompt":"components/school_list-components/my_prompt","components/electric_wallet-components/list_card":"components/electric_wallet-components/list_card","components/electric_wallet-components/transaction_card":"components/electric_wallet-components/transaction_card","components/electric_wallet-components/bank_card_list":"components/electric_wallet-components/bank_card_list"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
