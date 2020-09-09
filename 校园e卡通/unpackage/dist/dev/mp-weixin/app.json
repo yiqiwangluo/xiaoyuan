@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/home_page/index",
+    "pages/index/school_list_and_authentication/school_list",
+    "pages/school_card/payment_code",
+    "pages/school_card/id_code",
+    "pages/index/school_list_and_authentication/authentication",
+    "pages/school-card-list/card-balance/card-balance",
+    "pages/school-card-list/flow-query/flow-query",
+    "pages/school-card-list/change-password/change-password",
+    "pages/waterElectricity/electricity",
+    "pages/waterElectricity/water",
+    "pages/index/electric_wallet_module/electric_wallet",
+    "pages/index/electric_wallet_module/transaction_detail",
+    "pages/index/electric_wallet_module/get_deposit",
+    "pages/index/electric_wallet_module/quota",
+    "pages/index/electric_wallet_module/recharge_money",
+    "pages/index/electric_wallet_module/bank_card",
+    "pages/index/electric_wallet_module/client_msg_recording"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园e卡通",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

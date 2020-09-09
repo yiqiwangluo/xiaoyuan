@@ -1,0 +1,51 @@
+.row_center.data-v-b8baaa7e {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.school_card_box.data-v-b8baaa7e {
+  height: 139rpx;
+  padding-left: 28rpx;
+  margin-bottom: 4rpx;
+  background-color: #ffffff;
+}
+.school_card_box .logo > image.data-v-b8baaa7e {
+  width: 74rpx;
+  height: 49rpx;
+}
+.school_card_box .school_msg.data-v-b8baaa7e {
+  height: 87rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  margin-left: 23rpx;
+}
+.school_card_box .school_msg .school_name.data-v-b8baaa7e {
+  font-size: 30rpx;
+}
+.school_card_box .school_msg .school_adress.data-v-b8baaa7e {
+  font-size: 24rpx;
+  color: #999999;
+}
+.school_card_box .distance.data-v-b8baaa7e {
+  margin-left: auto;
+  color: #999999;
+}
+.school_card_box .distance .right_arrow_image.data-v-b8baaa7e {
+  width: 25rpx;
+  height: 25rpx;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 11rpx;
+  margin-right: 30rpx;
+}
+

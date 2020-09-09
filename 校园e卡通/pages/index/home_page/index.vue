@@ -127,11 +127,13 @@ export default {
 				},
 				{
 					icon: '../../static/images/index_images/recharge.png',
-					title: '卡片充值'
+					title: '卡片充值',
+					url:'/pages/school-card-list/card-recharge/card-recharge'
 				},
 				{
 					icon: '../../static/images/index_images/report_loss.png',
-					title: '卡片挂失'
+					title: '卡片挂失',
+					url:'/pages/school-card-list/card-lost/card-lost'
 				},
 				{
 					icon: '../../static/images/index_images/change_password.png',
