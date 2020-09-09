@@ -102,13 +102,6 @@
 				"navigationBarTitleText": "充值"
 			}
 		},
-		// 银行卡页
-		{
-			"path": "pages/index/electric_wallet_module/bank_card",
-			"style": {
-				"navigationBarTitleText": "银行卡管理"
-			}
-		},
 		// 客户信息补录
 		{
 			"path": "pages/index/electric_wallet_module/client_msg_recording"
