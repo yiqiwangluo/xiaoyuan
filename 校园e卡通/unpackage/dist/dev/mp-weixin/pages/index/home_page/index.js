@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -210,6 +210,12 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     // 注册模块卡片组件
     moduleCard: moduleCard },
 
+  methods: {
+    // 页面跳转
+    toOtherPage: function toOtherPage(url) {
+      uni.navigateTo({ url: url });
+    } },
+
   data: function data() {
     return {
       // 客服图标的y轴位置
@@ -220,27 +226,33 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       electronic_wallet_list: [
       {
         icon: '../../static/images/index_images/transaction_detail.png',
-        title: '交易明细' },
+        title: '交易明细',
+        url: '../electric_wallet_module/transaction_detail' },
 
       {
         icon: '../../static/images/index_images/recharge_money.png',
-        title: '钱包充值' },
+        title: '钱包充值',
+        url: '../electric_wallet_module/recharge_money' },
 
       {
         icon: '../../static/images/index_images/withdraw_deposit.png',
-        title: '提现' },
+        title: '提现',
+        url: '../electric_wallet_module/get_deposit' },
 
       {
         icon: '../../static/images/index_images/bank_card.png',
-        title: '银行卡' },
+        title: '银行卡',
+        url: '../electric_wallet_module/bank_card' },
 
       {
         icon: '../../static/images/index_images/quota_setting.png',
-        title: '限额' },
+        title: '限额',
+        url: '../electric_wallet_module/quota' },
 
       {
         icon: '../../static/images/index_images/additional_recording.png',
-        title: '客户信息补录' }],
+        title: '客户信息补录',
+        url: '../electric_wallet_module/client_msg_recording' }],
 
 
       // 校园卡账户列表
@@ -272,22 +284,22 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
       // 缴费服务列表
-      pay_serve_list: [
-      {
-        icon: '../../static/images/index_images/electric_charge.png',
-        title: '电费',
-        url: '/pages/waterElectricity/electricity' },
-
-      {
-        icon: '../../static/images/index_images/water_rate.png',
-        title: '水费',
-        url: '/pages/waterElectricity/water' },
-
-      {
-        icon: '../../static/images/index_images/pay.png',
-        title: '缴费' }],
-
-
+      // pay_serve_list: [
+      // 	{
+      // 		icon: '../../static/images/index_images/electric_charge.png',
+      // 		title: '电费',
+      // 		url: '/pages/waterElectricity/electricity'
+      // 	},
+      // 	{
+      // 		icon: '../../static/images/index_images/water_rate.png',
+      // 		title: '水费',
+      // 		url: '/pages/waterElectricity/water'
+      // 	},
+      // 	{
+      // 		icon: '../../static/images/index_images/pay.png',
+      // 		title: '缴费'
+      // 	}
+      // ],
       // 其他服务列表
       other_serve_list: [
       {
@@ -309,6 +321,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   onPageScroll: function onPageScroll(e) {
     this.y = e.scrollTop + 20;
   } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */

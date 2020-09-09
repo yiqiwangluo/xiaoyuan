@@ -12,7 +12,7 @@
 				<view class="topCard_body_left">
 					<card style_list="width:326rpx;height:328rpx;">
 						<!-- 电子钱包卡片 -->
-						<view class="wallet_box flexCenter">
+						<view class="wallet_box flexCenter" @click="toOtherPage('../electric_wallet_module/electric_wallet')">
 							<!-- 电子钱包盒子 -->
 							<view>
 								<image src="../../../static/images/index_images/wallet.png" class="wallet_image"></image>
@@ -26,7 +26,7 @@
 				<!-- 右侧身份码、付款码区域 -->
 				<view class="topCard_body_right flexCenter">
 					<!-- 身份码外层卡片 -->
-					<card style_list="width:325rpx;height:157rpx">
+					<card style_list="width:325rpx;height:157rpx" @click.native="toOtherPage('../../school_card/id_code')">
 						<!-- 身份码盒子 -->
 						<view class="flexCenter idCard_box">
 							<image src="../../../static/images/index_images/id_card.png" class="idCard_image"></image>
@@ -34,7 +34,7 @@
 						</view>
 					</card>
 					<!-- 付款码外层卡片 -->
-					<card style_list="width:325rpx;height:157rpx">
+					<card style_list="width:325rpx;height:157rpx" @click.native="toOtherPage('../../school_card/payment_code')">
 						<!-- 付款码盒子 -->
 						<view class="flexCenter qrCode_box">
 							<image src="../../../static/images/index_images/qr_code.png" class="qrCode_image"></image>
@@ -53,7 +53,7 @@
 		<!-- 校园卡账户区域 -->
 		<module-card style_list="width:705rpx;height:504rpx;margin:22rpx auto" list_title="校园卡账户" :list_data="school_card_list"></module-card>
 		<!-- 缴费服务区域 -->
-		<module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="缴费服务" :list_data="pay_serve_list"></module-card>
+		<!-- <module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="缴费服务" :list_data="pay_serve_list"></module-card> -->
 		<!-- 其他服务区域 -->
 		<module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
 		<!-- 客服 -->
@@ -73,6 +73,12 @@ export default {
 		// 注册模块卡片组件
 		moduleCard
 	},
+	methods: {
+		// 页面跳转
+		toOtherPage(url) {
+			uni.navigateTo({ url });
+		}
+	},
 	data() {
 		return {
 			// 客服图标的y轴位置
@@ -83,27 +89,33 @@ export default {
 			electronic_wallet_list: [
 				{
 					icon: '../../static/images/index_images/transaction_detail.png',
-					title: '交易明细'
+					title: '交易明细',
+					url: '../electric_wallet_module/transaction_detail'
 				},
 				{
 					icon: '../../static/images/index_images/recharge_money.png',
-					title: '钱包充值'
+					title: '钱包充值',
+					url: '../electric_wallet_module/recharge_money'
 				},
 				{
 					icon: '../../static/images/index_images/withdraw_deposit.png',
-					title: '提现'
+					title: '提现',
+					url: '../electric_wallet_module/get_deposit'
 				},
 				{
 					icon: '../../static/images/index_images/bank_card.png',
-					title: '银行卡'
+					title: '银行卡',
+					url: '../electric_wallet_module/bank_card'
 				},
 				{
 					icon: '../../static/images/index_images/quota_setting.png',
-					title: '限额'
+					title: '限额',
+					url: '../electric_wallet_module/quota'
 				},
 				{
 					icon: '../../static/images/index_images/additional_recording.png',
-					title: '客户信息补录'
+					title: '客户信息补录',
+					url:'../electric_wallet_module/client_msg_recording'
 				}
 			],
 			// 校园卡账户列表
@@ -111,12 +123,12 @@ export default {
 				{
 					icon: '../../static/images/index_images/balance.png',
 					title: '卡片余额',
-					url:'/pages/school-card-list/card-balance/card-balance'
+					url: '/pages/school-card-list/card-balance/card-balance'
 				},
 				{
 					icon: '../../static/images/index_images/Cash_flow_inquiry.png',
 					title: '流水查询',
-					url:'/pages/school-card-list/flow-query/flow-query'
+					url: '/pages/school-card-list/flow-query/flow-query'
 				},
 				{
 					icon: '../../static/images/index_images/recharge.png',
@@ -131,26 +143,26 @@ export default {
 				{
 					icon: '../../static/images/index_images/change_password.png',
 					title: '修改密码',
-					url:'/pages/school-card-list/change-password/change-password'
+					url: '/pages/school-card-list/change-password/change-password'
 				}
 			],
 			// 缴费服务列表
-			pay_serve_list: [
-				{
-					icon: '../../static/images/index_images/electric_charge.png',
-					title: '电费',
-					url:'/pages/waterElectricity/electricity'
-				},
-				{
-					icon: '../../static/images/index_images/water_rate.png',
-					title: '水费',
-					url:'/pages/waterElectricity/water'
-				},
-				{
-					icon: '../../static/images/index_images/pay.png',
-					title: '缴费'
-				}
-			],
+			// pay_serve_list: [
+			// 	{
+			// 		icon: '../../static/images/index_images/electric_charge.png',
+			// 		title: '电费',
+			// 		url: '/pages/waterElectricity/electricity'
+			// 	},
+			// 	{
+			// 		icon: '../../static/images/index_images/water_rate.png',
+			// 		title: '水费',
+			// 		url: '/pages/waterElectricity/water'
+			// 	},
+			// 	{
+			// 		icon: '../../static/images/index_images/pay.png',
+			// 		title: '缴费'
+			// 	}
+			// ],
 			// 其他服务列表
 			other_serve_list: [
 				{

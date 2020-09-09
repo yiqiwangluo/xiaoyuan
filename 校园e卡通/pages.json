@@ -2,10 +2,7 @@
 	"pages": [
 		// 首页
 		{
-			"path": "pages/index/home_page/index",
-			"style": {
-				"navigationBarTitleText": "校园e卡通" // 顶部的标题
-			}
+			"path": "pages/index/home_page/index"
 		},
 		// 学校列表页
 		{
@@ -14,46 +11,44 @@
 				"navigationBarTitleText": "学校列表" // 顶部标题
 			}
 		},
+		// 付款码页面
+		{
+			"path": "pages/school_card/payment_code",
+			"style": {
+				"navigationBarTitleText": "付款码"
+			}
+		},
+		// 身份码页面
+		{
+			"path": "pages/school_card/id_code",
+			"style": {
+				"navigationBarTitleText": "身份码"
+			}
+		},
 		// 身份认证页
 		{
 			"path": "pages/index/school_list_and_authentication/authentication",
 			"style": {
 				"navigationBarTitleText": "校园e码通身份验证"
 			}
-		}
-	    ,{
-            "path" : "pages/school-card-list/card-balance/card-balance",
-            "style" : {
+		}, {
+			"path": "pages/school-card-list/card-balance/card-balance",
+			"style": {
 				"navigationBarTitleText": "校园卡余额" // 顶部标题
 			}
-        }
-        ,{
-            "path" : "pages/school-card-list/flow-query/flow-query",
-            "style" : {
+		}, {
+			"path": "pages/school-card-list/flow-query/flow-query",
+			"style": {
 				"navigationBarTitleText": "流水查询" // 顶部标题
 			}
-        }
-		,{
-		    "path" : "pages/school-card-list/card-lost/card-lost",
-		    "style" : {
-				"navigationBarTitleText": "卡片挂失" // 顶部标题
-			}
-		}
-		,{
-		    "path" : "pages/school-card-list/card-recharge/card-recharge",
-		    "style" : {
-				"navigationBarTitleText": "校园卡充值" // 顶部标题
-			}
-		}
-        ,{
-            "path" : "pages/school-card-list/change-password/change-password",
-            "style" : {
+		}, {
+			"path": "pages/school-card-list/change-password/change-password",
+			"style": {
 				"navigationBarTitleText": "修改查询密码" // 顶部标题
 			}
-        }
-		,{
-		    "path" : "pages/waterElectricity/electricity",
-		    "style" : {
+		}, {
+			"path": "pages/waterElectricity/electricity",
+			"style": {
 				"navigationBarTitleText": "缴电费",
 				"app-plus": {
 					"titleNView": {
@@ -61,10 +56,9 @@
 					}
 				}
 			}
-		}
-		,{
-		    "path" : "pages/waterElectricity/water",
-		    "style" : {
+		}, {
+			"path": "pages/waterElectricity/water",
+			"style": {
 				"navigationBarTitleText": "缴水费",
 				"app-plus": {
 					"titleNView": {
@@ -72,9 +66,54 @@
 					}
 				}
 			}
+		},
+		// 电子钱包详情页
+		{
+			"path": "pages/index/electric_wallet_module/electric_wallet",
+			"style": {
+				"navigationBarTitleText": "电子钱包"
+			}
+		},
+		// 交易明细页
+		{
+			"path": "pages/index/electric_wallet_module/transaction_detail",
+			"style": {
+				"navigationBarTitleText": "交易明细"
+			}
+		},
+		// 提现页面
+		{
+			"path": "pages/index/electric_wallet_module/get_deposit",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},
+		// 限额页
+		{
+			"path": "pages/index/electric_wallet_module/quota",
+			"style": {
+				"navigationBarTitleText": "限额"
+			}
+		},
+		// 充值页
+		{
+			"path": "pages/index/electric_wallet_module/recharge_money",
+			"style": {
+				"navigationBarTitleText": "充值"
+			}
+		},
+		// 银行卡页
+		{
+			"path": "pages/index/electric_wallet_module/bank_card",
+			"style": {
+				"navigationBarTitleText": "银行卡管理"
+			}
+		},
+		// 客户信息补录
+		{
+			"path": "pages/index/electric_wallet_module/client_msg_recording"
 		}
-        
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "校园e卡通",
