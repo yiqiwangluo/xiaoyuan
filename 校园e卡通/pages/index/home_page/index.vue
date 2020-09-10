@@ -112,6 +112,11 @@ export default {
 					title: '限额',
 					url: '../electric_wallet_module/quota'
 				}
+				// {
+				// 	icon:'../../static/images/index_images/bank_card.png',
+				// 	title:'银行卡',
+				// 	url:'../electric_wallet_module/bank_card_list'
+				// }
 			],
 			// 校园卡账户列表
 			school_card_list: [

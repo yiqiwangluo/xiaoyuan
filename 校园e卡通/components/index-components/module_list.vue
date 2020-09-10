@@ -97,7 +97,7 @@ export default {
 			}
 			display: flex;
 			align-items: center;
-			width: 234rpx;
+			flex: 0 0 33%;
 			height: 222rpx;
 			flex-direction: column;
 			justify-content: center;
