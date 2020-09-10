@@ -1,7 +1,0 @@
-.card_box.data-v-19aa1643 {
-  overflow: hidden;
-  border-radius: 24rpx;
-  border: 1rpx solid rgba(153, 153, 153, 0.5);
-  box-shadow: 0, 0, 21px, rgba(0, 0, 0, 0.05);
-}
-
