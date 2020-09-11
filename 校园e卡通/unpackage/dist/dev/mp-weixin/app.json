@@ -15,7 +15,6 @@
     "pages/index/electric_wallet_module/get_deposit",
     "pages/index/electric_wallet_module/quota",
     "pages/index/electric_wallet_module/recharge_money",
-    "pages/index/electric_wallet_module/bank_card",
     "pages/index/electric_wallet_module/client_msg_recording"
   ],
   "subPackages": [],

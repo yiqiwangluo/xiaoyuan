@@ -103,20 +103,20 @@ export default {
 					url: '../electric_wallet_module/get_deposit'
 				},
 				{
-					icon: '../../static/images/index_images/bank_card.png',
-					title: '银行卡',
-					url: '../electric_wallet_module/bank_card'
+					icon: '../../static/images/index_images/additional_recording.png',
+					title: '客户信息补录',
+					url: '../electric_wallet_module/client_msg_recording'
 				},
 				{
 					icon: '../../static/images/index_images/quota_setting.png',
 					title: '限额',
 					url: '../electric_wallet_module/quota'
-				},
-				{
-					icon: '../../static/images/index_images/additional_recording.png',
-					title: '客户信息补录',
-					url:'../electric_wallet_module/client_msg_recording'
 				}
+				// {
+				// 	icon:'../../static/images/index_images/bank_card.png',
+				// 	title:'银行卡',
+				// 	url:'../electric_wallet_module/bank_card_list'
+				// }
 			],
 			// 校园卡账户列表
 			school_card_list: [
@@ -133,12 +133,12 @@ export default {
 				{
 					icon: '../../static/images/index_images/recharge.png',
 					title: '卡片充值',
-					url:'/pages/school-card-list/card-recharge/card-recharge'
+					url: '/pages/school-card-list/card-recharge/card-recharge'
 				},
 				{
 					icon: '../../static/images/index_images/report_loss.png',
 					title: '卡片挂失',
-					url:'/pages/school-card-list/card-lost/card-lost'
+					url: '/pages/school-card-list/card-lost/card-lost'
 				},
 				{
 					icon: '../../static/images/index_images/change_password.png',

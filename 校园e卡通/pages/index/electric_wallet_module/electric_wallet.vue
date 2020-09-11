@@ -48,11 +48,6 @@ export default {
 					icon: '../../static/images/index_images/quota_setting.png',
 					title: '限额',
 					url: './quota'
-				},
-				{
-					icon: '../../static/images/index_images/bank_card.png',
-					title: '银行卡',
-					url: './bank_card'
 				}
 			]
 		};
