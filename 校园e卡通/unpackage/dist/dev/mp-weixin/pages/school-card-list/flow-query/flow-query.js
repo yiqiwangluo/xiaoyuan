@@ -130,47 +130,91 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var transactionCard = function transactionCard() {__webpack_require__.e(/*! require.ensure | components/electric_wallet-components/transaction_card */ "components/electric_wallet-components/transaction_card").then((function () {return resolve(__webpack_require__(/*! ../../../components/electric_wallet-components/transaction_card.vue */ 189));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
+    var currentDate = this.getDate({
+      format: true });
+
     return {
-      detailsList: [
-      {
-        using: '餐费支出A585-66',
-        date: '2020-07-02 15:48:15',
-        amount: '￥12' },
-
-      {
-        using: '餐费支出A585-66',
-        date: '2020-07-02 15:48:15',
-        amount: '￥12' },
-
-      {
-        using: '餐费支出A585-66',
-        date: '2020-07-02 15:48:15',
-        amount: '￥12' }] };
-
-
+      title: 'picker',
+      date: currentDate };
 
   },
-  methods: {} };exports.default = _default;
+  components: {
+    transactionCard: transactionCard },
+
+  computed: {
+    startDate: function startDate() {
+      return this.getDate('start');
+    },
+    endDate: function endDate() {
+      return this.getDate('end');
+    } },
+
+  methods: {
+
+    bindDateChange: function bindDateChange(e) {
+      this.date = e.target.value;
+    },
+
+    getDate: function getDate(type) {
+      var date = new Date();
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+      var day = date.getDate();
+
+      if (type === 'start') {
+        year = year - 60;
+      } else if (type === 'end') {
+        year = year + 2;
+      }
+      month = month > 9 ? month : '0' + month;;
+      day = day > 9 ? day : '0' + day;
+      return "".concat(year, "-").concat(month, "-").concat(day);
+    } } };exports.default = _default;
 
 /***/ }),
 

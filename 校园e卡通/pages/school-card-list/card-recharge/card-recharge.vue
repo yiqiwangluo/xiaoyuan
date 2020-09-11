@@ -4,7 +4,7 @@
 			<view class="balance">校园卡余额: ￥{{balance}}</view>
 		</view>
 		<view class="white"></view>
-		
+
 		<view class="center">
 			<view class="content">
 				<view class="banner">校园卡充值金额(元)</view>
@@ -20,15 +20,17 @@
 			</view>
 			<view class="ways">
 				<text class="ways-text">充值方式</text>
-				<view class="btn" :class="{'active': isChoosing == 1}">
-					<view class="wallet_box" >
+				<view class="btn" :class="{'active': isactive === 1}">
+					<view class="wallet_box">
 						<view class="wallet_text">
 							<image src="../../../static/images/school_card_images/wallet.png" class="wallet_image"></image>
 							<text class="wallet_left">电子钱包支付</text>
 						</view>
 						<view class="water_button">
-							<view class="one" @click="choose()"></view>
-							<view class="two"></view>
+							<view class="one" @click="choose()" v-show="isChangesss"></view>
+							<view class="two" @click="choosing()" v-show="isChanging">
+								<image src="../../../static/images/school_card_images/checked.png"></image>
+							</view>
 						</view>
 					</view>
 				</view>
@@ -86,7 +88,9 @@
 				list: ["50", "100", "150", "200"],
 				success: false,
 				fail: true,
-				isChoosing:'0'
+				isactive: '0',
+				isChangesss: true,
+				isChanging: false
 			}
 		},
 		methods: {
@@ -99,7 +103,14 @@
 				}
 			},
 			choose() {
-				this.isChoosing = 1;
+				this.isactive = 1;
+				this.isChangesss = false;
+				this.isChanging = true;
+			},
+			choosing() {
+				this.isactive = 0;
+				this.isChangesss = true;
+				this.isChanging = false;
 			},
 			submit() {
 				this.success = true;
@@ -211,10 +222,13 @@
 					margin-top: 33rpx;
 					border: 1rpx solid rgb(153, 153, 153);
 					margin-top: 25rpx;
+
 					.wallet_box {
 						margin: 21rpx 36rpx;
+
 						.wallet_text {
 							float: left;
+
 							.wallet_image {
 								width: 58rpx;
 								height: 58rpx;
@@ -230,18 +244,25 @@
 
 						.water_button {
 							float: right;
-							.one{
+
+							.one {
 								width: 35rpx;
 								height: 35rpx;
 								border-radius: 50%;
 								margin-top: 15rpx;
-								background-color: rgb(153,153,153); 
+								background-color: rgb(153, 153, 153);
+							}
+
+							.two>image {
+								width: 35rpx;
+								height: 35rpx;
 							}
 						}
 					}
 
-					
+
 				}
+
 				.active {
 					border: 1rpx solid rgb(232, 79, 79);
 				}
@@ -262,12 +283,14 @@
 				background-color: rgb(40, 111, 201);
 				text-align: center;
 			}
-			.tips{
+
+			.tips {
 				font-size: 26rpx;
 				width: 706rpx;
 				margin: 24rpx auto;
-				.warn-tips{
-					color: rgb(227,31,31);
+
+				.warn-tips {
+					color: rgb(227, 31, 31);
 				}
 			}
 		}
