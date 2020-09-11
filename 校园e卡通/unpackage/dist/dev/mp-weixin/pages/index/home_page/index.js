@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 144));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 151));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var card = function card() {__webpack_require__.e(/*! require.ensure | components/index-components/card */ "components/index-components/card").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/card.vue */ 140));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var moduleCard = function moduleCard() {__webpack_require__.e(/*! require.ensure | components/index-components/module_list */ "components/index-components/module_list").then((function () {return resolve(__webpack_require__(/*! ../../../components/index-components/module_list.vue */ 147));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
