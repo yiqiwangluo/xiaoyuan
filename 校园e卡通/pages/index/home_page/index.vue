@@ -55,7 +55,7 @@
 		<!-- 缴费服务区域 -->
 		<!-- <module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="缴费服务" :list_data="pay_serve_list"></module-card> -->
 		<!-- 其他服务区域 -->
-		<module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
+		<module-card style_list="width:705rpx;height:504rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
 		<!-- 客服 -->
 		<movable-view class="service" direction="vertical" :y="y"><image src="../../../static/images/index_images/service.png" class="service_image"></image></movable-view>
 	</movable-area>
@@ -176,6 +176,10 @@ export default {
 				{
 					icon: '../../static/images/index_images/user_guide.png',
 					title: '用户指南'
+				},
+				{
+					icon: '../../static/images/index_images/feedback.png',
+					title: '意见反馈'
 				}
 			]
 		};
