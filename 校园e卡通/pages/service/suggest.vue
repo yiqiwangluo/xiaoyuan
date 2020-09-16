@@ -138,15 +138,15 @@
 				textContent:"",
 				imgs: [],
 				imgList:[
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide2.png",
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide1.png",
-					"../../static/img/service/guide1.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide2.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide1.png",
+					"../../static/images/service/guide1.png",
 				],
 				
 				success:false,
@@ -176,10 +176,8 @@
 			},
 			chooseImg() {
 				var _this = this;
-				//此处开始加弹窗，并判断用户是否点击了确定，只有点击了确定才去调用uni.chooseImage,如果是非IOS设备，就是直接调用uni.chooseImage
 				if (this.device == "ios") {
 					if (!uni.getStorageSync('imgPre')) {
-						console.log('进来提示');
 						uni.showModal({
 							title: '提示',
 							content: '系统在需要选择图片时，需要调用获取相机的权限！',
@@ -187,7 +185,6 @@
 								if (res.confirm) {
 									uni.setStorageSync("imgPre", "1");
 									_this.openImg();
-			
 								} else if (res.cancel) {
 									console.log('用户点击取消');
 								}
@@ -214,9 +211,7 @@
 						if (this.imgs.length + paths.length > 9) {
 							paths.length = 9 - this.imgs.length;
 						};
-						
 						this.imgs = this.imgs.concat(paths);
-						console.log("选择图片"+this.imgs);
 					}
 				})
 			},
