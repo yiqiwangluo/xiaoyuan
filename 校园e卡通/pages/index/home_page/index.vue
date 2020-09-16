@@ -160,26 +160,31 @@ export default {
 			// 	},
 			// 	{
 			// 		icon: '../../static/images/index_images/pay.png',
-			// 		title: '缴费'
+			// 		title: '缴费',
+			// 		url: '/pages/online/online'
 			// 	}
 			// ],
 			// 其他服务列表
 			other_serve_list: [
 				{
 					icon: '../../static/images/index_images/common_question.png',
-					title: '常见问题'
+					title: '常见问题',
+					url: '/pages/service/problem'
 				},
 				{
 					icon: '../../static/images/index_images/privacy_policy.png',
-					title: '隐私政策'
+					title: '隐私政策',
+					url: '/pages/service/private'
 				},
 				{
 					icon: '../../static/images/index_images/user_guide.png',
-					title: '用户指南'
+					title: '用户指南',
+					url: '/pages/service/guide'
 				},
 				{
 					icon: '../../static/images/index_images/feedback.png',
-					title: '意见反馈'
+					title: '意见反馈',
+					url: '/pages/service/suggest'
 				}
 			]
 		};
