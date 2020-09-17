@@ -70,7 +70,7 @@
 				</view>
 				<view class="my_btn">
 					<view class="my_btn_close" @click="fail=false">取消</view>
-					<view class="my_btn_ok" @click="">确定</view>
+					<view class="my_btn_ok" @click="fail=false">确定</view>
 				</view>
 			</view>
 		</view>
@@ -85,7 +85,7 @@
 				isChange:"-1",
 				list: ["5","10","20","30","50","100"],
 				success:false,
-				fail:true,
+				fail:false,
 				
 				campus:["江南校区","本部"],
 				campusIndex:null,

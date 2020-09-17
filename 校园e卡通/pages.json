@@ -79,6 +79,61 @@
 				}
 			}
 		},
+		{
+		    "path" : "pages/online/online",
+		    "style" : {
+				"navigationBarTitleText": "在线缴费",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				}
+			}
+		}
+		,{
+		    "path" : "pages/service/problem",
+		    "style" : {
+				"navigationBarTitleText": "常见问题",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				}
+			}
+		}
+		,{
+		    "path" : "pages/service/private",
+		    "style" : {
+				"navigationBarTitleText": "隐私政策",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				}
+			}
+		}
+		,{
+		    "path" : "pages/service/guide",
+		    "style" : {
+				"navigationBarTitleText": "用户指南",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				} 
+			}
+		}
+		,{
+		    "path" : "pages/service/suggest",
+		    "style" : {
+				"navigationBarTitleText": "意见反馈",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#fff"
+					}
+				} 
+			}
+		},
 		// 电子钱包详情页
 		{
 			"path": "pages/index/electric_wallet_module/electric_wallet",

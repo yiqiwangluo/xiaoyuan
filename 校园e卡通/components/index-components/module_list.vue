@@ -7,7 +7,12 @@
 		<!-- 模块主体 -->
 		<view class="card_body">
 			<!-- 模块子项 -->
-			<view :class="['card_item', list_data.length % 2 === 0 ? '' : 'card_item_specal']" v-for="(item, index) in list_data" :key="index" @click="natigateToNewPage(item.url)">
+			<view
+				:class="['card_item', class_type ? 'card_item_specal4' : 'card_item_specal5']"
+				v-for="(item, index) in list_data"
+				:key="index"
+				@click="natigateToNewPage(item.url)"
+			>
 				<!-- 子项的icon图标 -->
 				<image :src="item.icon" class="item_image"></image>
 				<!-- 子项的文字 -->
@@ -24,6 +29,15 @@ export default {
 	components: {
 		// 注册卡片组件
 		card
+	},
+	computed: {
+		class_type() {
+			if (this.list_data.length === 4) {
+				return true;
+			} else if (this.list_data.length === 5) {
+				return false;
+			}
+		}
 	},
 	props: {
 		// 样式字符串
@@ -47,7 +61,7 @@ export default {
 			uni.navigateTo({
 				url,
 				fail(err) {
-					console.log(err)
+					console.log(err);
 				}
 			});
 		}
@@ -109,8 +123,8 @@ export default {
 				margin-bottom: 20rpx;
 			}
 		}
-		// 特殊子项(只有4个子项时的样式)
-		.card_item_specal {
+		// 特殊子项(只有5个子项时的样式)
+		.card_item_specal5 {
 			&:nth-child(5) {
 				border-right: 1rpx solid #e5e5e5;
 			}
@@ -119,12 +133,24 @@ export default {
 			&:nth-child(3n) {
 				border-right: none;
 				margin-bottom: -1rpx;
+				margin-left: -1rpx;
+			}
+			&:nth-child(3) {
+				border-bottom: 1rpx solid #e5e5e5;
+			}
+		}
+		// 特殊子项(只有4个子项时的样式)
+		.card_item_specal4 {
+			&:nth-child(4) {
+				margin-top: -1rpx;
+				border-right: 1rpx solid #e5e5e5;
+			}
+			// 右侧元素
+			&:nth-child(3n) {
+				border-right: none;
 			}
 			// 顶部元素
-			&:nth-child(1),
-			&:nth-child(2) {
-				border-bottom: none;
-			}
+			&:nth-child(2),
 			&:nth-child(3) {
 				border-bottom: 1rpx solid #e5e5e5;
 			}

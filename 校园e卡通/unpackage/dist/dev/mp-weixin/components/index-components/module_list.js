@@ -136,10 +136,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
 {
   components: {
     // 注册卡片组件
     card: card },
+
+  computed: {
+    class_type: function class_type() {
+      if (this.list_data.length === 4) {
+        return true;
+      } else if (this.list_data.length === 5) {
+        return false;
+      }
+    } },
 
   props: {
     // 样式字符串
