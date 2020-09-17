@@ -258,9 +258,9 @@ __webpack_require__.r(__webpack_exports__);
       // 校园卡账户列表
       school_card_list: [
       {
-        icon: '../../static/images/index_images/balance.png',
-        title: '卡片余额',
-        url: '/pages/school-card-list/card-balance/card-balance' },
+        icon: '../../static/images/index_images/recharge.png',
+        title: '卡片充值',
+        url: '/pages/school-card-list/card-recharge/card-recharge' },
 
       {
         icon: '../../static/images/index_images/Cash_flow_inquiry.png',
@@ -268,9 +268,20 @@ __webpack_require__.r(__webpack_exports__);
         url: '/pages/school-card-list/flow-query/flow-query' },
 
       {
-        icon: '../../static/images/index_images/recharge.png',
-        title: '卡片充值',
-        url: '/pages/school-card-list/card-recharge/card-recharge' },
+        icon: '../../static/images/index_images/balance.png',
+        title: '卡片余额',
+        url: '/pages/school-card-list/card-balance/card-balance' },
+
+
+      {
+        icon: '../../static/images/index_images/additional_recording.png',
+        title: '信息补录',
+        url: '../electric_wallet_module/client_msg_recording' },
+
+      {
+        icon: '../../static/images/index_images/quota_setting.png',
+        title: '限额',
+        url: '../electric_wallet_module/quota' },
 
       {
         icon: '../../static/images/index_images/report_loss.png',

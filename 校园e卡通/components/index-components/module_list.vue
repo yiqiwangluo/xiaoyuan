@@ -114,6 +114,7 @@ export default {
 			&:nth-child(5) {
 				border-right: 1rpx solid #e5e5e5;
 			}
+			
 			// 右侧元素
 			&:nth-child(3n) {
 				border-right: none;
