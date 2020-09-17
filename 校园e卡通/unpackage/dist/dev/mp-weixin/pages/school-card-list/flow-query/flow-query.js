@@ -173,6 +173,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
 {
   data: function data() {
     var currentDate = this.getDate({
@@ -180,7 +188,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
     return {
       title: 'picker',
-      date: currentDate };
+      date: currentDate,
+      isClick: '0',
+      showTrue: true,
+      showFalse: true };
 
   },
   components: {
@@ -204,7 +215,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       var date = new Date();
       var year = date.getFullYear();
       var month = date.getMonth() + 1;
-      var day = date.getDate();
 
       if (type === 'start') {
         year = year - 60;
@@ -212,8 +222,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         year = year + 2;
       }
       month = month > 9 ? month : '0' + month;;
-      day = day > 9 ? day : '0' + day;
-      return "".concat(year, "-").concat(month, "-").concat(day);
+
+      return "".concat(year, "\u5E74").concat(month, "\u6708");
+    },
+
+    addActive: function addActive() {
+      this.isClick = 1;
+      this.showFalse = true;
+      this.showTrue = false;
+
+    },
+
+    addActiveClick: function addActiveClick() {
+      this.isClick = 2;
+      this.showTrue = true;
+      this.showFalse = false;
     } } };exports.default = _default;
 
 /***/ }),

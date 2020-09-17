@@ -49,9 +49,9 @@
 			<image src="../../../static/images/index_images/student_union_enroll.png" class="studentUnion_enroll_image"></image>
 		</card>
 		<!-- 电子钱包区域 -->
-		<module-card style_list="width:705rpx;height:506rpx;margin:22rpx auto" list_title="电子钱包" :list_data="electronic_wallet_list"></module-card>
+		<!-- <module-card style_list="width:705rpx;height:506rpx;margin:22rpx auto" list_title="电子钱包" :list_data="electronic_wallet_list"></module-card> -->
 		<!-- 校园卡账户区域 -->
-		<module-card style_list="width:705rpx;height:504rpx;margin:22rpx auto" list_title="校园卡账户" :list_data="school_card_list"></module-card>
+		<module-card style_list="width:705rpx;height:725rpx;margin:22rpx auto" list_title="校园电子卡" :list_data="school_card_list"></module-card>
 		<!-- 缴费服务区域 -->
 		<!-- <module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="缴费服务" :list_data="pay_serve_list"></module-card> -->
 		<!-- 其他服务区域 -->
@@ -121,9 +121,9 @@ export default {
 			// 校园卡账户列表
 			school_card_list: [
 				{
-					icon: '../../static/images/index_images/balance.png',
-					title: '卡片余额',
-					url: '/pages/school-card-list/card-balance/card-balance'
+					icon: '../../static/images/index_images/recharge.png',
+					title: '卡片充值',
+					url: '/pages/school-card-list/card-recharge/card-recharge'
 				},
 				{
 					icon: '../../static/images/index_images/Cash_flow_inquiry.png',
@@ -131,9 +131,20 @@ export default {
 					url: '/pages/school-card-list/flow-query/flow-query'
 				},
 				{
-					icon: '../../static/images/index_images/recharge.png',
-					title: '卡片充值',
-					url: '/pages/school-card-list/card-recharge/card-recharge'
+					icon: '../../static/images/index_images/balance.png',
+					title: '卡片余额',
+					url: '/pages/school-card-list/card-balance/card-balance'
+				},
+				
+				{
+					icon: '../../static/images/index_images/additional_recording.png',
+					title: '信息补录',
+					url: '../electric_wallet_module/client_msg_recording'
+				},
+				{
+					icon: '../../static/images/index_images/quota_setting.png',
+					title: '限额',
+					url: '../electric_wallet_module/quota'
 				},
 				{
 					icon: '../../static/images/index_images/report_loss.png',
