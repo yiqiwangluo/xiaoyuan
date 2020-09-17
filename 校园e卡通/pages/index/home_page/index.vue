@@ -55,7 +55,7 @@
 		<!-- 缴费服务区域 -->
 		<!-- <module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="缴费服务" :list_data="pay_serve_list"></module-card> -->
 		<!-- 其他服务区域 -->
-		<module-card style_list="width:705rpx;height:283rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
+		<module-card style_list="width:705rpx;height:504rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
 		<!-- 客服 -->
 		<movable-view class="service" direction="vertical" :y="y"><image src="../../../static/images/index_images/service.png" class="service_image"></image></movable-view>
 	</movable-area>
@@ -160,22 +160,31 @@ export default {
 			// 	},
 			// 	{
 			// 		icon: '../../static/images/index_images/pay.png',
-			// 		title: '缴费'
+			// 		title: '缴费',
+			// 		url: '/pages/online/online'
 			// 	}
 			// ],
 			// 其他服务列表
 			other_serve_list: [
 				{
 					icon: '../../static/images/index_images/common_question.png',
-					title: '常见问题'
+					title: '常见问题',
+					url: '/pages/service/problem'
 				},
 				{
 					icon: '../../static/images/index_images/privacy_policy.png',
-					title: '隐私政策'
+					title: '隐私政策',
+					url: '/pages/service/private'
 				},
 				{
 					icon: '../../static/images/index_images/user_guide.png',
-					title: '用户指南'
+					title: '用户指南',
+					url: '/pages/service/guide'
+				},
+				{
+					icon: '../../static/images/index_images/feedback.png',
+					title: '意见反馈',
+					url: '/pages/service/suggest'
 				}
 			]
 		};
