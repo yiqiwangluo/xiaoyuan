@@ -26,7 +26,7 @@
 			<view class="popup" v-if="success">
 				<view class="popup-window">
 					<view class="popup_icon">
-						<image src="../../../static/images/school_card_images/success.png" mode="aspectFill"></image>
+						<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_card_images/success.png" mode="aspectFill"></image>
 					</view>
 					<view class="popup_content">
 						校园卡充值成功
@@ -40,7 +40,7 @@
 			<view class="popup" v-if="fail">
 				<view class="popup-window">
 					<view class="popup_icon">
-						<image src="../../../static/images/school_card_images/error.png" mode="aspectFill"></image>
+						<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_card_images/error.png" mode="aspectFill"></image>
 					</view>
 					<view class="popup_content">
 						电子钱包/银行卡余额不足，充值失败

@@ -35,7 +35,7 @@
 		<view class="popup" v-if="success">
 			<view class="popup-window">
 				<view class="popup_icon">
-					<image src="../../../static/images/school_card_images/success.png" mode="aspectFill"></image>
+					<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_card_images/success.png" mode="aspectFill"></image>
 				</view>
 				<view class="popup_content">
 					修改查询密码成功
@@ -49,7 +49,7 @@
 		<view class="popup" v-if="fail">
 			<view class="popup-window">
 				<view class="popup_icon">
-					<image src="../../../static/images/school_card_images/error.png" mode="aspectFill"></image>
+					<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_card_images/error.png" mode="aspectFill"></image>
 				</view>
 				<view class="popup_content">
 					修改失败，信息不全/错误

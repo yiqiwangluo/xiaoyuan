@@ -15,7 +15,7 @@
 				<view class="select-right">
 					<picker mode="date" fields="month" :value="date" :start="startDate" :end="endDate" @change="bindDateChange">
 						<view class="uni-input">
-							<image src="../../../static/images/school_list_images/left_arrow.png" class="right_arrow" />
+							<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/left_arrow.png" class="right_arrow" />
 						</view>
 					</picker>
 				</view>
