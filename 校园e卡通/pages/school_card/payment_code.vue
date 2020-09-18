@@ -1,38 +1,38 @@
 <template>
 	<!-- 付款码页面盒子 -->
-	<view class="payment_code_box" style="background-image: url(../../static/images/idcode_paymentcode/blue_sky.png);">
+	<view class="payment_code_box" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/blue_sky.png);">
 		<!-- 付款码盒子 -->
 		<view class="payment_code">
 			<!-- 顶部tab栏 -->
 			<view class="payment_code_head">
 				<!-- 电子钱包tab栏 -->
 				<view :class="['electric_wallet', tabIndex === 0 ? 'select_tabItem' : '']" @click="tabIndex = 0">
-					<image src="../../static/images/idcode_paymentcode/wallet.png" />
+					<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/wallet.png" />
 					<text>电子钱包</text>
 				</view>
 				<!-- 校园卡tab栏 -->
 				<view :class="['school_card', tabIndex === 1 ? 'select_tabItem' : '']" @click="tabIndex = 1">
-					<image src="../../static/images/idcode_paymentcode/bang_card.png" />
+					<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/bang_card.png" />
 					<text>校园卡</text>
 				</view>
 			</view>
 			<!-- 内容区 -->
 			<view class="payment_code_body">
-				<image src="../../static/images/idcode_paymentcode/tengtu.jpg" />
+				<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/tengtu.jpg" />
 				<view class="money_left">余额：￥200元</view>
 			</view>
 		</view>
 		<!-- 每分钟刷新提示 -->
 		<view class="refresh_text center">
-			<image src="../../static/images/idcode_paymentcode/refresh.png" />
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/refresh.png" />
 			<text>每分钟自动刷新</text>
 		</view>
 		<!-- 身份码 -->
-		<nav-card icon="../../static/images/idcode_paymentcode/id_card.png" title="身份码" url="../../pages/school_card/id_code" />
+		<nav-card icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/id_card.png" title="身份码" url="../../pages/school_card/id_code" />
 		<!-- 分隔横线 -->
 		<view class="line"></view>
 		<!-- 优惠信息 -->
-		<nav-card icon="../../static/images/idcode_paymentcode/gift.png" title="优惠信息" url="" :marginTop="false" />
+		<nav-card icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/gift.png" title="优惠信息" url="" :marginTop="false" />
 	</view>
 </template>
 

@@ -7,7 +7,7 @@
 		<view class="get_deposit">
 			<view class="disc_text">充值金额(元)</view>
 			<view class="input_box">
-				<image src="../../../static/images/electric_wallet_images/money.png" />
+				<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/electric_wallet_images/money.png" />
 				<input type="text" v-model="value" @input="inputValue" />
 			</view>
 			<!-- 快捷输入金额盒子 -->

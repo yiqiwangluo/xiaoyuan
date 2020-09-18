@@ -15,7 +15,7 @@
 		<view class="distance row_center">
 			<text>{{ distance }}km</text>
 			<!-- 右箭头图片 -->
-			<image src="../../static/images/school_list_images/left_arrow.png" class="right_arrow_image"></image>
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/left_arrow.png" class="right_arrow_image"></image>
 		</view>
 	</view>
 </template>

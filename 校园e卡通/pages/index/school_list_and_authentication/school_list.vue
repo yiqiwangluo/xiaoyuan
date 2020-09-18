@@ -5,11 +5,11 @@
 			<!-- 地区选择 -->
 			<view class="choose_area row_center" @click="show_prompt=true">
 				<view class="area">{{ area }}</view>
-				<image src="../../../static/images/school_list_images/left_arrow.png" class="left_arrow_image"></image>
+				<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/left_arrow.png" class="left_arrow_image"></image>
 			</view>
 			<!-- 搜索框 -->
 			<view class="search_box row_center">
-				<image src="../../../static/images/school_list_images/magnifying_glass.png" class="search_image"></image>
+				<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/magnifying_glass.png" class="search_image"></image>
 				<text>搜索</text>
 			</view>
 		</view>

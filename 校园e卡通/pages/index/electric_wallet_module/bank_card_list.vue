@@ -1,7 +1,7 @@
 <template>
 	<view class="page_box">
 		<!-- 银行卡列表 -->
-		<view class="bank_card" style="background-image: url(../../../static/images/electric_wallet_images/bank_card.png);">
+		<view class="bank_card" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/electric_wallet_images/bank_card.png);">
 			<text>{{bank_card_num.substr(0,4)}}****{{bank_card_num.substr(-4,4)}}</text>
 		</view>
 	</view>

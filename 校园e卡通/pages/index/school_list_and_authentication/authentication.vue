@@ -1,7 +1,7 @@
 <template>
 	<view class="authentication_box">
 		<!-- 学校信息盒子 -->
-		<view class="school_msg_box" style="background-image: url(../../../static/images/school_list_images/school_msg_backgroundImage.png);">
+		<view class="school_msg_box" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/school_msg_backgroundImage.png);">
 			<!-- 学校logo及名称盒子 -->
 			<view class="school_msg">
 				<!-- logo图片 -->
@@ -15,11 +15,11 @@
 		<!-- 表单盒子 -->
 		<view class="form_box">
 			<!-- 学工号 -->
-			<form-card icon="../../static/images/school_list_images/list.png" placeholder="请输入学工号" :value.sync="id" />
+			<form-card icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/list.png" placeholder="请输入学工号" :value.sync="id" />
 			<!-- 校园卡密码 -->
-			<form-card v-show="form_item_show" icon="../../static/images/school_list_images/lock.png" placeholder="请输入校园卡密码" inputType="password" :value.sync="password" />
+			<form-card v-show="form_item_show" icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/lock.png" placeholder="请输入校园卡密码" inputType="password" :value.sync="password" />
 			<!-- 姓名 -->
-			<form-card v-show="form_item_show" icon="../../static/images/school_list_images/person.png" placeholder="请输入姓名" :value.sync="name" />
+			<form-card v-show="form_item_show" icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/person.png" placeholder="请输入姓名" :value.sync="name" />
 		</view>
 		<!-- 相关协议 -->
 		<view class="protocol">

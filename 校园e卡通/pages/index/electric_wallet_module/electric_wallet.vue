@@ -3,17 +3,17 @@
 	<view class="page_box">
 		<!-- 余额 -->
 		<view class="money_quota">
-			<image src="../../../static/images/index_images/balance.png" />
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/balance.png" />
 			<text class="card_text">余额</text>
 			<text class="quota_text">￥{{ money_quota }}</text>
 		</view>
 		<!-- 卡号 -->
-		<view class="card_num">
-			<image src="../../../static/images/idcode_paymentcode/wallet.png" class="wallet_image" />
+		<!-- <view class="card_num">
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/wallet.png" class="wallet_image" />
 			<text class="card_num_text">电子钱包卡号</text>
 			<text class="card_num">************5566</text>
-			<image src="../../../static/images/electric_wallet_images/hide.png" class="eye_image" />
-		</view>
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/electric_wallet_images/hide.png" class="eye_image" />
+		</view> -->
 		<!-- 模块列表 -->
 		<list-card v-for="(item, index) in list_data" :key="index" :icon="item.icon" :title="item.title" :url="item.url" />
 	</view>
@@ -30,22 +30,22 @@ export default {
 			// 模块列表渲染数据
 			list_data: [
 				{
-					icon: '../../static/images/index_images/transaction_detail.png',
-					title: '交易明细',
+					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/transaction_detail.png',
+					title: '流水查询',
 					url: './transaction_detail'
 				},
 				{
-					icon: '../../static/images/index_images/recharge_money.png',
+					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge_money.png',
 					title: '充值',
 					url: './recharge_money'
 				},
+				// {
+				// 	icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge.png',
+				// 	title: '提现',
+				// 	url: './get_deposit'
+				// },
 				{
-					icon: '../../static/images/index_images/recharge.png',
-					title: '提现',
-					url: './get_deposit'
-				},
-				{
-					icon: '../../static/images/index_images/quota_setting.png',
+					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/quota_setting.png',
 					title: '限额',
 					url: './quota'
 				}
@@ -74,8 +74,10 @@ export default {
 		align-items: center;
 		background-color: #ffffff;
 		image {
-			width: 50rpx;
+			width: 70rpx;
 			height: 50rpx;
+			margin-left: -15rpx;
+			margin-right: -10rpx;
 		}
 		// 余额文字
 		.card_text {

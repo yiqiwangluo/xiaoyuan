@@ -1,24 +1,24 @@
 <template>
 	<!-- 身份码页面盒子 -->
-	<view class="id_code_box" style="background-image: url(../../static/images/idcode_paymentcode/blue_sky.png);">
+	<view class="id_code_box" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/blue_sky.png);">
 		<!-- 身份码盒子 -->
 		<view class="id_code">
 			<!-- 身份码头部 -->
 			<view class="id_code_head center">
 				<!-- icon图片 -->
-				<image src="../../static/images/index_images/id_card.png" />
+				<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/id_card.png" />
 				<text>身份码</text>
 			</view>
 			<!-- 身份码主体 -->
-			<view class="id_code_body"><image src="../../static/images/idcode_paymentcode/tengtu.jpg"></image></view>
+			<view class="id_code_body"><image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/tengtu.jpg"></image></view>
 		</view>
 		<!-- 每5分钟刷新提示 -->
 		<view class="refresh_text center">
-			<image src="../../static/images/idcode_paymentcode/refresh.png" />
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/refresh.png" />
 			<text>每五分钟自动刷新</text>
 		</view>
 		<!-- 付款码 -->
-		<nav-card icon="../../static/images/idcode_paymentcode/qrCode.png" title="付款码" url="../../pages/school_card/payment_code" />
+		<nav-card icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/qrCode.png" title="付款码" url="../../pages/school_card/payment_code" />
 	</view>
 </template>
 

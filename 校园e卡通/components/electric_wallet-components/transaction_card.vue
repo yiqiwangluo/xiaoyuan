@@ -7,7 +7,7 @@
 			<text class="last_text">￥{{ consumption_money }}</text>
 		</view>
 		<!-- 订单详细信息盒子 -->
-		<view class="consumption_detail_box" v-show="show_datail">
+		<view class="consumption_detail_box" :style="{height:show_datail?'300rpx':'0rpx'}">
 			<!-- 订单金额 -->
 			<view class="consumption_money">
 				<text>订单金额</text>
@@ -40,7 +40,7 @@
 			<view class="detail_flag center" @click="show_datail = !show_datail">
 				<text class="last_text">{{ show_datail ? '收起' : '查看详情' }}</text>
 				<image
-					src="../../static/images/electric_wallet_images/border-arrow.png"
+					src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/electric_wallet_images/border-arrow.png"
 					class="right_arrow"
 					:style="show_datail ? 'transform: rotate(270deg)' : 'transform: rotate(90deg)'"
 				/>
@@ -120,6 +120,8 @@ export default {
 	}
 	// 交易详细信息盒子
 	.consumption_detail_box {
+		transition: all 0.5s;
+		overflow: hidden;
 		padding-left: 17rpx;
 		& > view {
 			display: flex;
