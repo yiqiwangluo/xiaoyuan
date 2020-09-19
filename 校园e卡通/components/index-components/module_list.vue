@@ -9,7 +9,7 @@
 			<!-- 模块子项 -->
 			<view :class="['card_item', specal_class]" v-for="(item, index) in list_data" :key="index" @click="natigateToNewPage(item.url)">
 				<!-- 子项的icon图标 -->
-				<image :src="item.icon" class="item_image"></image>
+				<image :src="item.icon" class="item_image" mode="aspectFit"></image>
 				<!-- 子项的文字 -->
 				<view>{{ item.title }}</view>
 			</view>
@@ -114,7 +114,7 @@ export default {
 			border: 1rpx solid #e5e5e5;
 			// 卡片子项的图标
 			.item_image {
-				width: 50rpx;
+				width: 100rpx;
 				height: 50rpx;
 				margin-bottom: 20rpx;
 			}

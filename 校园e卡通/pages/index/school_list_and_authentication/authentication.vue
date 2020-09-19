@@ -177,6 +177,8 @@ export default {
 	.btn {
 		width: 706rpx;
 		height: 80rpx;
+		font-size: 32rpx;
+		line-height: 80rpx;
 		border-radius: 24rpx;
 		background-color: rgb(40, 111, 201);
 		color: #ffffff;

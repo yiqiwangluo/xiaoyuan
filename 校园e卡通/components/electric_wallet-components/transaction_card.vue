@@ -7,7 +7,7 @@
 			<text class="last_text">￥{{ consumption_money }}</text>
 		</view>
 		<!-- 订单详细信息盒子 -->
-		<view class="consumption_detail_box" :style="{height:show_datail?'300rpx':'0rpx'}">
+		<view class="consumption_detail_box" :style="{ maxHeight: show_datail ? '300rpx' : '0rpx' }">
 			<!-- 订单金额 -->
 			<view class="consumption_money">
 				<text>订单金额</text>
@@ -123,6 +123,7 @@ export default {
 		transition: all 0.5s;
 		overflow: hidden;
 		padding-left: 17rpx;
+		font-size: 28rpx;
 		& > view {
 			display: flex;
 			align-items: center;
