@@ -49,7 +49,7 @@
 		<view class="uni-mask" v-if="success">
 			<view class="my-window">
 				<view class="my_icon">
-					<image src="../../static/images/waterElectricity/elec_success.png" mode="aspectFill"></image>
+					<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/waterElectricity/elec_success.png" mode="aspectFill"></image>
 				</view>
 				<view class="my_content">
 					缴费成功
@@ -63,7 +63,7 @@
 		<view class="uni-mask" v-if="fail">
 			<view class="my-window">
 				<view class="my_icon">
-					<image src="../../static/images/waterElectricity/elec_fail.png" mode="aspectFill"></image>
+					<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/waterElectricity/elec_fail.png" mode="aspectFill"></image>
 				</view>
 				<view class="my_content">
 					缴费失败，钱包余额不足

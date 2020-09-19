@@ -2,13 +2,13 @@
 	<view>
 		<view class="problem_box" v-for="(item,index) in problemList" :key="index">
 			<view class="problem_content">
-				<image class="problem_logo" src="../../static/images/service/question.png" mode="aspectFill"></image>
+				<image class="problem_logo" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/question.png" mode="aspectFill"></image>
 				<view class="problem_body">
 					<view class="problem_text">{{item.questionText}}</view>
 				</view>
 			</view>
 			<view class="problem_content">
-				<image class="problem_logo" src="../../static/images/service/answer.png" mode="aspectFill"></image>
+				<image class="problem_logo" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/answer.png" mode="aspectFill"></image>
 				<view class="problem_body">
 					<view class="problem_text">{{item.answerText}}</view>
 				</view>

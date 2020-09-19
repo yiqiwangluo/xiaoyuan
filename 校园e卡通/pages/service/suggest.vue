@@ -27,7 +27,7 @@
 										<view class="active_img" v-for="(img,index) in imgs" :key="index">
 											<image class="image" :src="img" @click="previewImage" mode="aspectFill" ></image>
 										</view>
-										<image class="photo" src="../../static/images/service/photo.jpg" @click="chooseImg" v-if="imgs.length<6"></image>	
+										<image class="photo" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/photo.jpg" @click="chooseImg" v-if="imgs.length<6"></image>	
 									</view>
 								</view>
 								<view class="suggest_button" @click="success=true">提交</view>
@@ -98,7 +98,7 @@
 				<view class="uni-mask" v-if="success">
 					<view class="my-window">
 						<view class="my_icon">
-							<image src="../../static/images/waterElectricity/elec_success.png" mode="aspectFill"></image>
+							<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/waterElectricity/elec_success.png" mode="aspectFill"></image>
 						</view>
 						<view class="my_content">
 							意见反馈提交成功
@@ -112,7 +112,7 @@
 				<view class="uni-mask" v-if="fail">
 					<view class="my-window">
 						<view class="my_icon">
-							<image src="../../static/images/waterElectricity/elec_fail.png" mode="aspectFill"></image>
+							<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/waterElectricity/elec_fail.png" mode="aspectFill"></image>
 						</view>
 						<view class="my_content">
 							信息为空
@@ -138,15 +138,15 @@
 				textContent:"",
 				imgs: [],
 				imgList:[
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide2.png",
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide2.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
 				],
 				
 				success:false,

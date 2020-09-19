@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<image class="bgSet" src="../../static/img/online/online.png"></image>
+		<image class="bgSet" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/online/online.png"></image>
 		<view class="title">
 			在线缴费
 			<view class="border"></view>
