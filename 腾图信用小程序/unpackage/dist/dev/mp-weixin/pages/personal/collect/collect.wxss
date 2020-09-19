@@ -1,0 +1,108 @@
+page {
+  background-color: #f6f6f6;
+}
+.information_box {
+  width: 92%;
+  margin: 20rpx auto;
+  height: 280rpx;
+  box-shadow: 0 1px 2px -1px #CCCCCC;
+  background-color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.information_box image {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  width: 180rpx;
+  height: 220rpx;
+  border-radius: 5px;
+  margin: 30rpx 20rpx;
+}
+.information_box .information_box_content {
+  -webkit-box-flex: 9;
+  -webkit-flex: 9;
+          flex: 9;
+  min-width: 0;
+  /* 解决white-space: nowrap;遇到flex的问题 */
+}
+.information_box .information_box_content .information_box_content_top {
+  line-height: 50rpx;
+  margin-top: 20rpx;
+}
+.information_box .information_box_content .information_box_content_top .information_top_left {
+  font-size: 31rpx;
+  font-weight: 700;
+  float: left;
+  width: 80%;
+}
+.information_box .information_box_content .information_box_content_top .information_top_right {
+  width: 20%;
+  font-size: 25rpx;
+  color: #919191;
+  float: right;
+  text-align: center;
+}
+.information_box .information_box_content .information_box_content_middle {
+  width: 68%;
+  clear: both;
+  display: inline-block;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #ababae;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.information_box .information_box_content .information_box_content_bottom .time {
+  float: left;
+  margin-left: -15rpx;
+}
+.information_box .information_box_content .information_box_content_bottom .time image {
+  float: left;
+  display: inline-block;
+  width: 25rpx;
+  height: 25rpx;
+}
+.information_box .information_box_content .information_box_content_bottom .time .time_word {
+  float: left;
+  font-size: 25rpx;
+  margin-left: -13rpx;
+  display: inline-block;
+  margin-top: 26rpx;
+  color: #ababae;
+}
+.information_box .information_box_content .information_box_content_bottom .people_num {
+  float: left;
+}
+.information_box .information_box_content .information_box_content_bottom .people_num image {
+  float: left;
+  display: inline-block;
+  width: 25rpx;
+  height: 25rpx;
+}
+.information_box .information_box_content .information_box_content_bottom .people_num .people_word {
+  float: left;
+  font-size: 25rpx;
+  margin-left: -13rpx;
+  display: inline-block;
+  margin-top: 26rpx;
+  color: #ababae;
+}
+.information_box .information_box_content .information_box_content_bottom .information_button {
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  display: inline-block;
+  width: 130rpx;
+  text-align: center;
+  font-size: 25rpx;
+  background-color: #6486f6;
+  color: #fff;
+  padding: 10rpx 10rpx;
+  border-radius: 30rpx;
+}
+

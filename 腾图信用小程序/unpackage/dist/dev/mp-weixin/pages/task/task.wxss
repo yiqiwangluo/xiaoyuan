@@ -1,0 +1,105 @@
+.container.data-v-96a65fb4 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.info.data-v-96a65fb4 {
+  padding-top: 40px;
+  position: relative;
+  background-image: -webkit-linear-gradient(top, #6486f6 30%, #fff);
+  background-image: linear-gradient(to bottom, #6486f6 30%, #fff);
+}
+.info .task_box.data-v-96a65fb4 {
+  width: 90%;
+  height: 180rpx;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #CCCCCC;
+  margin-left: 5%;
+  padding: 55rpx 0;
+  margin-bottom: 60rpx;
+}
+.info .task_box .task_box_title.data-v-96a65fb4 {
+  text-align: center;
+  font-weight: 800;
+}
+.info .task_box .task_box_input.data-v-96a65fb4 {
+  background-color: #f2f3f7;
+  width: 88%;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  color: #cdcdcd;
+  border-radius: 5rpx;
+  padding-left: 20rpx;
+}
+.info .task_box .task_box_input input.data-v-96a65fb4 {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  color: #9c9c9c;
+}
+.task_button.data-v-96a65fb4 {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 30rpx;
+  border-radius: 20px;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 25rpx;
+  background-color: #6486f6;
+  color: #fff;
+}
+.uni-mask.data-v-96a65fb4 {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.uni-mask .my-window.data-v-96a65fb4 {
+  width: 80%;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin-left: 10%;
+  margin-top: 35%;
+}
+.uni-mask .my-window .my_icon.data-v-96a65fb4 {
+  margin: 0 auto;
+  text-align: center;
+}
+.uni-mask .my-window .my_icon image.data-v-96a65fb4 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-top: 30rpx;
+}
+.uni-mask .my-window .my_content.data-v-96a65fb4 {
+  padding: 0;
+  font-size: 38rpx;
+  color: #212121;
+  text-align: center;
+}
+.uni-mask .my-window .my_btn.data-v-96a65fb4 {
+  width: 100%;
+  font-size: 36rpx;
+  text-align: center;
+  height: 100rpx;
+}
+.uni-mask .my-window .my_btn .check_button.data-v-96a65fb4 {
+  width: 180rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+  border-radius: 20px;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #6486f6;
+  color: #fff;
+  margin-top: 25rpx;
+}
+

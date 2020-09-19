@@ -1,0 +1,50 @@
+.detail_title.data-v-14194a94 {
+  width: 94%;
+  margin: 20rpx auto;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.detail_num_time.data-v-14194a94 {
+  width: 94%;
+  margin: 0 auto;
+  font-size: 25rpx;
+  border-bottom: 1px #8e8e8e solid;
+  color: #8e8e8e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.detail_num_time .detail_num.data-v-14194a94 {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+          flex: 6;
+  text-align: left;
+  display: inline-block;
+}
+.detail_num_time .detail_time.data-v-14194a94 {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+          flex: 6;
+  text-align: right;
+  display: inline-block;
+}
+.MsoNormal.data-v-14194a94 {
+  margin: 20rpx auto;
+  width: 94%;
+  color: #4d4d4d;
+  text-align: justify;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  -webkit-margin-after: 0.3em;
+          margin-block-end: 0.3em;
+}
+.img.data-v-14194a94 {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.img image.data-v-14194a94 {
+  width: 100%;
+  height: 455rpx;
+}
+
