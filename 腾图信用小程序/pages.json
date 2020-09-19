@@ -1,0 +1,243 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "腾图信用",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+		}
+        ,{
+            "path" : "pages/task/task",
+            "style" : {
+				"navigationBarTitleText": "业务中心",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/personal",
+            "style" : {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/index/information/information",
+            "style" : {
+				"navigationBarTitleText": "资讯中心",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/index/information/informationDetail",
+            "style" : {
+				"navigationBarTitleText": "文章资讯详情",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/index/joinUs/joinUs",
+            "style" : {
+            	"navigationBarTitleText": "加入我们",
+            	"app-plus": {
+            		"titleNView": {
+            			"backgroundColor": "#6486f6"
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/index/repair/repair",
+            "style" : {
+				"navigationBarTitleText": "个人征信修复",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/collect/collect",
+            "style" : {
+				"navigationBarTitleText": "我的收藏",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/complain/complain",
+            "style" : {
+				"navigationBarTitleText": "投诉留言",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/edit/edit",
+            "style" : {
+				"navigationBarTitleText": "修改资料",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/aboutUs/aboutUs",
+            "style" : {
+				"navigationBarTitleText": "关于我们",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/order/order",
+            "style" : {
+				"navigationBarTitleText": "订单列表",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personal/order/orderDetail",
+            "style" : {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/task/custom/customList",
+            "style" : {
+				"navigationBarTitleText": "客户信息列表",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/task/custom/customDetail",
+            "style" : {
+				"navigationBarTitleText": "客户信息详情",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/task/custom/addCustom",
+            "style" : {
+				"navigationBarTitleText": "客户信息详情",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/task/customOrder/addOrder",
+            "style" : {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/task/customOrder/ordersDetail",
+            "style" : {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/task/customOrder/orderList",
+            "style" : {
+				"navigationBarTitleText": "客户订单列表",
+				"app-plus": {
+					"titleNView": {
+						"backgroundColor": "#6486f6"
+					}
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#6486f6",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#6486f6",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		/* "iconWidth": "24px",
+		"spacing": "3px", */
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "/static/img/index/index1.png",
+			"selectedIconPath": "/static/img/index/index2.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/task/task",
+			"iconPath": "/static/img/index/yewu1.png",
+			"selectedIconPath": "/static/img/index/yewu2.png",
+			"text": "业务中心"
+		}, {
+			"pagePath": "pages/personal/personal",
+			"iconPath": "/static/img/index/my1.png",
+			"selectedIconPath": "/static/img/index/my2.png",
+			"text": "我的"
+		}]
+	}
+}

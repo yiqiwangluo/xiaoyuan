@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<image class="bgSet" :src="guideList[index]"></image>
-		<image v-if="button" class="changeBtn" @click="next" src="../../static/images/service/next.png" mode="aspectFill"></image>
+		<image v-if="button" class="changeBtn" @click="next" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/next.png" mode="aspectFill"></image>
 	</view>
 </template>
 
@@ -12,17 +12,17 @@
 				index:0,
 				button:true,
 				guideList:[
-					"../../static/images/service/guide1.png",
-					"../../static/images/service/guide2.png",
-					"../../static/images/service/guide3.png",
-					"../../static/images/service/guide4.png",
-					"../../static/images/service/guide5.png",
-					"../../static/images/service/guide6.png",
-					"../../static/images/service/guide7.png",
-					"../../static/images/service/guide8.png",
-					"../../static/images/service/guide9.png",
-					"../../static/images/service/guide10.png",
-					"../../static/images/service/guide11.png"
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide2.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide3.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide4.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide5.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide6.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide7.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide8.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide9.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide10.png",
+					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide11.png"
 				]
 			}
 		},

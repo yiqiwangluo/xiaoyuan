@@ -1,0 +1,119 @@
+.content_title {
+  width: 100%;
+  position: fixed;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  top: 25px;
+  overflow: hidden;
+  z-index: 100;
+  background-color: #f6f6f6;
+  top: 0;
+  display: table;
+  padding: 35rpx 0 42rpx 0;
+}
+.content_title .title1 {
+  width: 20%;
+  text-align: center;
+  float: left;
+}
+.content_title .title1 .title_name_point {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #9db0f6;
+  line-height: 30rpx;
+}
+.content_title .title1 .title_name {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  color: #06080b;
+  line-height: 30rpx;
+}
+.content_title .title1 .title_point {
+  position: absolute;
+  width: 15%;
+  height: 8rpx;
+  background: #6486f6;
+  border-radius: 2rpx;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  border-radius: 2px;
+}
+.swiper {
+  background-color: #f6f6f6;
+  height: 1434rpx;
+}
+.swiper swiper-item {
+  padding-top: 110rpx;
+}
+.swiper swiper-item scroll-view {
+  height: 1330rpx;
+}
+.swiper swiper-item scroll-view .order_box {
+  width: 98%;
+  height: 330rpx;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -30rpx;
+}
+.swiper swiper-item scroll-view .order_box image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -19091;
+}
+.swiper swiper-item scroll-view .order_box .navigator_box {
+  position: absolute;
+  margin: 0 auto;
+  top: 25rpx;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+  width: 90%;
+  height: 270rpx;
+  background-color: transparent;
+}
+.swiper swiper-item scroll-view .order_box .order_box_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.swiper swiper-item scroll-view .order_box .order_box_top .order_name {
+  display: inline-block;
+  width: 250rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 60rpx;
+  font-size: 32rpx;
+  color: #222222;
+}
+.swiper swiper-item scroll-view .order_box .order_box_top .order_status {
+  display: inline-block;
+  width: 100rpx;
+  position: absolute;
+  top: 60rpx;
+  right: 28rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+.swiper swiper-item scroll-view .order_box .order_box_bottom {
+  position: absolute;
+  top: 130rpx;
+  left: 60rpx;
+  font-size: 28rpx;
+  line-height: 38rpx;
+  color: #303133;
+}
+.swiper swiper-item scroll-view .order_box .order_box_bottom .type_num {
+  line-height: 70rpx;
+}
+.swiper swiper-item scroll-view .order_box .order_box_bottom .type_num .order_type {
+  display: inline-block;
+}
+.swiper swiper-item scroll-view .order_box .order_box_bottom .type_num .order_num {
+  margin-left: 40rpx;
+  display: inline-block;
+}
+

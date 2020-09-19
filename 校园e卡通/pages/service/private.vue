@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<image class="bgSet" src="../../static/images/service/private.png"></image>
+		<image class="bgSet" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/private.png"></image>
 	</view>
 </template>
 
