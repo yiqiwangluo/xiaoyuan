@@ -148,7 +148,8 @@ page {
   width: 150rpx;
   margin: 0 auto;
   font-size: 25rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   text-align: center;
   height: 50rpx;
   line-height: 50rpx;
@@ -163,7 +164,8 @@ page {
   width: 90%;
   margin: 0 auto;
   font-size: 30rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   text-align: center;
   height: 80rpx;
   line-height: 80rpx;
@@ -184,7 +186,8 @@ page {
 .uni-mask .my-window {
   width: 80%;
   background: #FFFFFF;
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
   margin-left: 10%;
   margin-top: 35%;
 }
@@ -220,7 +223,8 @@ page {
   width: 180rpx;
   margin: 0 auto;
   font-size: 30rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   text-align: center;
   height: 60rpx;
   line-height: 60rpx;

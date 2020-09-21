@@ -1,16 +1,19 @@
 .change_swiper.data-v-57280228 {
   width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6486f6), to(#fff));
   background-image: -webkit-linear-gradient(top, #6486f6, #fff);
   background-image: linear-gradient(to bottom, #6486f6, #fff);
 }
 .change_swiper .swiper.data-v-57280228 {
   height: 150px;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 .change_swiper .swiper .le-img.data-v-57280228 {
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
   -webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
@@ -105,7 +108,8 @@
   margin: 0 auto;
   height: 280rpx;
   background-color: #f2f5ff;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -117,7 +121,8 @@
           flex: 3;
   width: 180rpx;
   height: 220rpx;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   margin: 30rpx 20rpx;
 }
 .information_box .information_box_content.data-v-57280228 {
@@ -201,7 +206,8 @@
   background-color: #6486f6;
   color: #fff;
   padding: 10rpx 10rpx;
-  border-radius: 30rpx;
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
 }
 .my_pop.data-v-57280228 {
   background: rgba(0, 0, 0, 0.5);
@@ -225,7 +231,8 @@
   position: absolute;
   width: 586rpx;
   background: white;
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
 }
 .my_pop .windows_content-box .windows_title.data-v-57280228 {
   font-size: 35rpx;
@@ -271,14 +278,17 @@
   position: relative;
   background: white;
   text-align: center;
-  border-bottom-left-radius: 24rpx;
-  border-bottom-right-radius: 24rpx;
+  -webkit-border-bottom-left-radius: 24rpx;
+          border-bottom-left-radius: 24rpx;
+  -webkit-border-bottom-right-radius: 24rpx;
+          border-bottom-right-radius: 24rpx;
 }
 .my_pop .windows_content-box .windows_btn_box .check_button.data-v-57280228 {
   width: 200rpx;
   margin: 0 auto;
   font-size: 30rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   text-align: center;
   height: 60rpx;
   line-height: 60rpx;
@@ -299,7 +309,8 @@
 .my-window.data-v-57280228 {
   width: 80%;
   background: #FFFFFF;
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
   margin-left: 10%;
   margin-top: 35%;
 }

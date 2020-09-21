@@ -35,18 +35,22 @@ page {
 .about_content_top .about_title .shadow1 {
   width: 55%;
   height: 8rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   background-color: #6486f6;
   margin-top: -5rpx;
-  box-shadow: 0 1rpx 2rpx -1rpx #cfd9f9;
+  -webkit-box-shadow: 0 1rpx 2rpx -1rpx #cfd9f9;
+          box-shadow: 0 1rpx 2rpx -1rpx #cfd9f9;
 }
 .about_content_top .about_title .shadow2 {
   width: 82%;
   height: 8rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   background-color: #6486f6;
   margin-top: -5rpx;
-  box-shadow: 0 1rpx 2rpx -1rpx #cfd9f9;
+  -webkit-box-shadow: 0 1rpx 2rpx -1rpx #cfd9f9;
+          box-shadow: 0 1rpx 2rpx -1rpx #cfd9f9;
 }
 .about_content_top .MsoNormal {
   margin: 30rpx auto;
@@ -84,13 +88,15 @@ page {
 .about_content_top .list .list-item image {
   width: 30px;
   height: 30px;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 .about_content_top .list .list-item image.img1 {
   width: 50px;
   height: 50px;
   margin-top: -10px;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 .about_content_top .list .list-item view {
   font-size: 30rpx;

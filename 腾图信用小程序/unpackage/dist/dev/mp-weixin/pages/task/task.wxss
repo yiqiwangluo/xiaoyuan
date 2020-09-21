@@ -6,6 +6,7 @@
 .info.data-v-96a65fb4 {
   padding-top: 40px;
   position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #6486f6), to(#fff));
   background-image: -webkit-linear-gradient(top, #6486f6 30%, #fff);
   background-image: linear-gradient(to bottom, #6486f6 30%, #fff);
 }
@@ -13,8 +14,10 @@
   width: 90%;
   height: 180rpx;
   background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0 0 2px #CCCCCC;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 0 2px #CCCCCC;
+          box-shadow: 0 0 2px #CCCCCC;
   margin-left: 5%;
   padding: 55rpx 0;
   margin-bottom: 60rpx;
@@ -31,7 +34,8 @@
   margin: 0 auto;
   margin-top: 60rpx;
   color: #cdcdcd;
-  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
   padding-left: 20rpx;
 }
 .info .task_box .task_box_input input.data-v-96a65fb4 {
@@ -44,7 +48,8 @@
   width: 85%;
   margin: 0 auto;
   font-size: 30rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   text-align: center;
   height: 80rpx;
   line-height: 80rpx;
@@ -64,7 +69,8 @@
 .uni-mask .my-window.data-v-96a65fb4 {
   width: 80%;
   background: #FFFFFF;
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
   margin-left: 10%;
   margin-top: 35%;
 }
@@ -94,7 +100,8 @@
   width: 180rpx;
   margin: 0 auto;
   font-size: 30rpx;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   text-align: center;
   height: 60rpx;
   line-height: 60rpx;

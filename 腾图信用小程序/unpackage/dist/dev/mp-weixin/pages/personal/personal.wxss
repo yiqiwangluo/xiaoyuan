@@ -37,7 +37,8 @@
   width: 55px;
   height: 55px;
   margin-left: 2.5%;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
 }
 .info .info_box .info_box_position .name.data-v-3df0de86 {
@@ -55,8 +56,10 @@
   width: 95%;
   height: 250rpx;
   background-color: #FFFFFF;
-  border-radius: 20px;
-  box-shadow: 0 0 2px #CCCCCC;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0 0 2px #CCCCCC;
+          box-shadow: 0 0 2px #CCCCCC;
   margin-top: 230rpx;
   margin-left: 2.5%;
   display: -webkit-box;
@@ -95,13 +98,15 @@
 .info .list1 .list-item image.data-v-3df0de86 {
   width: 30px;
   height: 30px;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 .info .list1 .list-item image.img1.data-v-3df0de86 {
   width: 25px;
   height: 25px;
   margin-top: 5px;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 .info .list1 .list-item view.data-v-3df0de86 {
   font-size: 28rpx;
@@ -112,8 +117,10 @@
   width: 95%;
   height: 420rpx;
   background-color: #FFFFFF;
-  border-radius: 20px;
-  box-shadow: 0 0 2px #CCCCCC;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0 0 2px #CCCCCC;
+          box-shadow: 0 0 2px #CCCCCC;
   margin-top: 80rpx;
   margin-left: 2.5%;
   display: -webkit-box;
@@ -146,13 +153,15 @@
 .info .list2 .list-item image.data-v-3df0de86 {
   width: 27px;
   height: 27px;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 .info .list2 .list-item image.img1.data-v-3df0de86 {
   width: 22px;
   height: 22px;
   margin-top: 5px;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 .info .list2 .list-item view.data-v-3df0de86 {
   font-size: 28rpx;

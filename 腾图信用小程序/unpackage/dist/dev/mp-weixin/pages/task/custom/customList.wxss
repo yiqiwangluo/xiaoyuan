@@ -14,7 +14,8 @@
   height: 50rpx;
   background-color: #fff;
   padding: 5rpx;
-  border-radius: 30px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
   margin-top: 40rpx;
   padding-left: 20rpx;
   padding-bottom: 10rpx;
@@ -57,8 +58,10 @@
   width: 90%;
   height: 150rpx;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 4px -1px #CCCCCC;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 0 4px -1px #CCCCCC;
+          box-shadow: 0 0 4px -1px #CCCCCC;
   margin: 0 auto;
   margin-top: 30rpx;
   display: -webkit-box;

@@ -34,10 +34,12 @@
   width: 15%;
   height: 8rpx;
   background: #6486f6;
-  border-radius: 2rpx;
+  -webkit-border-radius: 2rpx;
+          border-radius: 2rpx;
   margin-top: 25rpx;
   margin-left: 20rpx;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 .swiper {
   background-color: #f6f6f6;
