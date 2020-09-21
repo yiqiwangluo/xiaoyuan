@@ -18,7 +18,7 @@
 								<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/wallet.png" class="wallet_image"></image>
 								<view class="electronic_wallet_text">电子钱包</view>
 								<!-- 钱包余额 -->
-								<view>￥{{ money_left }}</view>
+								<view style="font-size: 28rpx;">￥{{ money_left }}</view>
 							</view>
 						</view>
 					</card>
@@ -30,7 +30,7 @@
 						<!-- 身份码盒子 -->
 						<view class="flexCenter idCard_box">
 							<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/id_card.png" class="idCard_image"></image>
-							<view>身份码</view>
+							<view class="explain_text">身份码</view>
 						</view>
 					</card>
 					<!-- 付款码外层卡片 -->
@@ -38,7 +38,7 @@
 						<!-- 付款码盒子 -->
 						<view class="flexCenter qrCode_box">
 							<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/qr_code.png" class="qrCode_image"></image>
-							<view>付款码</view>
+							<view class="explain_text">付款码</view>
 						</view>
 					</card>
 				</view>
@@ -57,7 +57,9 @@
 		<!-- 其他服务区域 -->
 		<module-card style_list="width:705rpx;height:504rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
 		<!-- 客服 -->
-		<movable-view class="service" direction="vertical" :y="y"><image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/service.png" class="service_image"></image></movable-view>
+		<movable-view class="service" direction="vertical" :y="y">
+			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/service.png" class="service_image"></image>
+		</movable-view>
 	</movable-area>
 </template>
 
@@ -135,7 +137,7 @@ export default {
 					title: '卡片余额',
 					url: '/pages/school-card-list/card-balance/card-balance'
 				},
-				
+
 				{
 					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/additional_recording.png',
 					title: '信息补录',
@@ -236,6 +238,7 @@ export default {
 				text-align: center;
 				// 我的钱包-文字
 				.electronic_wallet_text {
+					font-size: 32rpx;
 					letter-spacing: 2rpx;
 					margin-top: 23rpx;
 				}
@@ -296,5 +299,9 @@ export default {
 	z-index: 100;
 	left: 628rpx;
 	top: 26%;
+}
+// 说明性文字
+.explain_text {
+	font-size: 32rpx;
 }
 </style>

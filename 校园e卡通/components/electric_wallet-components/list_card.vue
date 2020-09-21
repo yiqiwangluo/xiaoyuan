@@ -4,7 +4,7 @@
 		<!-- icon图标 -->
 		<image :src="icon" class="icon_image" mode="aspectFit" />
 		<!-- 标题 -->
-		<text>{{ title }}</text>
+		<text class="explain_text">{{ title }}</text>
 		<!-- 右箭头 -->
 		<image v-if="!money_quota" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/left_arrow.png" class="right_arrow" />
 		<!-- 余额（和右箭头二选一） -->
@@ -79,6 +79,10 @@ export default {
 		margin-right: 26rpx;
 		color: rgb(102, 102, 102);
 		font-size: 28rpx;
+	}
+	// 说明性文字
+	.explain_text {
+		font-size: 32rpx;
 	}
 }
 </style>

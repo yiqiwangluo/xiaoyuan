@@ -3,7 +3,7 @@
 	<view class="payment_code_box" @click="toOtherPage" :style="marginTop ? '' : 'margin-top: 0'">
 		<!-- 付款码图标 -->
 		<image :src="icon" />
-		<text>{{ title }}</text>
+		<text class="explain_text">{{ title }}</text>
 	</view>
 </template>
 
@@ -62,6 +62,9 @@ export default {
 		height: 45rpx;
 		margin-left: 43rpx;
 		margin-right: 36rpx;
+	}
+	.explain_text {
+		font-size: 32rpx;
 	}
 }
 </style>

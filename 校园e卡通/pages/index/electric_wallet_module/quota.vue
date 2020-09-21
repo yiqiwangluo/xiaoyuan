@@ -7,13 +7,13 @@
 		<view class="resize_quota_box">
 			<!-- 单笔限额 -->
 			<view class="once_quota">
-				<text>单笔限额</text>
-				<text class="quota_num">{{once_quota}} 元</text>
+				<text class="explain_text">单笔限额</text>
+				<text class="quota_num">{{ once_quota }} 元</text>
 			</view>
 			<!-- 日累计限额 -->
 			<view class="day_quota">
-				<text>日累计限额</text>
-				<text class="quota_num">{{day_quota}} 元</text>
+				<text class="explain_text">日累计限额</text>
+				<text class="quota_num">{{ day_quota }} 元</text>
 			</view>
 		</view>
 		<!-- 温馨提示 -->
@@ -75,6 +75,10 @@ export default {
 				margin-right: 20rpx;
 			}
 		}
+	}
+	.explain_text {
+		font-size: 32rpx;
+		color: rgba(51, 51, 51);
 	}
 	// 温馨提示
 	.warm_prompt {

@@ -7,7 +7,7 @@
 			<view class="id_code_head center">
 				<!-- icon图片 -->
 				<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/id_card.png" />
-				<text>身份码</text>
+				<text class="explain_text">身份码</text>
 			</view>
 			<!-- 身份码主体 -->
 			<view class="id_code_body"><image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/tengtu.jpg"></image></view>
@@ -15,7 +15,7 @@
 		<!-- 每5分钟刷新提示 -->
 		<view class="refresh_text center">
 			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/refresh.png" />
-			<text>每五分钟自动刷新</text>
+			<text style="font-size: 28rpx;letter-spacing: 1rpx;">每五分钟自动刷新</text>
 		</view>
 		<!-- 付款码 -->
 		<nav-card icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/qrCode.png" title="付款码" url="../../pages/school_card/payment_code" />
@@ -119,6 +119,9 @@ export default {
 			margin-left: 43rpx;
 			margin-right: 36rpx;
 		}
+	}
+	.explain_text {
+		font-size: 32rpx;
 	}
 }
 </style>

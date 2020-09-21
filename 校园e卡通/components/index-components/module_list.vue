@@ -11,7 +11,7 @@
 				<!-- 子项的icon图标 -->
 				<image :src="item.icon" class="item_image" mode="aspectFit"></image>
 				<!-- 子项的文字 -->
-				<view>{{ item.title }}</view>
+				<text class="explain_text">{{ item.title }}</text>
 			</view>
 		</view>
 	</card>
@@ -117,6 +117,10 @@ export default {
 				width: 100rpx;
 				height: 50rpx;
 				margin-bottom: 20rpx;
+			}
+			// 卡片子项的标题
+			.explain_text {
+				font-size: 28rpx;
 			}
 		}
 		// 特殊子项(有4个子项时的样式)
