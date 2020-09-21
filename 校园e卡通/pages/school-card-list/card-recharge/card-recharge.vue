@@ -14,8 +14,10 @@
 				<text class="text">{{price}}</text>
 			</view>
 			<view class="price">
-				<view class="price-number" :class="{'active': isChange == index}" v-for="(item, index) in list" :key="index" @click="click(index,item)">
-					{{item}}元
+				<view class="price-center">
+					<view class="price-number" :class="{'active': isChange == index}" v-for="(item, index) in list" :key="index" @click="click(index,item)">
+						{{item}}元
+					</view>
 				</view>
 			</view>
 
@@ -144,32 +146,36 @@
 			}
 
 			.price {
-				padding: 30rpx 30rpx;
-
-				// text-align: center;
-				.price-number {
-					display: inline-block;
-					width: 118rpx;
-					height: 101rpx;
-					border: 2rpx solid rgb(102, 102, 102);
-					border-radius: 10rpx;
-					font-size: 28rpx;
-					color: rgb(51, 51, 51);
-					text-align: center;
-					line-height: 100rpx;
+				width: ;
+				.price-center{
+					padding: 30rpx 30rpx;
+					.price-number {
+						display: inline-block;
+						width: 118rpx;
+						height: 101rpx;
+						border: 2rpx solid rgb(102, 102, 102);
+						border-radius: 10rpx;
+						font-size: 28rpx;
+						color: rgb(51, 51, 51);
+						text-align: center;
+						line-height: 100rpx;
+					}
+					// text-align: center;
+								
+					
+					.price-number:nth-child(1),
+					.price-number:nth-child(2),
+					.price-number:nth-child(3) {
+						margin-right: 70rpx;
+					}
+					
+					.active {
+						border: 2rpx solid rgb(102, 102, 102);
+						color: rgb(255, 255, 255);
+						background-color: rgb(40, 111, 201);
+					}
 				}
 
-				.price-number:nth-child(1),
-				.price-number:nth-child(2),
-				.price-number:nth-child(3) {
-					margin-right: 72rpx;
-				}
-
-				.active {
-					border: 2rpx solid rgb(102, 102, 102);
-					color: rgb(255, 255, 255);
-					background-color: rgb(40, 111, 201);
-				}
 			}
 
 		}
