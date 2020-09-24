@@ -30,7 +30,6 @@ export default {
 		return {};
 	},
 	components: {
-		// 注册跳转卡片组件
 		navCard
 	},
 	methods: {

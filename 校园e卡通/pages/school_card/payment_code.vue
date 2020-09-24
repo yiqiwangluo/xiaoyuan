@@ -47,7 +47,6 @@ export default {
 		};
 	},
 	components: {
-		// 注册跳转卡片组件
 		navCard
 	}
 };

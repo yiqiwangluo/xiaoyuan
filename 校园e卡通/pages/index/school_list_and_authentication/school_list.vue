@@ -72,7 +72,6 @@ export default {
 		};
 	},
 	components: {
-		// 注册学校卡片组件
 		schoolCard
 	},
 	methods: {

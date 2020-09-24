@@ -67,7 +67,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 外层盒子
 .my_prompt {
 	// 灰色遮罩层
 	.gray_shade {

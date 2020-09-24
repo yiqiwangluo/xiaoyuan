@@ -22,12 +22,17 @@
 			<text style="color: rgb(102,102,102);">建议您根据自己的消费习惯设置消费限额。该限额仅适用于电子钱包扫码消费(含主扫与被扫)，电子钱包充值、提现不受此限额控制。</text>
 		</view>
 		<!-- 提交按钮 -->
-		<button class="btn" @click="btnClick">修改</button>
+		<btn title="修改" @click.native="btnClick" />
 	</view>
 </template>
 
 <script>
+// 引入按钮组件
+import btn from '../../../components/electric_wallet-components/btn.vue';
 export default {
+	components: {
+		btn
+	},
 	data() {
 		return {
 			// 单笔限额
@@ -89,21 +94,6 @@ export default {
 			letter-spacing: 4rpx;
 			line-height: 42rpx;
 		}
-	}
-	// 按钮
-	.btn {
-		width: 706rpx;
-		height: 80rpx;
-		font-size: 32rpx;
-		line-height: 80rpx;
-		border-radius: 24rpx;
-		background-color: rgb(40, 111, 201);
-		color: #ffffff;
-		margin-top: 41rpx;
-	}
-	// 点击按钮时的反馈，增加按钮30%的灰度
-	.btn:active {
-		filter: grayscale(30%);
 	}
 }
 </style>

@@ -1,7 +1,10 @@
 <template>
 	<view class="authentication_box">
 		<!-- 学校信息盒子 -->
-		<view class="school_msg_box" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/school_msg_backgroundImage.png);">
+		<view
+			class="school_msg_box"
+			style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/school_msg_backgroundImage.png);"
+		>
 			<!-- 学校logo及名称盒子 -->
 			<view class="school_msg">
 				<!-- logo图片 -->
@@ -17,9 +20,20 @@
 			<!-- 学工号 -->
 			<form-card icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/list.png" placeholder="请输入学工号" :value.sync="id" />
 			<!-- 校园卡密码 -->
-			<form-card v-show="form_item_show" icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/lock.png" placeholder="请输入校园卡密码" inputType="password" :value.sync="password" />
+			<form-card
+				v-show="form_item_show"
+				icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/lock.png"
+				placeholder="请输入校园卡密码"
+				inputType="password"
+				:value.sync="password"
+			/>
 			<!-- 姓名 -->
-			<form-card v-show="form_item_show" icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/person.png" placeholder="请输入姓名" :value.sync="name" />
+			<form-card
+				v-show="form_item_show"
+				icon="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/person.png"
+				placeholder="请输入姓名"
+				:value.sync="name"
+			/>
 		</view>
 		<!-- 相关协议 -->
 		<view class="protocol">
@@ -34,7 +48,7 @@
 			</text>
 		</view>
 		<!-- 提交按钮 -->
-		<button class="btn" @click="verify">验证</button>
+		<btn title="验证" @click.native="verify" />
 		<!-- 可输入值的弹框 -->
 		<my-prompt v-show="show_prompt" :show_prompt.sync="show_prompt" title="请输入手机验证码" :value.sync="prompt_value" @inputDone="inputDone" />
 	</view>
@@ -45,7 +59,14 @@
 import formCard from '../../../components/school_list-components/form_card.vue';
 // 引入可输入内容的弹框组件
 import myPrompt from '../../../components/school_list-components/my_prompt.vue';
+// 引入按钮组件
+import btn from '../../../components/electric_wallet-components/btn.vue';
 export default {
+	components: {
+		btn,
+		formCard,
+		myPrompt
+	},
 	data() {
 		return {
 			// 学校信息
@@ -63,14 +84,8 @@ export default {
 			// 是否显示prompt弹框
 			show_prompt: false,
 			// prompt弹框的返回值
-			prompt_value: '',
+			prompt_value: ''
 		};
-	},
-	components: {
-		// 注册表单框组件
-		formCard,
-		// 注册可输入值得弹框组件
-		myPrompt
 	},
 	methods: {
 		// 验证按钮的点击事件
@@ -107,7 +122,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 身份验证最外层盒子
 .authentication_box {
 	min-height: 100vh;
 	background-color: #f8f8f8;
@@ -116,11 +130,11 @@ export default {
 	.school_msg_box {
 		width: 645rpx;
 		height: 416rpx;
-		display: flex;
 		color: #ffffff;
 		margin: 0 auto;
 		margin-top: 56rpx;
 		border-radius: 17rpx;
+		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		background-size: 100%;
@@ -172,21 +186,6 @@ export default {
 		.checkbox_box {
 			display: inline-block;
 		}
-	}
-	// 验证按钮
-	.btn {
-		width: 706rpx;
-		height: 80rpx;
-		font-size: 32rpx;
-		line-height: 80rpx;
-		border-radius: 24rpx;
-		background-color: rgb(40, 111, 201);
-		color: #ffffff;
-		margin-top: 43rpx;
-	}
-	// 点击验证按钮时的反馈，增加按钮30%的灰度
-	.btn:active {
-		filter: grayscale(30%);
 	}
 }
 </style>

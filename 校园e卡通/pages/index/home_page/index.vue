@@ -45,7 +45,7 @@
 			</view>
 		</card>
 		<!-- 学生会招新图片 -->
-		<card style_list="width:706rpx;height:319rpx;margin:22rpx auto" class="studentUnion_enroll_box">
+		<card style_list="width:706rpx;height:319rpx;margin:22rpx auto;">
 			<image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/student_union_enroll.png" class="studentUnion_enroll_image"></image>
 		</card>
 		<!-- 电子钱包区域 -->
@@ -70,9 +70,7 @@ import card from '../../../components/index-components/card.vue';
 import moduleCard from '../../../components/index-components/module_list.vue';
 export default {
 	components: {
-		// 注册卡片组件
 		card,
-		// 注册模块卡片组件
 		moduleCard
 	},
 	methods: {
@@ -88,38 +86,38 @@ export default {
 			// 电子钱包余额
 			money_left: '0.00',
 			// 电子钱包列表
-			electronic_wallet_list: [
-				{
-					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/transaction_detail.png',
-					title: '交易明细',
-					url: '../electric_wallet_module/transaction_detail'
-				},
-				{
-					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge_money.png',
-					title: '钱包充值',
-					url: '../electric_wallet_module/recharge_money'
-				},
-				{
-					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/withdraw_deposit.png',
-					title: '提现',
-					url: '../electric_wallet_module/get_deposit'
-				},
-				{
-					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/additional_recording.png',
-					title: '客户信息补录',
-					url: '../electric_wallet_module/client_msg_recording'
-				},
-				{
-					icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/quota_setting.png',
-					title: '限额',
-					url: '../electric_wallet_module/quota'
-				}
-				// {
-				// 	icon:'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/bank_card.png',
-				// 	title:'银行卡',
-				// 	url:'../electric_wallet_module/bank_card_list'
-				// }
-			],
+			// electronic_wallet_list: [
+			// 	{
+			// 		icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/transaction_detail.png',
+			// 		title: '交易明细',
+			// 		url: '../electric_wallet_module/transaction_detail'
+			// 	},
+			// 	{
+			// 		icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge_money.png',
+			// 		title: '钱包充值',
+			// 		url: '../../school-card-list/card-recharge/card-recharge'
+			// 	},
+			// 	{
+			// 		icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/withdraw_deposit.png',
+			// 		title: '提现',
+			// 		url: '../electric_wallet_module/get_deposit'
+			// 	},
+			// 	{
+			// 		icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/additional_recording.png',
+			// 		title: '客户信息补录',
+			// 		url: '../electric_wallet_module/client_msg_recording'
+			// 	},
+			// 	{
+			// 		icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/quota_setting.png',
+			// 		title: '限额',
+			// 		url: '../electric_wallet_module/quota'
+			// 	}
+			// 	// {
+			// 	// 	icon:'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/bank_card.png',
+			// 	// 	title:'银行卡',
+			// 	// 	url:'../electric_wallet_module/bank_card_list'
+			// 	// }
+			// ],
 			// 校园卡账户列表
 			school_card_list: [
 				{
@@ -277,13 +275,10 @@ export default {
 		}
 	}
 }
-// 学生会招新盒子
-.studentUnion_enroll_box {
-	// 学生会招新图片
-	.studentUnion_enroll_image {
-		width: 706rpx;
-		height: 319rpx;
-	}
+// 学生会招新图片
+.studentUnion_enroll_image {
+	width: 706rpx;
+	height: 319rpx;
 }
 // 拖拽组件外层盒子
 .my_movable {

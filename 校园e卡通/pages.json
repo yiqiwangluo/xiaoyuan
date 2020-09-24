@@ -8,7 +8,7 @@
 		{
 			"path": "pages/index/school_list_and_authentication/school_list",
 			"style": {
-				"navigationBarTitleText": "学校列表" // 顶部标题
+				"navigationBarTitleText": "学校列表"
 			}
 		},
 		// 付款码页面
@@ -34,29 +34,27 @@
 		}, {
 			"path": "pages/school-card-list/card-balance/card-balance",
 			"style": {
-				"navigationBarTitleText": "校园卡余额" // 顶部标题
+				"navigationBarTitleText": "校园卡余额"
 			}
 		}, {
 			"path": "pages/school-card-list/card-recharge/card-recharge",
 			"style": {
-				"navigationBarTitleText": "卡片充值" // 顶部标题
+				"navigationBarTitleText": "卡片充值"
 			}
 		}, {
 			"path": "pages/school-card-list/card-lost/card-lost",
 			"style": {
-				"navigationBarTitleText": "卡片挂失" // 顶部标题
+				"navigationBarTitleText": "卡片挂失"
 			}
-		}
-		, {
+		}, {
 			"path": "pages/school-card-list/flow-query/flow-query",
 			"style": {
-				"navigationBarTitleText": "流水查询" // 顶部标题
+				"navigationBarTitleText": "流水查询"
 			}
-		}
-		, {
+		}, {
 			"path": "pages/school-card-list/change-password/change-password",
 			"style": {
-				"navigationBarTitleText": "修改查询密码" // 顶部标题
+				"navigationBarTitleText": "修改查询密码"
 			}
 		}, {
 			"path": "pages/waterElectricity/electricity",
@@ -80,8 +78,8 @@
 			}
 		},
 		{
-		    "path" : "pages/online/online",
-		    "style" : {
+			"path": "pages/online/online",
+			"style": {
 				"navigationBarTitleText": "在线缴费",
 				"app-plus": {
 					"titleNView": {
@@ -89,10 +87,9 @@
 					}
 				}
 			}
-		}
-		,{
-		    "path" : "pages/service/problem",
-		    "style" : {
+		}, {
+			"path": "pages/service/problem",
+			"style": {
 				"navigationBarTitleText": "常见问题",
 				"app-plus": {
 					"titleNView": {
@@ -100,10 +97,9 @@
 					}
 				}
 			}
-		}
-		,{
-		    "path" : "pages/service/private",
-		    "style" : {
+		}, {
+			"path": "pages/service/private",
+			"style": {
 				"navigationBarTitleText": "隐私政策",
 				"app-plus": {
 					"titleNView": {
@@ -111,27 +107,25 @@
 					}
 				}
 			}
-		}
-		,{
-		    "path" : "pages/service/guide",
-		    "style" : {
+		}, {
+			"path": "pages/service/guide",
+			"style": {
 				"navigationBarTitleText": "用户指南",
 				"app-plus": {
 					"titleNView": {
 						"backgroundColor": "#fff"
 					}
-				} 
+				}
 			}
-		}
-		,{
-		    "path" : "pages/service/suggest",
-		    "style" : {
+		}, {
+			"path": "pages/service/suggest",
+			"style": {
 				"navigationBarTitleText": "意见反馈",
 				"app-plus": {
 					"titleNView": {
 						"backgroundColor": "#fff"
 					}
-				} 
+				}
 			}
 		},
 		// 电子钱包详情页
@@ -160,13 +154,6 @@
 			"path": "pages/index/electric_wallet_module/quota",
 			"style": {
 				"navigationBarTitleText": "限额"
-			}
-		},
-		// 充值页
-		{
-			"path": "pages/index/electric_wallet_module/recharge_money",
-			"style": {
-				"navigationBarTitleText": "充值"
 			}
 		},
 		// 客户信息补录页

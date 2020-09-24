@@ -19,7 +19,6 @@
 </script>
 
 <style lang="less" scoped>
-// 页面盒子
 .page_box {
 	// 银行卡
 	.bank_card {

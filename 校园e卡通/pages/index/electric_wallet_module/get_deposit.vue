@@ -16,13 +16,18 @@
 				<text @click="value = quota" style="color: rgb(40,111,201);">全部提现</text>
 			</view>
 			<!-- 提交按钮 -->
-			<button class="btn" @click="btnClick">提现</button>
+			<btn title="提现" @click.native="btnClick" />
 		</view>
 	</view>
 </template>
 
 <script>
+// 引入按钮组件
+import btn from '../../../components/electric_wallet-components/btn.vue';
 export default {
+	components:{
+		btn
+	},
 	data() {
 		return {
 			// 提现金额
@@ -94,21 +99,6 @@ export default {
 		color: rgb(153, 153, 153);
 		margin-top: 20rpx;
 		padding-left: 30rpx;
-	}
-	// 按钮
-	.btn {
-		width: 706rpx;
-		height: 80rpx;
-		font-size: 32rpx;
-		line-height: 80rpx;
-		border-radius: 24rpx;
-		background-color: rgb(40, 111, 201);
-		color: #ffffff;
-		margin-top: 41rpx;
-	}
-	// 点击按钮时的反馈，增加按钮30%的灰度
-	.btn:active {
-		filter: grayscale(30%);
 	}
 }
 </style>

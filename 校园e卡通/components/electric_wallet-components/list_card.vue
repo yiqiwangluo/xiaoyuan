@@ -48,7 +48,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 页面盒子
 .page_box {
 	height: 113rpx;
 	display: flex;

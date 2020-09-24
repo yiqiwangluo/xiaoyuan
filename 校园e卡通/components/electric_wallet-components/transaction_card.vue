@@ -1,5 +1,5 @@
 <template>
-	<!-- 此组件用于交易明细页面的列表渲染 -->
+	<!-- 此组件用于交易明细和流水查询页面的列表渲染 -->
 	<view class="page_box">
 		<!-- 消费 -->
 		<view class="consumption_box center">
@@ -103,7 +103,6 @@ export default {
 	display: flex;
 	align-items: center;
 }
-// 页面盒子
 .page_box {
 	min-height: 118rpx;
 	padding-left: 29rpx;

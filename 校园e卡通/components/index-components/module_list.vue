@@ -22,7 +22,6 @@
 import card from './card.vue';
 export default {
 	components: {
-		// 注册卡片组件
 		card
 	},
 	data() {
