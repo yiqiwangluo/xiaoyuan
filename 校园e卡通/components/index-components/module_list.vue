@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件用于首页的各个模块及模块对应列表子项的渲染
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:06:00
+-->
 <template>
-	<!-- 此组件用于首页的模块及模块列表渲染的显示 -->
 	<!-- 外层卡片 -->
 	<card :style_list="style_list" class="module_list_box">
 		<!-- 模块标题 -->

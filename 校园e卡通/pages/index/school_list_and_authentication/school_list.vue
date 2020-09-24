@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 学校选择页
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:12:42
+-->
 <template>
 	<view class="school_list_box">
 		<!-- 顶部地区选择及学校搜索盒子 -->

@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 提现页面
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:10:50
+-->
 <template>
 	<!-- 提现页面盒子 -->
 	<view class="get_deposit_box">

@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 首页
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:11:30
+-->
 <template>
 	<movable-area class="my_movable">
 		<!-- 顶部卡片 -->

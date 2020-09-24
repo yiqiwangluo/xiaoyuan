@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件是身份码和付款码页面的底部跳转盒子
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:06:36
+-->
 <template>
-	<!-- 此组件用于身份码和付款码页面的跳转盒子 -->
 	<view class="payment_code_box" @click="toOtherPage" :style="marginTop ? '' : 'margin-top: 0'">
 		<!-- 付款码图标 -->
 		<image :src="icon" />

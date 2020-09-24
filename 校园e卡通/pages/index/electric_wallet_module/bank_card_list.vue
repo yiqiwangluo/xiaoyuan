@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 银行卡列表页
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:08:51
+-->
 <template>
 	<view class="page_box">
 		<!-- 银行卡列表 -->

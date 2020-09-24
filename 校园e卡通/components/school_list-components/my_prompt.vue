@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件用于模拟HTML中的prompt功能（带输入框的弹框）
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:07:27
+-->
 <template>
-	<!-- 此组件用于模拟HTML中的prompt功能 -->
 	<!-- 外部灰色遮罩层 -->
 	<view class="my_prompt">
 		<view class="gray_shade"></view>

@@ -1,6 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件用于首页的大部分外层盒子
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:05:22
+-->
 <template>
-	<!-- 此组件用于首页的大部分外层盒子 -->
-	<!-- 卡片组件盒子 -->
 	<view class="card_box" :style="style_list"><slot></slot></view>
 </template>
 

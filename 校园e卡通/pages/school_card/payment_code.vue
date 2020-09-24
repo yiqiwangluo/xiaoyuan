@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 付款码页面
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:13:39
+-->
 <template>
 	<!-- 付款码页面盒子 -->
 	<view class="payment_code_box" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/blue_sky.png);">

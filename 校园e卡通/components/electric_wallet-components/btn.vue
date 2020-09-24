@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件是通用的蓝色按钮组件
+ * @Date: 2020-09-23 15:25:32
+ * @LastEditTime: 2020-09-24 10:03:48
+-->
 <template>
-	<!-- 此组件为通用蓝色按钮组件 -->
 	<button class="btn">{{ title }}</button>
 </template>
 

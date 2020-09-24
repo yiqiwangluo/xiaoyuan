@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件用于交易明细和流水查询页面的列表渲染
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:04:55
+-->
 <template>
-	<!-- 此组件用于交易明细和流水查询页面的列表渲染 -->
 	<view class="page_box">
 		<!-- 消费 -->
 		<view class="consumption_box center">

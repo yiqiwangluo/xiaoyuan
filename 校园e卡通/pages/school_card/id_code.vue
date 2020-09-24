@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 身份码页面
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:13:23
+-->
 <template>
-	<!-- 身份码页面盒子 -->
 	<view class="id_code_box" style="background-image: url(https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/idcode_paymentcode/blue_sky.png);">
 		<!-- 身份码盒子 -->
 		<view class="id_code">
@@ -50,7 +55,6 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
-// 身份码页面盒子
 .id_code_box {
 	width: 100%;
 	min-height: 100vh;

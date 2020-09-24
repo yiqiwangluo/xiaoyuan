@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件用于电子钱包详情页的列表卡片渲染
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:04:19
+-->
 <template>
-	<!-- 此组件用于电子钱包详情页的列表卡片渲染 -->
 	<view class="page_box" @click="toOtherPage">
 		<!-- icon图标 -->
 		<image :src="icon" class="icon_image" mode="aspectFit" />

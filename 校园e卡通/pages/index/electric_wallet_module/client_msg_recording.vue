@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 用户信息补录页
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:09:05
+-->
 <template>
 	<view class="page_box">
 		<!-- 顶部文字 -->

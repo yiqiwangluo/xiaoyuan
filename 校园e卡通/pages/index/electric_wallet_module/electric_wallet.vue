@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 电子钱包页
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:10:37
+-->
 <template>
 	<!-- 页面盒子 -->
 	<view class="page_box">

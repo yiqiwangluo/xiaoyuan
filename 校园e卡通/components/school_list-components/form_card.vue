@@ -1,6 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 此组件用于身份验证页面的表单框
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:07:00
+-->
 <template>
-	<!-- 此组件用于身份验证页面的表单框 -->
-	<!-- 表单卡片盒子 -->
 	<view class="form_card_box">
 		<!-- 输入框前置icon图标 -->
 		<image :src="icon" />
@@ -41,7 +45,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 表单框盒子
 .form_card_box {
 	display: flex;
 	align-items: center;

@@ -1,3 +1,9 @@
+<!--
+ * @Author: LF
+ * @Description: 学生开卡验证页面
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:12:28
+-->
 <template>
 	<view class="authentication_box">
 		<!-- 学校信息盒子 -->

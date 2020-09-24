@@ -1,5 +1,10 @@
+<!--
+ * @Author: LF
+ * @Description: 限额页
+ * @Date: 2020-09-21 10:56:19
+ * @LastEditTime: 2020-09-24 10:11:00
+-->
 <template>
-	<!-- 限额页面盒子 -->
 	<view class="quota_box">
 		<!-- 顶部提示文字 -->
 		<view class="alert_text">电子钱包支付限额</view>
@@ -53,7 +58,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 限额页面盒子
 .quota_box {
 	width: 100%;
 	min-height: 100vh;
