@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 电子钱包页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:10:37
+ * @LastEditTime: 2020-09-25 15:13:53
 -->
 <template>
     <!-- 页面盒子 -->
@@ -37,7 +37,7 @@ export default {
                 },
                 {
                     title: '充值',
-                    url: '../../school-card-list/card-recharge/card-recharge',
+                    url: '../../school-card-list/card-recharge',
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge_money.png'
                 },
                 // {

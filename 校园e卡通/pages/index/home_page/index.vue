@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 首页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:50:09
+ * @LastEditTime: 2020-09-25 15:14:09
 -->
 <template>
     <movable-area class="my_movable">
@@ -129,17 +129,17 @@ export default {
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge.png',
                     title: '卡片充值',
-                    url: '/pages/school-card-list/card-recharge/card-recharge'
+                    url: '/pages/school-card-list/card-recharge'
                 },
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/Cash_flow_inquiry.png',
                     title: '流水查询',
-                    url: '/pages/school-card-list/flow-query/flow-query'
+                    url: '/pages/school-card-list/flow-query'
                 },
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/balance.png',
                     title: '卡片余额',
-                    url: '/pages/school-card-list/card-balance/card-balance'
+                    url: '/pages/school-card-list/card-balance'
                 },
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/additional_recording.png',
@@ -154,12 +154,12 @@ export default {
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/report_loss.png',
                     title: '卡片挂失',
-                    url: '/pages/school-card-list/card-lost/card-lost'
+                    url: '/pages/school-card-list/card-lost'
                 },
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/change_password.png',
                     title: '修改密码',
-                    url: '/pages/school-card-list/change-password/change-password'
+                    url: '/pages/school-card-list/change-password'
                 }
             ],
             // 缴费服务列表
