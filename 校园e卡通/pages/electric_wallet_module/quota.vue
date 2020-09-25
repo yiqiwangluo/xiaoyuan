@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 限额页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:42:17
+ * @LastEditTime: 2020-09-25 15:44:40
 -->
 <template>
     <view class="quota_box">
@@ -33,7 +33,7 @@
 
 <script>
 // 引入按钮组件
-import btn from '../../../components/electric_wallet-components/btn.vue'
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
     components: {
         btn

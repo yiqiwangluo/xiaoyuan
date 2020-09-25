@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 用户信息补录页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:09:05
+ * @LastEditTime: 2020-09-25 15:44:07
 -->
 <template>
     <view class="page_box">
@@ -30,7 +30,7 @@
 
 <script>
 // 引入按钮组件
-import btn from '../../../components/electric_wallet-components/btn.vue'
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
     components: {
         btn

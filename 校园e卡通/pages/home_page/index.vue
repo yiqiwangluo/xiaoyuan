@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 首页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 15:14:09
+ * @LastEditTime: 2020-09-25 15:39:21
 -->
 <template>
     <movable-area class="my_movable">
@@ -32,7 +32,7 @@
                 <!-- 右侧身份码、付款码区域 -->
                 <view class="topCard_body_right flexCenter">
                     <!-- 身份码外层卡片 -->
-                    <card style_list="width:325rpx;height:157rpx" @click.native="toOtherPage('../../school_card/id_code')">
+                    <card style_list="width:325rpx;height:157rpx" @click.native="toOtherPage('../school_card/id_code')">
                         <!-- 身份码盒子 -->
                         <view class="flexCenter idCard_box">
                             <image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/id_card.png" class="idCard_image"></image>
@@ -40,7 +40,7 @@
                         </view>
                     </card>
                     <!-- 付款码外层卡片 -->
-                    <card style_list="width:325rpx;height:157rpx" @click.native="toOtherPage('../../school_card/payment_code')">
+                    <card style_list="width:325rpx;height:157rpx" @click.native="toOtherPage('../school_card/payment_code')">
                         <!-- 付款码盒子 -->
                         <view class="flexCenter qrCode_box">
                             <image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/qr_code.png" class="qrCode_image"></image>
@@ -71,9 +71,9 @@
 
 <script>
 // 引入卡片组件
-import card from '../../../components/index-components/card.vue'
+import card from '../../components/index-components/card.vue'
 // 引入模块卡片组件
-import moduleCard from '../../../components/index-components/module_list.vue'
+import moduleCard from '../../components/index-components/module_list.vue'
 export default {
     components: {
         card,
@@ -144,12 +144,12 @@ export default {
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/additional_recording.png',
                     title: '信息补录',
-                    url: '../electric_wallet_module/client_msg_recording'
+                    url: '/pages/electric_wallet_module/client_msg_recording'
                 },
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/quota_setting.png',
                     title: '限额',
-                    url: '../electric_wallet_module/quota'
+                    url: '/pages/electric_wallet_module/quota'
                 },
                 {
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/report_loss.png',

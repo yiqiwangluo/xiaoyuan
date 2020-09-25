@@ -2,10 +2,9 @@
  * @Author: LF
  * @Description: 电子钱包页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 15:13:53
+ * @LastEditTime: 2020-09-25 15:53:57
 -->
 <template>
-    <!-- 页面盒子 -->
     <view class="page_box">
         <!-- 模块列表 -->
         <list-card v-for="(item, index) in list_data" :key="index" :icon="item.icon" :title="item.title" :money_quota="item.money_quota" :url="item.url" />
@@ -14,7 +13,7 @@
 
 <script>
 // 引入列表卡片组件
-import listCard from '../../../components/electric_wallet-components/list_card.vue'
+import listCard from '../../components/electric_wallet-components/list_card.vue'
 export default {
     components: {
         listCard
@@ -37,7 +36,7 @@ export default {
                 },
                 {
                     title: '充值',
-                    url: '../../school-card-list/card-recharge',
+                    url: '../school-card-list/card-recharge',
                     icon: 'https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/recharge_money.png'
                 },
                 // {

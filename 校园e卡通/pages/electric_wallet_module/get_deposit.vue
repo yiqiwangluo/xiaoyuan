@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 提现页面
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:50:01
+ * @LastEditTime: 2020-09-25 15:44:27
 -->
 <template>
     <!-- 提现页面盒子 -->
@@ -29,7 +29,7 @@
 
 <script>
 // 引入按钮组件
-import btn from '../../../components/electric_wallet-components/btn.vue'
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
     components: {
         btn

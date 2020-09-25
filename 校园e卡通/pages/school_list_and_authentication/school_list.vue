@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 学校选择页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:12:42
+ * @LastEditTime: 2020-09-25 15:24:01
 -->
 <template>
     <view class="school_list_box">
@@ -42,7 +42,7 @@
 
 <script>
 // 引入学校卡片组件
-import schoolCard from '../../../components/school_list-components/school_card.vue'
+import schoolCard from '../../components/school_list-components/school_card.vue'
 export default {
     data() {
         return {

@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 学生开卡验证页面
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-24 10:44:31
+ * @LastEditTime: 2020-09-25 15:23:35
 -->
 <template>
     <view class="authentication_box">
@@ -59,11 +59,11 @@
 
 <script>
 // 引入表单框组件
-import formCard from '../../../components/school_list-components/form_card.vue'
+import formCard from '../../components/school_list-components/form_card.vue'
 // 引入可输入内容的弹框组件
-import myPrompt from '../../../components/school_list-components/my_prompt.vue'
+import myPrompt from '../../components/school_list-components/my_prompt.vue'
 // 引入按钮组件
-import btn from '../../../components/electric_wallet-components/btn.vue'
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
     components: {
         btn,

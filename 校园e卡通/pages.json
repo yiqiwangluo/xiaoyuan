@@ -1,10 +1,10 @@
 {
 	"pages": [
 		{
-			"path": "pages/index/home_page/index"
+			"path": "pages/home_page/index"
 		},
 		{
-			"path": "pages/index/school_list_and_authentication/school_list",
+			"path": "pages/school_list_and_authentication/school_list",
 			"style": {
 				"navigationBarTitleText": "学校列表"
 			}
@@ -22,7 +22,7 @@
 			}
 		},
 		{
-			"path": "pages/index/school_list_and_authentication/authentication",
+			"path": "pages/school_list_and_authentication/authentication",
 			"style": {
 				"navigationBarTitleText": "校园e码通身份验证"
 			}
@@ -135,38 +135,32 @@
 			}
 		},
 		{
-			"path": "pages/index/electric_wallet_module/electric_wallet",
+			"path": "pages/electric_wallet_module/electric_wallet",
 			"style": {
 				"navigationBarTitleText": "电子钱包"
 			}
 		},
 		{
-			"path": "pages/index/electric_wallet_module/transaction_detail",
+			"path": "pages/electric_wallet_module/transaction_detail",
 			"style": {
 				"navigationBarTitleText": "交易明细"
 			}
 		},
 		{
-			"path": "pages/index/electric_wallet_module/get_deposit",
+			"path": "pages/electric_wallet_module/get_deposit",
 			"style": {
 				"navigationBarTitleText": "提现"
 			}
 		},
 		{
-			"path": "pages/index/electric_wallet_module/quota",
+			"path": "pages/electric_wallet_module/quota",
 			"style": {
 				"navigationBarTitleText": "限额"
 			}
 		},
 		{
-			"path": "pages/index/electric_wallet_module/client_msg_recording"
+			"path": "pages/electric_wallet_module/client_msg_recording"
 		}
-		// {
-		// 	"path": "pages/index/electric_wallet_module/bank_card_list",
-		// 	"style": {
-		// 		"navigationBarTitleText": "银行卡管理"
-		// 	}
-		// }
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
