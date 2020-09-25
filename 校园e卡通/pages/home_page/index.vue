@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 首页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 15:39:21
+ * @LastEditTime: 2020-09-25 17:07:21
 -->
 <template>
     <movable-area class="my_movable">
