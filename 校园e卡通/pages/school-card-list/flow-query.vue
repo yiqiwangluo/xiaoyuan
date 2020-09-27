@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 流水查询页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-27 17:00:38
+ * @LastEditTime: 2020-09-27 17:04:56
 -->
 <template>
     <view class="content">
@@ -125,9 +125,9 @@ export default {
             let month = (date.getMonth() + 1).toString().padStart(2, '0')
             return `${year}年${month}月`
         },
-        // 获取完整当前日期（格式：YYYY-MM-DD HH:MM:SS）
-        getFullDate() {
-            const date = new Date()
+        // 获取完整日期，默认为当前日期（格式：YYYY-MM-DD HH:MM:SS）
+        getFullDate(time) {
+            const date = new Date(time)
             let year = date.getFullYear()
             let month = (date.getMonth() + 1).toString().padStart(2, '0')
             let day = date.getDate().toString().padStart(2, '0')
@@ -138,12 +138,17 @@ export default {
         },
         // 判断日期是否符合条件
         checkTime(str) {
+            // 获取日期筛选条件
             let time = new Date(str)
+            // 获取当前项的年份
             let filterYear = this.date.substring(0, 4)
+            // 获取当前项的月份
             let filterMonth = this.date.substring(5, 7)
+            // 对比：如果当前项的年月和日期筛选条件的年月一致，则返回true，在渲染中显示该项
             if (time.getFullYear() == filterYear && time.getMonth() + 1 == filterMonth) {
                 return true
             }
+            // 否则返回false，隐藏该项
             return false
         },
         // 更改查看条件，充值/消费

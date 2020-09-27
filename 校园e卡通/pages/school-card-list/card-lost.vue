@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 卡片挂失页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-26 09:09:21
+ * @LastEditTime: 2020-09-27 18:09:54
 -->
 <template>
     <view class="top">
@@ -33,8 +33,6 @@
                 </view>
             </view>
         </view>
-
-        <view class="white"></view>
 
         <view class="old-password">
             <view class="left">
@@ -93,12 +91,6 @@ export default {
     font-family: PingFang-SC-Medium;
     letter-spacing: 1rpx;
 
-    .white {
-        width: 100%;
-        height: 15rpx;
-        background-color: #f8f8f8;
-    }
-
     .content {
         width: 100%;
         height: 276rpx;
@@ -107,27 +99,23 @@ export default {
         .content-details {
             width: 100%;
             height: 92rpx;
-            border-bottom: 1rpx solid rgb(153, 153, 153);
-            opacity: 0.5;
-
+            border-bottom: 1rpx solid rgb(207, 207, 207);
+            display: flex;
+            align-items: center;
             .left {
-                float: left;
-
                 .left-text {
+                    font-size: 32rpx;
                     margin-left: 30rpx;
                     margin-top: 31rpx;
-                    display: block;
                 }
             }
-
             .right {
-                float: right;
-
+                margin-left: auto;
                 .right-text {
+                    font-size: 32rpx;
                     margin-top: 31rpx;
                     margin-right: 30rpx;
                     color: rgb(102, 102, 102);
-                    display: block;
                 }
             }
         }
@@ -135,31 +123,27 @@ export default {
 
     .old-password {
         width: 100%;
-        height: 92rpx;
+        display: flex;
+        align-items: center;
         background-color: rgb(255, 255, 255);
-
+        margin-top: 26rpx;
         .left {
-            width: 15%;
-            float: left;
-
+            height: 100%;
             .old_label {
                 margin-left: 30rpx;
-                margin-top: 31rpx;
-                display: block;
+                font-size: 32rpx;
             }
         }
-
         .right {
-            width: 80%;
-            float: right;
-
+            margin-left: 49rpx;
+            height: 100%;
             .password {
-                margin-top: 20rpx;
+                height: 100%;
+                font-size: 28rpx;
                 color: rgb(153, 153, 153);
             }
         }
     }
-
     .tip {
         margin-top: 30rpx;
         .tip-details {
