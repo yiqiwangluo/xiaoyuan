@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 卡片挂失页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 18:10:07
+ * @LastEditTime: 2020-09-26 09:09:21
 -->
 <template>
     <view class="top">
@@ -49,10 +49,7 @@
             <view class="tip-details">提醒:查询密码默认身份证后六位，X用0代替</view>
         </view>
 
-        <view class="botton">
-            <view class="button" @click="submit">提交</view>
-        </view>
-
+        <btn title="提交" @click.native="submit" />
         <popup :title="title" :status="status" :is_show.sync="is_show" />
     </view>
 </template>
@@ -62,9 +59,12 @@
 <script>
 // 引入带icon图标的弹框组件
 import popup from '../../components/school_card-components/popup.vue'
+// 引入按钮组件
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
     components: {
-        popup
+        popup,
+        btn
     },
     data() {
         return {
@@ -157,22 +157,6 @@ export default {
                 margin-top: 20rpx;
                 color: rgb(153, 153, 153);
             }
-        }
-    }
-
-    .botton {
-        margin-top: 44rpx;
-
-        .button {
-            width: 706rpx;
-            height: 80rpx;
-            border-radius: 24rpx 24rpx 24rpx 24rpx;
-            margin: 24rpx auto;
-            color: rgb(255, 255, 255);
-            line-height: 75rpx;
-            letter-spacing: 1rpx;
-            background-color: rgb(40, 111, 201);
-            text-align: center;
         }
     }
 

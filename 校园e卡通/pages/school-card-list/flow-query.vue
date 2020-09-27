@@ -2,14 +2,14 @@
  * @Author: LF
  * @Description: 流水查询页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 15:11:00
+ * @LastEditTime: 2020-09-27 16:00:56
 -->
 <template>
     <view class="content">
         <view class="top-banner">
             <view class="balance">
-                <view class="recharge" :class="{ active: isClick == 1 }" @click="addActive()">充值</view>
-                <view class="fee" :class="{ active: isClick == 2 }" @click="addActiveClick()">消费</view>
+                <view class="recharge" :class="{ active: isClick == 1 }" @click="changeType(1)">充值</view>
+                <view class="fee" :class="{ active: isClick == 2 }" @click="changeType(2)">消费</view>
             </view>
         </view>
         <view class="top">
@@ -17,7 +17,7 @@
             <view class="select uni-list-cell-db">
                 <view class="select-left">日期筛选</view>
                 <view class="select-right">
-                    <picker mode="date" fields="month" :value="date" :start="startDate" :end="endDate" @change="bindDateChange">
+                    <picker mode="date" fields="month" :value="date" :end="getDate()" @change="bindDateChange">
                         <view class="uni-input">
                             <image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/school_list_images/left_arrow.png" class="right_arrow" />
                         </view>
@@ -27,54 +27,16 @@
         </view>
         <!-- 消费记录 -->
         <transaction-card
-            consumption_type="消费"
-            consumption_time="2020-07-02 15:48:15"
-            consumption_money="12"
-            discounts_money="0"
-            consumption_id="1584987879845487487894"
-            consumption_account="8484564684784878"
-            merchant_name="梅州市职业技术学校"
-            v-if="showTrue"
-        />
-        <transaction-card
-            consumption_type="充值"
-            consumption_time="2020-07-02 15:48:15"
-            consumption_money="58"
-            discounts_money="0"
-            consumption_id="1584987879845487487894"
-            consumption_account="8484564684784878"
-            merchant_name="梅州市职业技术学校"
-            v-if="showFalse"
-        />
-        <transaction-card
-            consumption_type="缴费"
-            consumption_time="2020-07-02 15:48:15"
-            consumption_money="200"
-            v-if="showTrue"
-            discounts_money="0"
-            consumption_id="1584987879845487487894"
-            consumption_account="8484564684784878"
-            merchant_name="梅州市职业技术学校"
-        />
-        <transaction-card
-            consumption_type="房租"
-            consumption_time="2020-07-02 15:48:15"
-            consumption_money="1000"
-            v-if="showTrue"
-            discounts_money="0"
-            consumption_id="1584987879845487487894"
-            consumption_account="8484564684784878"
-            merchant_name="梅州市职业技术学校"
-        />
-        <transaction-card
-            consumption_type="水电"
-            consumption_time="2020-07-02 15:48:15"
-            consumption_money="400"
-            v-if="showTrue"
-            discounts_money="0"
-            consumption_id="1584987879845487487894"
-            consumption_account="8484564684784878"
-            merchant_name="梅州市职业技术学校"
+            v-for="(item, index) in transaction_data"
+            :key="index"
+            :consumption_type="item.consumption_type"
+            :consumption_time="item.consumption_time"
+            :consumption_money="item.consumption_money"
+            :discounts_money="item.discounts_money"
+            :consumption_id="item.consumption_id"
+            :consumption_account="item.consumption_account"
+            :merchant_name="item.merchant_name"
+            v-show="isClick === 0 || item.type === isClick"
         />
     </view>
 </template>
@@ -84,59 +46,87 @@
 import transactionCard from '../../components/electric_wallet-components/transaction_card.vue'
 
 export default {
-    data() {
-        const currentDate = this.getDate({
-            format: true
-        })
-        return {
-            title: 'picker',
-            date: currentDate,
-            isClick: '0',
-            showTrue: true,
-            showFalse: true
-        }
-    },
     components: {
         transactionCard
     },
-    computed: {
-        startDate() {
-            return this.getDate('start')
-        },
-        endDate() {
-            return this.getDate('end')
+    data() {
+        return {
+            // 当前日期
+            date: this.getDate(),
+            // 查看条件，1为充值，2为消费
+            isClick: 0,
+            // 交易记录数据
+            transaction_data: [
+                {
+                    type: 2,
+                    consumption_type: '消费',
+                    consumption_time: '2020-07-02 15:48:15',
+                    consumption_money: '12',
+                    discounts_money: '0',
+                    consumption_id: '1584987879845487487894',
+                    consumption_account: '8484564684784878',
+                    merchant_name: '梅州市职业技术学校'
+                },
+                {
+                    type: 1,
+                    consumption_type: '充值',
+                    consumption_time: '2020-07-02 12:48:15',
+                    consumption_money: '60',
+                    discounts_money: '0',
+                    consumption_id: '1584987879845487487895',
+                    consumption_account: '8484564684784879',
+                    merchant_name: '梅州市职业技术学校'
+                },
+                {
+                    type: 2,
+                    consumption_type: '缴费',
+                    consumption_time: '2020-07-03 11:18:15',
+                    consumption_money: '200',
+                    discounts_money: '0',
+                    consumption_id: '1584987879845487487896',
+                    consumption_account: '8484564684784879',
+                    merchant_name: '梅州市职业技术学校'
+                },
+                {
+                    type: 2,
+                    consumption_type: '房租',
+                    consumption_time: '2020-07-05 15:48:15',
+                    consumption_money: '300',
+                    discounts_money: '0',
+                    consumption_id: '1584987879845487487814',
+                    consumption_account: '8484564684784888',
+                    merchant_name: '梅州市职业技术学校'
+                },
+                {
+                    type: 2,
+                    consumption_type: '水电',
+                    consumption_time: '2020-07-05 14:48:15',
+                    consumption_money: '50',
+                    discounts_money: '0',
+                    consumption_id: '1584987879845487487891',
+                    consumption_account: '8484564684784881',
+                    merchant_name: '梅州市职业技术学校'
+                }
+            ]
         }
     },
     methods: {
-        bindDateChange: function (e) {
-            this.date = e.target.value
+        // 将picker组件选择日期返回的值格式化后赋值给页面
+        bindDateChange(e) {
+            let arr = e.target.value.split('-')
+            let res = arr[0] + '年' + arr[1] + '月'
+            this.date = res
         },
-
+        // 获取当前日期（格式：YYYY年mm月）
         getDate(type) {
             const date = new Date()
             let year = date.getFullYear()
-            let month = date.getMonth() + 1
-
-            if (type === 'start') {
-                year = year - 60
-            } else if (type === 'end') {
-                year = year + 2
-            }
-            month = month > 9 ? month : '0' + month
-
+            let month = (date.getMonth() + 1).toString().padStart(2, '0')
             return `${year}年${month}月`
         },
-
-        addActive() {
-            this.isClick = 1
-            this.showFalse = true
-            this.showTrue = false
-        },
-
-        addActiveClick() {
-            this.isClick = 2
-            this.showTrue = true
-            this.showFalse = false
+        // 更改查看条件，充值/消费
+        changeType(id) {
+            this.isClick = this.isClick == id ? 0 : id
         }
     }
 }

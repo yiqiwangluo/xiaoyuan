@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 修改密码页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 18:03:44
+ * @LastEditTime: 2020-09-26 09:10:25
 -->
 <template>
     <view class="top">
@@ -21,8 +21,7 @@
                 <view class="right"><input class="password" type="text" value="" placeholder="确认新查询密码" /></view>
             </view>
         </view>
-
-        <view class="botton"><view class="button" @click="submit">提交</view></view>
+         <btn title="提交" @click.native="submit" />
         <popup :is_show.sync="is_show" :title="title" :status="status" />
     </view>
 </template>
@@ -30,9 +29,12 @@
 <script>
 // 引入带icon图标的弹框组件
 import popup from '../../components/school_card-components/popup.vue'
+// 引入按钮组件
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
     components: {
-        popup
+        popup,
+        btn
     },
     data() {
         return {
@@ -89,20 +91,6 @@ export default {
                     color: rgb(153, 153, 153);
                 }
             }
-        }
-    }
-    .botton {
-        margin-top: 44rpx;
-        .button {
-            width: 706rpx;
-            height: 80rpx;
-            border-radius: 24rpx 24rpx 24rpx 24rpx;
-            margin: 24rpx auto;
-            color: rgb(255, 255, 255);
-            line-height: 75rpx;
-            letter-spacing: 1rpx;
-            background-color: rgb(40, 111, 201);
-            text-align: center;
         }
     }
 }

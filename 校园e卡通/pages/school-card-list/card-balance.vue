@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 卡片余额页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 14:57:42
+ * @LastEditTime: 2020-09-26 09:07:38
 -->
 <template>
     <view>
@@ -17,14 +17,17 @@
             </view>
         </view>
 
-        <view class="botton">
-            <view class="button" @click="recharge()">充值</view>
-        </view>
+        <btn title="充值" @click.native="recharge" />
     </view>
 </template>
 
 <script>
+// 引入按钮组件
+import btn from '../../components/electric_wallet-components/btn.vue'
 export default {
+    components: {
+        btn
+    },
     data() {
         return {
             amout: '800.00'
@@ -55,7 +58,6 @@ export default {
         padding-top: 45rpx;
 
         .centent {
-            // margin:25rpx auto;
             text-align: center;
             color: rgb(255, 255, 255);
             font-size: 28rpx;
@@ -63,26 +65,12 @@ export default {
         }
 
         .centent-number {
-            // margin:25rpx auto;
             text-align: center;
             color: rgb(255, 255, 255);
             padding-top: 15rpx;
             font-family: ArialMT;
             font-weight: bold;
         }
-    }
-}
-
-.botton {
-    width: 750rpx;
-    height: 80rpx;
-    // border-radius:24rpx 24rpx 24rpx 24rpx;
-    background-color: rgb(40, 111, 201);
-    color: rgb(255, 255, 255);
-
-    .button {
-        line-height: 75rpx;
-        text-align: center;
     }
 }
 </style>
