@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 流水查询页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-27 16:00:56
+ * @LastEditTime: 2020-09-27 16:56:48
 -->
 <template>
     <view class="content">
@@ -36,7 +36,7 @@
             :consumption_id="item.consumption_id"
             :consumption_account="item.consumption_account"
             :merchant_name="item.merchant_name"
-            v-show="isClick === 0 || item.type === isClick"
+            v-show="(isClick === 0 && checkTime(item.consumption_time)) || (item.type === isClick && checkTime(item.consumption_time))"
         />
     </view>
 </template>
@@ -70,7 +70,7 @@ export default {
                 {
                     type: 1,
                     consumption_type: '充值',
-                    consumption_time: '2020-07-02 12:48:15',
+                    consumption_time: '2020-09-02 12:48:15',
                     consumption_money: '60',
                     discounts_money: '0',
                     consumption_id: '1584987879845487487895',
@@ -80,7 +80,7 @@ export default {
                 {
                     type: 2,
                     consumption_type: '缴费',
-                    consumption_time: '2020-07-03 11:18:15',
+                    consumption_time: '2020-08-06 11:18:15',
                     consumption_money: '200',
                     discounts_money: '0',
                     consumption_id: '1584987879845487487896',
@@ -90,7 +90,7 @@ export default {
                 {
                     type: 2,
                     consumption_type: '房租',
-                    consumption_time: '2020-07-05 15:48:15',
+                    consumption_time: '2020-09-11 15:48:15',
                     consumption_money: '300',
                     discounts_money: '0',
                     consumption_id: '1584987879845487487814',
@@ -100,7 +100,7 @@ export default {
                 {
                     type: 2,
                     consumption_type: '水电',
-                    consumption_time: '2020-07-05 14:48:15',
+                    consumption_time: '2020-09-21 14:48:15',
                     consumption_money: '50',
                     discounts_money: '0',
                     consumption_id: '1584987879845487487891',
@@ -116,13 +116,35 @@ export default {
             let arr = e.target.value.split('-')
             let res = arr[0] + '年' + arr[1] + '月'
             this.date = res
+            this.checkTime()
         },
         // 获取当前日期（格式：YYYY年mm月）
-        getDate(type) {
+        getDate() {
             const date = new Date()
             let year = date.getFullYear()
             let month = (date.getMonth() + 1).toString().padStart(2, '0')
             return `${year}年${month}月`
+        },
+        // 获取完整当前日期（格式：YYYY-MM-DD HH:MM:SS）
+        getFullDate() {
+            const date = new Date()
+            let year = date.getFullYear()
+            let month = (date.getMonth() + 1).toString().padStart(2, '0')
+            let day = date.getDate().toString().padStart(2, '0')
+            let hour = date.getHours().toString().padStart(2, '0')
+            let minute = date.getMinutes().toString().padStart(2, '0')
+            let second = date.getSeconds().toString().padStart(2, '0')
+            return `${year}-${month}-${day} ${hour}:${minute}:${second}`
+        },
+        // 判断日期是否符合条件
+        checkTime(str) {
+            let time = new Date(str)
+            let filterYear = this.date.substring(0, 4)
+            let filterMonth = this.date.substring(5, 7)
+            if (time.getFullYear() == filterYear && time.getMonth() + 1 == filterMonth) {
+                return true
+            }
+            return false
         },
         // 更改查看条件，充值/消费
         changeType(id) {
