@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 流水查询页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-27 16:58:47
+ * @LastEditTime: 2020-09-27 17:00:38
 -->
 <template>
     <view class="content">
