@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view @touchstart="start" @touchend="end">
 		<image class="bgSet" :src="guideList[index]"></image>
 		<image v-if="button" class="changeBtn" @click="next" src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/next.png" mode="aspectFill"></image>
 	</view>
@@ -10,7 +10,6 @@
 		data() {
 			return {
 				index:0,
-				button:true,
 				guideList:[
 					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide1.png",
 					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide2.png",
@@ -23,21 +22,45 @@
 					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide9.png",
 					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide10.png",
 					"https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/service/guide11.png"
-				]
+				],
+				startDataClientY:0
+			}
+		},
+		computed:{
+			button:function(){
+				if(this.index>=this.guideList.length-1){
+					return false;
+				}else{
+					return true;
+				}
 			}
 		},
 		methods: {
 			next(){
 				this.index++;
-				if(this.index>=this.guideList.length-1){
-					this.button=false;
+			},
+			start(e){                            
+			    this.startDataClientY=e.changedTouches[0].clientY;
+			},
+			end(e){
+			    const subY=e.changedTouches[0].clientY - this.startDataClientY;
+			    if(subY<-50){
+					if(this.index<this.guideList.length-1){
+						this.index++;
+					}
+					console.log(this.index)
+			    } else if(subY>50){
+					if(this.index>0){
+						this.index--;
+					}
 				}
 			}
 		}
 	}
 </script>
 
-<style>
+<style lang="less">
+
 .bgSet{
 	position: fixed;
 	width: 100%;
