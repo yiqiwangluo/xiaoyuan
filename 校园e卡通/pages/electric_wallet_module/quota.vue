@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 限额页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 15:44:40
+ * @LastEditTime: 2020-09-29 10:05:34
 -->
 <template>
     <view class="quota_box">
@@ -28,30 +28,39 @@
         </view>
         <!-- 提交按钮 -->
         <btn title="修改" @click.native="btnClick" />
+        <!-- 弹框组件 -->
+        <popup :title="title" :status="status" :is_show.sync="is_show" />
     </view>
 </template>
 
 <script>
 // 引入按钮组件
 import btn from '../../components/electric_wallet-components/btn.vue'
+// 引入带icon的弹框组件
+import popup from '../../components/school_card-components/popup'
 export default {
     components: {
-        btn
+        btn,
+        popup
     },
     data() {
         return {
             // 单笔限额
             once_quota: 100,
             // 日累计限额
-            day_quota: 200
+            day_quota: 200,
+            // 是否显示弹框
+            is_show: false,
+            // 弹框标题
+            title: '修改成功',
+            // 弹框状态
+            status: 'success'
         }
     },
     methods: {
-        // 点击修改按钮
+        // 点击修改按钮，显示反馈弹框
         btnClick() {
-            uni.showModal({
-                title: '修改成功'
-            })
+            this.is_show = true
         }
     }
 }

@@ -2,7 +2,7 @@
  * @Author: LF
  * @Description: 卡片挂失页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-27 18:09:54
+ * @LastEditTime: 2020-09-28 10:49:15
 -->
 <template>
     <view class="top">
@@ -51,8 +51,6 @@
         <popup :title="title" :status="status" :is_show.sync="is_show" />
     </view>
 </template>
-
-
 
 <script>
 // 引入带icon图标的弹框组件

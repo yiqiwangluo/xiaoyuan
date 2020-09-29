@@ -2,11 +2,10 @@
  * @Author: LF
  * @Description: 用户信息补录页
  * @Date: 2020-09-21 10:56:19
- * @LastEditTime: 2020-09-25 15:44:07
+ * @LastEditTime: 2020-09-29 09:12:47
 -->
 <template>
     <view class="page_box">
-        <!-- 顶部文字 -->
         <view class="top_text">身份信息</view>
         <!-- 信息区域 -->
         <view class="person_msg">
@@ -25,15 +24,20 @@
         </view>
         <!-- 提交按钮 -->
         <btn title="确定" @click.native="btnClick" />
+        <!-- 弹框组件 -->
+        <popup :title="title" :status="status" :is_show.sync="is_show" />
     </view>
 </template>
 
 <script>
 // 引入按钮组件
 import btn from '../../components/electric_wallet-components/btn.vue'
+// 引入带icon的弹框组件
+import popup from '../../components/school_card-components/popup'
 export default {
     components: {
-        btn
+        btn,
+        popup
     },
     data() {
         return {
@@ -44,15 +48,19 @@ export default {
                 class: '幼师5班',
                 // 身份证号码
                 id_num: '441402199909290418'
-            }
+            },
+            // 是否显示弹框
+            is_show: false,
+            // 弹框标题
+            title: '要素齐全，证件未过期，不需要补录',
+            // 弹框状态
+            status: 'success'
         }
     },
     methods: {
         // 提交按钮的点击事件
         btnClick() {
-            uni.showModal({
-                title: '要素齐全，证件未过期，不需要补录'
-            })
+            this.is_show = true
         }
     },
     computed: {
@@ -70,7 +78,6 @@ export default {
 
 <style lang="less" scoped>
 .page_box {
-    // 顶部文字
     .top_text {
         height: 71rpx;
         line-height: 71rpx;
