@@ -64,8 +64,10 @@
         <module-card style_list="width:705rpx;height:504rpx;margin:22rpx auto" list_title="其他服务" :list_data="other_serve_list"></module-card>
         <!-- 客服 -->
         <movable-view class="service" direction="vertical" :y="y">
-            <image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/service.png" class="service_image"></image>
-        </movable-view>
+			<button open-type='contact' class="contact">
+              <image src="https://yiyitongxingsystem.oss-cn-qingdao.aliyuncs.com/images/index_images/service.png" class="service_image"></image>
+			</button>
+		</movable-view>
     </movable-area>
 </template>
 
@@ -291,8 +293,7 @@ export default {
     height: auto;
 }
 // 客服盒子和客服图片
-.service,
-.service_image {
+.service{
     width: 100rpx;
     height: 100rpx;
     border-radius: 50%;
@@ -300,6 +301,20 @@ export default {
     left: 628rpx;
     top: 26%;
 }
+.contact{
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	.service_image {
+	    width: 100rpx;
+	    height: 100rpx;
+	    border-radius: 50%;
+	   
+	}
+}
+button.contact::after{
+	content: none;
+} 
 // 说明性文字
 .explain_text {
     font-size: 32rpx;

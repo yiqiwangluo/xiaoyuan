@@ -1,5 +1,5 @@
 {
-    "name" : "mei",
+    "name" : "校园e卡通",
     "appid" : "__UNI__EAB1269",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxae45ae5de9558fa4",
+        "appid" : "wxbac04d97b051dabd",
         "setting" : {
             "urlCheck" : true
         },
