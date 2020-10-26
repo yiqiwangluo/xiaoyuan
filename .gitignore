@@ -1,0 +1,6 @@
+# vscode格式化插件-配置文件
+.prettierrc
+# 项目依赖包
+node_modules
+# uni-app打包后的文件夹
+unpackage

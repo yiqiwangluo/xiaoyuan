@@ -1,12 +1,14 @@
 <template>
     <div>
         <top-nav />
-        <div>首页</div>
+        <div>
+            <img src="@/assets/images/slideshow_1.jpg">
+        </div>
     </div>
 </template>
 
 <script>
-import topNav from '@/components/head'
+import topNav from '@/components/header'
 export default {
     components:{
         topNav
