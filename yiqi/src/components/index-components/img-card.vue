@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style scoped>
+/* @media screen {
+    
+} */
 .img-card {
     width: 576px;
     display: flex;

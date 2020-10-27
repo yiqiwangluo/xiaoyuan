@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="content">
-            <card v-for="(item, index) in list" :key="index" :icon="item.icon" :title="item.title" :intro="item.intro" />
+            <card class="card" v-for="(item, index) in list" :key="index" :icon="item.icon" :title="item.title" :intro="item.intro" />
         </div>
     </div>
 </template>
@@ -44,10 +44,30 @@ export default {
 
 <style scoped>
 .content {
-    width: 63vw;
+    width: 1204px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .content {
+        width: 100%;
+        margin: 0px auto;
+        justify-content: center;
+    }
+    .card:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 700px) {
+    .content {
+        width: 100%;
+        margin: 0px auto;
+        justify-content: space-around;
+    }
+    .card:nth-child(3),.card:nth-child(4) {
+        margin-top: 20px;
+    }
 }
 </style>

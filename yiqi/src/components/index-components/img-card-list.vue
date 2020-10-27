@@ -5,6 +5,7 @@
 </template>
 
 <script>
+// 引入广告卡片组件
 import imgCard from './img-card'
 export default {
     components: {
@@ -48,6 +49,5 @@ export default {
     align-content: space-between;
     height: 1000px;
     margin: 0px auto;
-    align-items: center;
 }
 </style>
