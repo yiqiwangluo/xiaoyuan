@@ -35,7 +35,7 @@ export default {
                     icon: require('@/assets/images/cardImg_4.png'),
                     title: '安全保障',
                     intro: '一键报警，交易保险，实时定位时刻守护在你身边，交易更放心，全程保障您的合法交易'
-                },
+                }
             ]
         }
     }
@@ -44,9 +44,10 @@ export default {
 
 <style scoped>
 .content {
-    width: 1204px;
+    width: 63vw;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 </style>
