@@ -1,7 +1,7 @@
 <template>
     <div class="view">
         <div class="swiper" ref="swiper" @mouseover="stopSwiper" @mouseout="continueSwiper">
-            <img v-for="(item, index) in imgList" :key="index" :src="item" ref="imgList" />
+            <img v-for="(item, index) in imgList" :key="index" :src="item" ref="imgList" :style="{ width: screenWidth + 'px' }" />
         </div>
         <ul class="btns" :style="{ width: (imgList.length - 1) * 15 + 25 + 'px' }" @mouseover="stopSwiper" @mouseout="continueSwiper">
             <li v-for="(item, index) in imgList.length - 1" :key="index" :id="btnNum == index ? 'selected' : ''" @click="changeImg(index)"></li>
@@ -18,7 +18,9 @@ export default {
             // 轮播图当前图片索引
             num: 0,
             // 选中按钮的索引
-            btnNum: 0
+            btnNum: 0,
+            // 当前屏幕宽度
+            screenWidth: document.body.clientWidth
         }
     },
     props: {
@@ -54,39 +56,48 @@ export default {
                 }
             }, 20)
         },
-        // 鼠标移入时停止定时器
+        // 鼠标移入时停止轮播
         stopSwiper() {
             clearInterval(this.timer)
         },
-        // 鼠标移出时继续定时器
-        continueSwiper() {
+        // 启动轮播
+        startSwiper() {
             this.timer = setInterval(() => {
                 if (this.num == this.$refs.imgList.length - 1) {
                     this.num = 0
                     this.$refs.swiper.style.left = 0 + 'px'
                 }
                 this.num++
-                this.animateHome(this.$refs.swiper, -this.num * 1920)
+                this.animateHome(this.$refs.swiper, -this.num * this.screenWidth)
                 this.btnNum == 2 ? (this.btnNum = 0) : this.btnNum++
             }, 3000)
         },
+        // 鼠标移出时继续定时器
+        continueSwiper() {
+            this.startSwiper()
+        },
         // 选择某一张轮播图
         changeImg(index) {
-            this.animateHome(this.$refs.swiper, -index * 1920)
+            this.animateHome(this.$refs.swiper, -index * this.screenWidth)
             this.num = this.btnNum = index
         }
     },
     mounted() {
+        // 调整浏览器窗口大小时触发的函数（添加防抖提高性能）
+        let timee = null
+        window.onresize = () => {
+            clearTimeout(this.timer)
+            // 如果再次触发事件时数据还未到更新时间，则重新设置进程
+            clearTimeout(timee)
+            // 10毫秒后更新数据
+            timee = setTimeout(() => {
+                this.screenWidth = document.body.clientWidth
+                this.animateHome(this.$refs.swiper, -this.num * this.screenWidth)
+                this.startSwiper()
+            }, 20)
+        }
         // 页面挂载后启用定时器，开始自动轮播
-        this.timer = setInterval(() => {
-            if (this.num == this.$refs.imgList.length - 1) {
-                this.num = 0
-                this.$refs.swiper.style.left = 0 + 'px'
-            }
-            this.num++
-            this.animateHome(this.$refs.swiper, -this.num * 1920)
-            this.btnNum == 2 ? (this.btnNum = 0) : this.btnNum++
-        }, 3000)
+        this.startSwiper()
     },
     beforeDestroy() {
         // 页面销毁之前清除定时器
@@ -103,7 +114,6 @@ export default {
     position: relative;
 }
 .swiper {
-    width: calc(1920px * 4);
     display: flex;
     align-items: center;
     position: relative;
@@ -114,7 +124,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 38px;
+    bottom: 5vh;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
