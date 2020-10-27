@@ -7,8 +7,8 @@
                     <span class="title">伊起网络</span>
                 </a>
                 <div class="content-right">
-                    <ul class="component-list" @mouseout="hideLine">
-                        <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseover="locationLine(index)">
+                    <ul class="component-list">
+                        <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseout="hideLine" @mouseover="locationLine(index)">
                             <a :href="item.url">{{ item.title }}</a>
                         </li>
                     </ul>
@@ -24,6 +24,7 @@
 export default {
     data() {
         return {
+            // 
             component_list: [
                 { title: '首页', url: '/' },
                 { title: '产品介绍', url: '/' },
@@ -34,14 +35,14 @@ export default {
     },
     methods: {
         hideLine() {
-          // 线条从两边向中间缩短效果
+            // 线条从两边向中间缩短效果
             this.$refs.line.style.left = this.$refs.line.offsetLeft + this.$refs.line.offsetWidth / 2 + 'px'
             // 隐藏线条（宽度变0，透明度变0）
             this.$refs.line.style.width = 0 + 'px'
             this.$refs.line.style.opacity = 0
         },
         locationLine(index) {
-          // 根据li位置决定线条位置
+            // 根据li位置决定线条位置
             this.$refs.line.style.left = this.$refs.li[index].offsetLeft + 'px'
             // 将线条设置为不透明
             this.$refs.line.style.opacity = 1
@@ -58,6 +59,7 @@ export default {
     width: 100%;
     height: 72px;
     position: fixed;
+    z-index: 10000;
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.7);
@@ -126,10 +128,10 @@ export default {
 .line {
     position: absolute;
     left: 0px;
-    bottom: 0;
+    bottom: 1px;
     width: 0px;
     height: 2px;
-    background-color: #2db5a3;
+    background-color: #f24849;
     transition: all 0.4s;
 }
 </style>
