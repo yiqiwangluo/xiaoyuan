@@ -24,7 +24,6 @@
 export default {
     data() {
         return {
-            // 
             component_list: [
                 { title: '首页', url: '/' },
                 { title: '产品介绍', url: '/' },
@@ -66,7 +65,7 @@ export default {
 }
 /* 内容区 */
 .content {
-    width: calc(100% - 720px);
+    width: 1200px;
     height: 100%;
     margin: 0px auto;
     display: flex;
