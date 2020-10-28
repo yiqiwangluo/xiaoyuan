@@ -48,24 +48,25 @@ export default {
     justify-content: space-between;
     margin: 0px auto;
 }
-.img-card:nth-child(3),.img-card:nth-child(4){
-        margin-top: 40px;
-    }
+.img-card:nth-child(3),
+.img-card:nth-child(4) {
+    margin-top: 40px;
+}
 @media screen and (min-width: 660px) and (max-width: 1220px) {
     .img-card-list {
         width: 90%;
         justify-content: center;
     }
-    .img-card:not(:first-child){
+    .img-card:not(:first-child) {
         margin-top: 40px;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 660px) {
     .img-card-list {
-        width: 580px;
+        width: 100%;
         justify-content: center;
     }
-    .img-card:not(:first-child){
+    .img-card:not(:first-child) {
         margin-top: 40px;
     }
 }

@@ -27,6 +27,10 @@ export default {
         imgList: {
             require: true,
             type: Array
+        },
+        time: {
+            type: Number,
+            default: 5000
         }
     },
     methods: {
@@ -70,7 +74,7 @@ export default {
                 this.num++
                 this.animateHome(this.$refs.swiper, -this.num * this.screenWidth)
                 this.btnNum == 2 ? (this.btnNum = 0) : this.btnNum++
-            }, 3000)
+            }, this.time)
         },
         // 鼠标移出时继续定时器
         continueSwiper() {
@@ -89,7 +93,7 @@ export default {
             clearTimeout(this.timer)
             // 如果再次触发事件时数据还未到更新时间，则重新设置进程
             clearTimeout(timee)
-            // 10毫秒后更新数据
+            // 一段延迟未变化后更新数据
             timee = setTimeout(() => {
                 this.screenWidth = document.body.clientWidth
                 this.animateHome(this.$refs.swiper, -this.num * this.screenWidth)

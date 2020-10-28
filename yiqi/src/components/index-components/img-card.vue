@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style scoped>
-/* 1220px */
 .img-card {
     width: 576px;
     display: flex;

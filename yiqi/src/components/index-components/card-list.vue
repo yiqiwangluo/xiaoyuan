@@ -52,9 +52,9 @@ export default {
     flex-wrap: wrap;
 }
 /* 每行只显示一个子项 */
-@media screen and (min-width: 0px) and (max-width: 576px) {
+@media screen and (min-width: 0px) and (max-width: 650px) {
     .content {
-        width: 100%;
+        width: 88%;
         margin: 0px auto;
         justify-content: center;
     }
@@ -63,15 +63,15 @@ export default {
     }
 }
 /* 每行显示两个子项 */
-@media screen and (min-width: 576px) and (max-width: 1230px) {
+@media screen and (min-width: 650px) and (max-width: 1230px) {
     .content {
-        width: 580px;
+        width: 620px;
         margin: 0px auto;
         justify-content: space-between;
     }
     .card:nth-child(3),
     .card:nth-child(4) {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }
 </style>

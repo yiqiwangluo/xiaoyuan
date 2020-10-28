@@ -2,17 +2,27 @@
     <div>
         <div class="top-nav">
             <div class="content">
+                <!-- 左侧logo及公司名称 -->
                 <a class="content-left" href="/">
                     <img class="logo" src="@/assets/images/logo.png" />
                     <span class="title">伊起网络</span>
                 </a>
-                <div class="content-right">
+                <!-- 右侧功能长列表-屏幕尺寸大于770时显示 -->
+                <div class="content-right" v-if="screenWidth > 770">
                     <ul class="component-list">
                         <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseout="hideLine" @mouseover="locationLine(index)">
                             <a :href="item.url">{{ item.title }}</a>
                         </li>
                     </ul>
                     <div class="line" ref="line"></div>
+                </div>
+                <!-- 右侧功能收缩列表-屏幕尺寸小于770时显示 -->
+                <div class="list" v-else>
+                    <div class="button">
+                        <div class="button-line1"></div>
+                        <div class="button-line2"></div>
+                        <div class="button-line3"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,9 +37,11 @@ export default {
             component_list: [
                 { title: '首页', url: '/' },
                 { title: '产品介绍', url: '/' },
-                { title: '公司简介', url: '/' },
+                { title: '公司简介', url: '/intro' },
                 { title: '联系我们', url: '/' }
-            ]
+            ],
+            // 当前屏幕像素宽度
+            screenWidth: document.body.clientWidth
         }
     },
     methods: {
@@ -47,6 +59,12 @@ export default {
             this.$refs.line.style.opacity = 1
             // 将线条的宽设置的与对应li的宽相同
             this.$refs.line.style.width = this.$refs.li[index].offsetWidth + 'px'
+        }
+    },
+    mounted() {
+        // 调整浏览器窗口大小时触发的函数
+        window.onresize = () => {
+                this.screenWidth = document.body.clientWidth
         }
     }
 }
@@ -70,7 +88,39 @@ export default {
     margin: 0px auto;
     display: flex;
     align-items: center;
+    transition: all 0.5s;
 }
+@media screen and (max-width: 1230px) {
+    .content {
+        width: 1150px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .content {
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .content {
+        width: 950px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .content {
+        width: 850px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .content {
+        width: 750px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .content {
+        width: 98%;
+    }
+}
+/* 770像素以下将导航功能区改为点击展开的列表 */
 /* 左侧区域和右侧区域 */
 .content > div {
     width: auto;
@@ -81,6 +131,7 @@ export default {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-left: 20px;
 }
 /* 公司logo */
 .logo {
@@ -132,5 +183,24 @@ export default {
     height: 2px;
     background-color: #f24849;
     transition: all 0.4s;
+}
+.list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.button {
+    width: 25px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.button > div {
+    width: 25px;
+    height: 2px;
+    background: #2db5a3;
+    margin-bottom: 6px;
 }
 </style>

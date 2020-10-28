@@ -9,6 +9,10 @@ export default new Router({
         {
             path: '/',
             component: index
+        },
+        {
+            path: '/intro',
+            component: import('@/views/company-intro')
         }
     ]
 })
