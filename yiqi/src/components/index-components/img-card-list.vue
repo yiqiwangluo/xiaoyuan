@@ -1,6 +1,6 @@
 <template>
     <div class="img-card-list">
-        <img-card v-for="(item, index) in list" :key="index" :imgUrl="item.imgUrl" :title="item.title" :intro="item.intro" />
+        <img-card class="img-card" v-for="(item, index) in list" :key="index" :imgUrl="item.imgUrl" :title="item.title" :intro="item.intro" />
     </div>
 </template>
 
@@ -46,8 +46,27 @@ export default {
     flex-wrap: wrap;
     width: 1200px;
     justify-content: space-between;
-    align-content: space-between;
-    height: 1000px;
     margin: 0px auto;
+}
+.img-card:nth-child(3),.img-card:nth-child(4){
+        margin-top: 40px;
+    }
+@media screen and (min-width: 660px) and (max-width: 1220px) {
+    .img-card-list {
+        width: 90%;
+        justify-content: center;
+    }
+    .img-card:not(:first-child){
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 660px) {
+    .img-card-list {
+        width: 580px;
+        justify-content: center;
+    }
+    .img-card:not(:first-child){
+        margin-top: 40px;
+    }
 }
 </style>

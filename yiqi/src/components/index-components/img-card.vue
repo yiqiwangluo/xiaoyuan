@@ -28,15 +28,16 @@ export default {
 </script>
 
 <style scoped>
-/* @media screen {
-    
-} */
+/* 1220px */
 .img-card {
     width: 576px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     border: 1px solid #d2d2d2;
+}
+.img-card>img {
+    width: 100%;
 }
 .bottom {
     padding-left: 15px;
