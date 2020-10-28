@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style scoped>
+/* 一行显示四个子项 */
 .content {
     width: 1204px;
     margin: 0px auto;
@@ -50,6 +51,7 @@ export default {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* 每行只显示一个子项 */
 @media screen and (min-width: 0px) and (max-width: 576px) {
     .content {
         width: 100%;
@@ -60,13 +62,15 @@ export default {
         margin-top: 20px;
     }
 }
-@media screen and (min-width: 576px) and (max-width: 700px) {
+/* 每行显示两个子项 */
+@media screen and (min-width: 576px) and (max-width: 1230px) {
     .content {
-        width: 100%;
+        width: 580px;
         margin: 0px auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    .card:nth-child(3),.card:nth-child(4) {
+    .card:nth-child(3),
+    .card:nth-child(4) {
         margin-top: 20px;
     }
 }
