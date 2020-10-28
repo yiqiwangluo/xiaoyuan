@@ -124,7 +124,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 5vh;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
