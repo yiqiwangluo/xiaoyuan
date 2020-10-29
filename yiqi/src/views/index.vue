@@ -1,18 +1,19 @@
 <template>
     <div>
-        <top-nav />
+        <!-- 轮播图 -->
         <swiper :imgList="imgList" />
+        <!-- 特殊标题 -->
         <special-title title="内容经济社交" style="margin-top: 57px; margin-bottom: 84px" />
+        <!-- 卡片列表 -->
         <card-list />
+        <!-- 特殊标题 -->
         <special-title title="为用户提供完美的时间买卖服务" style="margin-top: 151px; margin-bottom: 71px" />
-        <img-card-list style="margin-bottom:168px" />
-        <nav-footer/>
+        <!-- 广告卡片列表 -->
+        <img-card-list style="margin-bottom: 168px" />
     </div>
 </template>
 
 <script>
-// 引入页头
-import topNav from '@/components/header'
 // 引入轮播图组件
 import swiper from '@/components/index-components/swiper'
 // 引入标题组件
@@ -21,15 +22,12 @@ import specialTitle from '@/components/index-components/special_title'
 import cardList from '@/components/index-components/card-list'
 // 引入图片卡片列表组件
 import imgCardList from '@/components/index-components/img-card-list'
-import NavFooter from '@/components/NavFooter'
 export default {
     components: {
-        topNav,
         swiper,
         specialTitle,
         cardList,
-        imgCardList,
-        NavFooter
+        imgCardList
     },
     data() {
         return {
@@ -41,10 +39,6 @@ export default {
                 require('@/assets/images/slideshow_1.jpg')
             ]
         }
-    } 
-}       
+    }
+}
 </script>
-
-
-<style scoped>
-</style>
