@@ -71,7 +71,7 @@
 		color: #fff;
 		text-align: left;
     .main{
-      width: 1200px;
+      width: 1196px;
       margin: 0 auto;
       .footer_content{
         margin-top: 75px;
