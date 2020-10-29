@@ -8,7 +8,7 @@
                     <span class="title">伊起网络</span>
                 </a>
                 <!-- 右侧功能长列表-屏幕尺寸大于770时显示 -->
-                <div class="content-right" v-if="screenWidth > 770">
+                <div class="content-right">
                     <ul class="component-list">
                         <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseout="hideLine" @mouseover="locationLine(index)">
                             <a :href="item.url">{{ item.title }}</a>
@@ -17,11 +17,16 @@
                     <div class="line" ref="line"></div>
                 </div>
                 <!-- 右侧功能收缩列表-屏幕尺寸小于770时显示 -->
-                <div class="list" v-else>
-                    <div class="button">
-                        <div class="button-line1"></div>
-                        <div class="button-line2"></div>
-                        <div class="button-line3"></div>
+                <div class="list">
+                    <div class="button" @click="styleChange">
+                        <div v-for="(item, index) in 3" :key="index" :class="'button-line' + index" ref="button_line" />
+                    </div>
+                    <div class="pull-down-list" ref="pull_down_list">
+                        <ul>
+                            <li v-for="(item, index) in component_list" :key="index" ref="li">
+                                <a :href="item.url">{{ item.title }}</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -40,11 +45,40 @@ export default {
                 { title: '公司简介', url: '/intro' },
                 { title: '联系我们', url: '/' }
             ],
-            // 当前屏幕像素宽度
-            screenWidth: document.body.clientWidth
+            // 功能列表集合是否展开
+            flag: false
         }
     },
     methods: {
+        // 展开或收起功能列表
+        styleChange() {
+            if (this.flag) {
+                // 收起
+                this.shrinkList()
+            } else {
+                // 展开
+                this.unfoldList()
+            }
+            this.flag = !this.flag
+        },
+        // 收起列表
+        shrinkList() {
+            let btns = this.$refs.button_line
+            btns[0].style.transform = btns[2].style.transform = 'none'
+            btns[0].style.top = btns[2].style.top = 0
+            btns[1].style.display = 'block'
+            this.$refs.pull_down_list.style.maxHeight = 0 + 'px'
+        },
+        // 展开列表
+        unfoldList() {
+            let btns = this.$refs.button_line
+            btns[0].style.transform = 'rotate(45deg)'
+            btns[0].style.top = '15%'
+            btns[1].style.display = 'none'
+            btns[2].style.transform = 'rotate(-45deg)'
+            btns[2].style.top = '-10%'
+            this.$refs.pull_down_list.style.maxHeight = 500 + 'px'
+        },
         hideLine() {
             // 线条从两边向中间缩短效果
             this.$refs.line.style.left = this.$refs.line.offsetLeft + this.$refs.line.offsetWidth / 2 + 'px'
@@ -59,12 +93,6 @@ export default {
             this.$refs.line.style.opacity = 1
             // 将线条的宽设置的与对应li的宽相同
             this.$refs.line.style.width = this.$refs.li[index].offsetWidth + 'px'
-        }
-    },
-    mounted() {
-        // 调整浏览器窗口大小时触发的函数
-        window.onresize = () => {
-                this.screenWidth = document.body.clientWidth
         }
     }
 }
@@ -90,37 +118,6 @@ export default {
     align-items: center;
     transition: all 0.5s;
 }
-@media screen and (max-width: 1230px) {
-    .content {
-        width: 1150px;
-    }
-}
-@media screen and (max-width: 1170px) {
-    .content {
-        width: 1000px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .content {
-        width: 950px;
-    }
-}
-@media screen and (max-width: 970px) {
-    .content {
-        width: 850px;
-    }
-}
-@media screen and (max-width: 870px) {
-    .content {
-        width: 750px;
-    }
-}
-@media screen and (max-width: 770px) {
-    .content {
-        width: 98%;
-    }
-}
-/* 770像素以下将导航功能区改为点击展开的列表 */
 /* 左侧区域和右侧区域 */
 .content > div {
     width: auto;
@@ -131,7 +128,7 @@ export default {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 /* 公司logo */
 .logo {
@@ -165,7 +162,6 @@ export default {
 .component-list > li > a {
     color: #666666;
     transition: all 0.5s;
-    font-size: PingFang-SC-Medium;
     font-size: 18px;
     cursor: pointer;
 }
@@ -186,8 +182,9 @@ export default {
 }
 .list {
     margin-left: auto;
-    display: flex;
+    margin-right: 10px;
     align-items: center;
+    display: none;
 }
 .button {
     width: 25px;
@@ -202,5 +199,59 @@ export default {
     height: 2px;
     background: #2db5a3;
     margin-bottom: 6px;
+    transition: all 0.5s;
+    position: relative;
+}
+.pull-down-list {
+    transition: all 0.5s;
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.pull-down-list > ul {
+    list-style: none;
+    width: 100%;
+}
+.pull-down-list > ul > li {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+}
+.pull-down-list > ul > li:hover {
+    background-color: rgba(190, 175, 175, 0.5);
+}
+.pull-down-list > ul > li > a:hover {
+    color: #2db5a3;
+}
+.pull-down-list > ul > li > a {
+    text-indent: 20px;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+@media screen and (max-width: 1230px) {
+    .content {
+        width: 95%;
+    }
+}
+/* 770像素以下将导航功能区改为点击展开的列表 */
+@media screen and (max-width: 770px) {
+    .content {
+        width: 98%;
+    }
+    .content-right {
+        display: none;
+    }
+    .list {
+        display: flex;
+    }
 }
 </style>
