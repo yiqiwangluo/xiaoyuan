@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/views/index'
 import Product from '@/views/product'
+import Intro from '@/views/intro'
 
 Vue.use(Router)
 
@@ -13,7 +14,7 @@ export default new Router({
         },
         {
             path: '/intro',
-            component: import('@/views/company-intro')
+            component: Intro
         },
         {
             path: '/product',
