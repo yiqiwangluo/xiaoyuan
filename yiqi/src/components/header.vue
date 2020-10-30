@@ -1,15 +1,15 @@
 <template>
     <div>
         <div class="top-nav">
-            <div class="content">
+            <div class="content flex-align-center">
                 <!-- 左侧logo及公司名称 -->
-                <a class="content-left" href="/">
+                <a class="content-left flex-align-center" href="/">
                     <img class="logo" src="@/assets/images/logo.png" />
                     <span class="title">伊起网络</span>
                 </a>
                 <!-- 右侧功能长列表-屏幕尺寸大于770时显示 -->
-                <div class="content-right">
-                    <ul class="component-list">
+                <div class="content-right flex-align-center">
+                    <ul class="component-list flex-align-center">
                         <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseout="hideLine" @mouseover="locationLine(index)">
                             <router-link :to="item.url">{{ item.title }}</router-link>
                         </li>
@@ -17,8 +17,8 @@
                     <div class="line" ref="line"></div>
                 </div>
                 <!-- 右侧功能收缩列表-屏幕尺寸小于770时显示 -->
-                <div class="list">
-                    <div class="button" @click="styleChange">
+                <div class="list flex-align-center">
+                    <div class="button flex-justify-center" @click="styleChange">
                         <div v-for="(item, index) in 3" :key="index" :class="'button-line' + index" ref="button_line" />
                     </div>
                     <div class="pull-down-list" ref="pull_down_list">
@@ -114,9 +114,7 @@ export default {
     width: 1200px;
     height: 100%;
     margin: 0px auto;
-    display: flex;
-    align-items: center;
-    transition: all 0.5s;
+    transition: 0.5s;
 }
 /* 左侧区域和右侧区域 */
 .content > div {
@@ -125,8 +123,6 @@ export default {
 }
 /* 左侧区域 */
 .content-left {
-    display: flex;
-    align-items: center;
     cursor: pointer;
     margin-left: 10px;
 }
@@ -143,17 +139,9 @@ export default {
 }
 /* 右侧区域 */
 .content-right {
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
     margin-left: auto;
     position: relative;
-}
-/* 功能列表 */
-.component-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
 }
 /* 功能列表-子项 */
 .component-list > li:not(:first-child) {
@@ -161,7 +149,7 @@ export default {
 }
 .component-list > li > a {
     color: #666666;
-    transition: all 0.5s;
+    transition: 0.5s;
     font-size: 18px;
     cursor: pointer;
 }
@@ -178,20 +166,17 @@ export default {
     width: 0px;
     height: 2px;
     background-color: #f24849;
-    transition: all 0.4s;
+    transition: 0.4s;
 }
 .list {
     margin-left: auto;
     margin-right: 10px;
-    align-items: center;
     display: none;
 }
 .button {
     width: 25px;
     height: 30px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     cursor: pointer;
 }
 .button > div {
@@ -199,11 +184,11 @@ export default {
     height: 2px;
     background: #2db5a3;
     margin-bottom: 6px;
-    transition: all 0.5s;
+    transition: 0.5s;
     position: relative;
 }
 .pull-down-list {
-    transition: all 0.5s;
+    transition: 0.5s;
     max-height: 0px;
     overflow: hidden;
     position: absolute;
@@ -213,11 +198,9 @@ export default {
     background-color: rgba(255, 255, 255, 0.7);
 }
 .pull-down-list > ul {
-    list-style: none;
     width: 100%;
 }
 .pull-down-list > ul > li {
-    box-sizing: border-box;
     width: 100%;
     height: 60px;
 }
@@ -229,8 +212,7 @@ export default {
 }
 .pull-down-list > ul > li > a {
     text-indent: 20px;
-    text-decoration: none;
-    color: #666;
+    color: #666666;
     font-size: 18px;
     display: block;
     width: 100%;

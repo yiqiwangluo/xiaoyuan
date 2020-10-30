@@ -1,9 +1,9 @@
 <template>
     <div class="view">
-        <div class="swiper" ref="swiper" @mouseover="stopSwiper" @mouseout="continueSwiper">
+        <div class="swiper flex-align-center" ref="swiper" @mouseover="stopSwiper" @mouseout="continueSwiper">
             <img v-for="(item, index) in imgList" :key="index" :src="item" ref="imgList" :style="{ width: screenWidth + 'px' }" />
         </div>
-        <ul class="btns" :style="{ width: (imgList.length - 1) * 15 + 25 + 'px' }" @mouseover="stopSwiper" @mouseout="continueSwiper">
+        <ul class="btns flex-align-center" :style="{ width: (imgList.length - 1) * 15 + 25 + 'px' }" @mouseover="stopSwiper" @mouseout="continueSwiper">
             <li v-for="(item, index) in imgList.length - 1" :key="index" :id="btnNum == index ? 'selected' : ''" @click="changeImg(index)"></li>
         </ul>
     </div>
@@ -121,20 +121,15 @@ export default {
     position: relative;
 }
 .swiper {
-    display: flex;
-    align-items: center;
     position: relative;
 }
 .btns {
     height: 15px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    list-style: none;
 }
 .btns > li {
     width: 15px;

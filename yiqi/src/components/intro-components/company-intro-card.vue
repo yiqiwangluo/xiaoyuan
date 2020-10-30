@@ -1,12 +1,12 @@
 <template>
     <div>
         <!-- 正常卡片 -->
-        <div class="card" v-if="!reverse">
+        <div class="card flex-align-center" v-if="!reverse">
             <div class="card-left">
                 <img :src="imgUrl" />
             </div>
             <div class="card-right">
-                <div class="content-top">
+                <div class="content-top flex-align-center">
                     <div class="title">{{ title }}</div>
                     <div class="subTitle">{{ subTitle }}</div>
                 </div>
@@ -17,12 +17,12 @@
             </div>
         </div>
         <!-- 反转卡片 -->
-        <div class="card reverse-card" v-else>
+        <div class="card flex-align-center reverse-card" v-else>
             <div class="card-left">
                 <img :src="imgUrl" />
             </div>
             <div class="card-right card-right-reverse">
-                <div class="content-top content-top-reverse">
+                <div class="content-top flex-align-center content-top-reverse">
                     <div class="title title-reverse">{{ title }}</div>
                     <div class="subTitle">{{ subTitle }}</div>
                 </div>
@@ -75,8 +75,6 @@ export default {
 <style scoped>
 .card {
     width: 1096px;
-    display: flex;
-    align-items: center;
 }
 .reverse-card {
     flex-direction: row-reverse;
@@ -88,13 +86,7 @@ export default {
 .card-right-reverse {
     margin-right: 33px;
 }
-.content-top {
-    display: flex;
-    align-items: center;
-}
-.content-top-reverse {
-    flex-direction: row-reverse;
-}
+.content-top-reverse,
 .content-top-reverse > .title {
     flex-direction: row-reverse;
 }
@@ -111,13 +103,13 @@ export default {
     letter-spacing: 1px;
 }
 .title-reverse {
-     border-radius: 15px 0px 0px 0px;
+    border-radius: 15px 0px 0px 0px;
 }
 .subTitle {
     height: 39px;
     line-height: 39px;
     box-sizing: border-box;
-    color: #999;
+    color: #999999;
     font-size: 16px;
     text-indent: 8px;
     padding-bottom: 12px;
@@ -127,7 +119,7 @@ export default {
     margin-top: 10px;
     font-size: 20px;
     text-indent: 40px;
-    color: #666;
+    color: #666666;
     line-height: 40px;
     letter-spacing: 1px;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="title">
+    <div class="title  flex-align-center">
         <img src="@/assets/images/line1.png" />
         <div class="msg">{{ title }}</div>
         <img src="@/assets/images/line2.png" />
@@ -20,10 +20,8 @@ export default {
 
 <style scoped>
 .title {
-    display: flex;
     margin: 0px auto;
     height: 39px;
-    align-items: center;
     justify-content: center;
 }
 .msg {
