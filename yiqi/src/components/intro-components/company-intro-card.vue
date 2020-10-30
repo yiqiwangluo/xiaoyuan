@@ -23,7 +23,7 @@
             </div>
             <div class="card-right card-right-reverse">
                 <div class="content-top content-top-reverse">
-                    <div class="title">{{ title }}</div>
+                    <div class="title title-reverse">{{ title }}</div>
                     <div class="subTitle">{{ subTitle }}</div>
                 </div>
                 <div class="content-bottom">
@@ -108,6 +108,10 @@ export default {
     color: #ffffff;
     padding: 7px 10px;
     font-size: 20px;
+    letter-spacing: 1px;
+}
+.title-reverse {
+     border-radius: 15px 0px 0px 0px;
 }
 .subTitle {
     height: 39px;
@@ -120,7 +124,7 @@ export default {
     border-bottom: 1px solid #999;
 }
 .content-bottom > div {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 20px;
     text-indent: 40px;
     color: #666;

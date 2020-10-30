@@ -138,7 +138,7 @@ export default {
 /* 公司名称 */
 .title {
     color: #f24849;
-    font-size: 28px;
+    font-size: 24px;
     margin-left: 11px;
 }
 /* 右侧区域 */

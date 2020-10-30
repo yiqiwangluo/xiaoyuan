@@ -38,29 +38,31 @@ export default {
     methods: {
         // 动画函数
         animateHome(elem, target) {
-            // 1.清除定时器
-            clearInterval(elem.timeId)
-            // 2.获取elem的当前位置
-            var current = elem.offsetLeft
-            // 4.声明定时器
-            elem.timeId = setInterval(function () {
-                // 4.1定义步进值 让匀速变成减速呢？ 让每次的步进减小
-                var step = (target - current) / 10
-                // 4.2 判断 当前距离和目标值 如果当前距离大于目标值 step为负值 否则为正值
-                step = step > 0 ? Math.ceil(step) : Math.floor(step)
-                // 4.3 累加
-                current += step
-                // 4.4 判断当前-目标差值的绝对值是否大于 step的绝对值
-                if (Math.abs(current - target) > Math.abs(step)) {
-                    // 4.5 如果是 赋值给元素
-                    elem.style.left = current + 'px'
-                } else {
-                    // 4.6 否则 清除定时器
-                    clearInterval(elem.timeId)
-                    // 4.7 把目标值赋值给元素
-                    elem.style.left = target + 'px'
-                }
-            }, 20)
+            try {
+                // 清除定时器
+                clearInterval(elem.timeId)
+                // 获取elem的当前位置
+                var current = elem.offsetLeft
+                // 声明定时器
+                elem.timeId = setInterval(function () {
+                    // 定义步进值
+                    var step = (target - current) / 10
+                    // 判断 当前距离和目标值 如果当前距离大于目标值 step为负值 否则为正值
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step)
+                    // 累加
+                    current += step
+                    // 判断当前-目标差值的绝对值是否大于 step的绝对值
+                    if (Math.abs(current - target) > Math.abs(step)) {
+                        // 如果是 赋值给元素
+                        elem.style.left = current + 'px'
+                    } else {
+                        // 否则 清除定时器
+                        clearInterval(elem.timeId)
+                        // 把目标值赋值给元素
+                        elem.style.left = target + 'px'
+                    }
+                }, 20)
+            } catch (error) {}
         },
         // 鼠标移入时停止轮播
         stopSwiper() {
@@ -92,7 +94,7 @@ export default {
         // 调整浏览器窗口大小时触发的函数（添加防抖提高性能）
         let timee = null
         window.onresize = () => {
-            clearTimeout(this.timer)
+            this.stopSwiper()
             // 如果再次触发事件时数据还未到更新时间，则重新设置进程
             clearTimeout(timee)
             // 一段延迟未变化后更新数据
