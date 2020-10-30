@@ -24,7 +24,7 @@
                     <div class="pull-down-list" ref="pull_down_list">
                         <ul>
                             <li v-for="(item, index) in component_list" :key="index" ref="li">
-                                <a :href="item.url">{{ item.title }}</a>
+                                <router-link :to="item.url">{{ item.title }}</router-link>
                             </li>
                         </ul>
                     </div>
@@ -41,9 +41,9 @@ export default {
         return {
             component_list: [
                 { title: '首页', url: '/' },
-                { title: '产品介绍', url: '/#/product' },
-                { title: '公司简介', url: '/#/intro' },
-                { title: '联系我们', url: '/#/contack' }
+                { title: '产品介绍', url: '/product' },
+                { title: '公司简介', url: '/intro' },
+                { title: '联系我们', url: '/contack' }
             ],
             // 功能列表集合是否展开
             flag: false
