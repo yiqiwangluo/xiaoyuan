@@ -43,7 +43,7 @@ export default {
                 { title: '首页', url: '/' },
                 { title: '产品介绍', url: '/product' },
                 { title: '公司简介', url: '/intro' },
-                { title: '联系我们', url: '/contack' }
+                { title: '联系我们', url: '/contact' }
             ],
             // 功能列表集合是否展开
             flag: false
