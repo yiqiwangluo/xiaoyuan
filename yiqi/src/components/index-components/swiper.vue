@@ -15,8 +15,6 @@ export default {
         return {
             // 定时器
             timer: null,
-            // 动画定时器
-            timeId: null,
             // 轮播图当前图片索引
             num: 0,
             // 选中按钮的索引
@@ -41,11 +39,11 @@ export default {
         // 动画函数
         animateHome(elem, target) {
             // 1.清除定时器
-            clearInterval(this.timeId)
+            clearInterval(elem.timeId)
             // 2.获取elem的当前位置
             var current = elem.offsetLeft
             // 4.声明定时器
-            this.timeId = setInterval(function () {
+            elem.timeId = setInterval(function () {
                 // 4.1定义步进值 让匀速变成减速呢？ 让每次的步进减小
                 var step = (target - current) / 10
                 // 4.2 判断 当前距离和目标值 如果当前距离大于目标值 step为负值 否则为正值
@@ -58,7 +56,7 @@ export default {
                     elem.style.left = current + 'px'
                 } else {
                     // 4.6 否则 清除定时器
-                    clearInterval(this.timeId)
+                    clearInterval(elem.timeId)
                     // 4.7 把目标值赋值给元素
                     elem.style.left = target + 'px'
                 }
@@ -110,8 +108,6 @@ export default {
     beforeDestroy() {
         // 页面销毁之前清除定时器
         clearInterval(this.timer)
-        clearInterval(this.timeId)
-        this.timer = this.timeId = null
     }
 }
 </script>

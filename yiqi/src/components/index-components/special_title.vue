@@ -28,7 +28,7 @@ export default {
 }
 .msg {
     margin: 0 25px;
-    font-size: 28px;
+    font-size: 2vw;
     font-weight: bold;
     color: #333333;
     letter-spacing: 2px;
