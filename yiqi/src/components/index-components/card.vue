@@ -9,14 +9,17 @@
 <script>
 export default {
     props: {
+        // icon图标路径
         icon: {
             require: true,
             type: String
         },
+        // 标题
         title: {
             require: true,
             type: String
         },
+        // 介绍
         intro: {
             require: true,
             type: String

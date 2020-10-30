@@ -38,26 +38,32 @@
 <script>
 export default {
     props: {
+        // 图片路径
         imgUrl: {
             require: true,
             type: String
         },
+        // 标题
         title: {
             require: true,
             type: String
         },
+        // 副标题
         subTitle: {
             require: true,
             type: String
         },
+        // 介绍段落 1
         intro1: {
             require: true,
             type: String
         },
+        // 介绍段落 2
         intro2: {
             require: true,
             type: String
         },
+        // 是否反转
         reverse: {
             type: Boolean,
             default: false

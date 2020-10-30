@@ -9,6 +9,7 @@
 <script>
 export default {
     props: {
+        // 标题
         title: {
             require: true,
             type: String

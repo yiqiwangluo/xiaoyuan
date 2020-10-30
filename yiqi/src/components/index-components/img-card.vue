@@ -11,14 +11,17 @@
 <script>
 export default {
     props: {
+        // 图片路径
         imgUrl: {
             require: true,
             type: String
         },
+        // 标题
         title: {
             require: true,
             type: String
         },
+        // 介绍
         intro: {
             require: true,
             type: String
