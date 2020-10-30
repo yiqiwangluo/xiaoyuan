@@ -1,7 +1,6 @@
 <template>
   <div>
-    <top-nav />
-    <img class="banner" src="@/assets/images/intro.jpg">
+    <img class="banner" src="@/assets/images/product.jpg">
     <special-title title="产品介绍" style="margin-top: 68px; margin-bottom: 83px" />
     <div class="main">
       <div class="intro_box">
@@ -38,19 +37,14 @@
         </div>
       </div>
     </div>
-    <nav-footer/>
   </div>
 </template>
 
 <script>
- import topNav from '@/components/header'
  import specialTitle from '@/components/index-components/special_title'
- import NavFooter from '@/components/NavFooter'
  export default {
      components: {
-         topNav,
          specialTitle,
-         NavFooter
      },
      data() {
          return {
@@ -87,6 +81,7 @@
         background-color: #f24849;
         border-radius: 10px;
         border: solid 1px #f24849;
+        box-shadow:0px 5px 1px #9c1c1c;
       }
       .intro_text{
         margin: 0 auto 118px auto;

@@ -11,7 +11,7 @@
                 <div class="content-right">
                     <ul class="component-list">
                         <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseout="hideLine" @mouseover="locationLine(index)">
-                            <a :href="item.url">{{ item.title }}</a>
+                            <router-link :to="item.url">{{ item.title }}</router-link>
                         </li>
                     </ul>
                     <div class="line" ref="line"></div>
