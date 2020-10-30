@@ -11,7 +11,7 @@
                 <div class="content-right">
                     <ul class="component-list">
                         <li v-for="(item, index) in component_list" :key="index" ref="li" @mouseout="hideLine" @mouseover="locationLine(index)">
-                            <a :href="item.url">{{ item.title }}</a>
+                            <router-link :to="item.url">{{ item.title }}</router-link>
                         </li>
                     </ul>
                     <div class="line" ref="line"></div>
@@ -43,7 +43,7 @@ export default {
                 { title: '首页', url: '/' },
                 { title: '产品介绍', url: '/#/product' },
                 { title: '公司简介', url: '/#/intro' },
-                { title: '联系我们', url: '/' }
+                { title: '联系我们', url: '/#/contack' }
             ],
             // 功能列表集合是否展开
             flag: false

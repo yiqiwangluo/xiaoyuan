@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="footer_copy" style="padding-top: 39px;">广东伊起网络科技有限公司 提供服务支持</div>
-  		<div class="footer_copy">Copyright © 2018-2019  粤ICP备19045836号</div>
+  		<div class="footer_copy">Copyright © 2018-2020  粤ICP备19045836号</div>
   	</div>
   </footer>
 </template>
