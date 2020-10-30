@@ -1,10 +1,8 @@
 <template>
     <div class="title">
-        <div class="line"></div>
-        <div class="diamond"></div>
+        <img src="@/assets/images/line1.png" />
         <div class="msg">{{ title }}</div>
-        <div class="diamond"></div>
-        <div class="line"></div>
+        <img src="@/assets/images/line2.png" />
     </div>
 </template>
 
@@ -26,17 +24,6 @@ export default {
     height: 39px;
     align-items: center;
     justify-content: center;
-}
-.line {
-    width: 120px;
-    height: 2px;
-    background-color: #f26357;
-}
-.diamond {
-    width: 10px;
-    height: 10px;
-    border: solid 2px #f24849;
-    transform: rotate(45deg);
 }
 .msg {
     margin: 0 25px;

@@ -1,0 +1,124 @@
+<template>
+    <div>
+        <!-- 正常卡片 -->
+        <div class="card" v-if="!reverse">
+            <div class="card-left">
+                <img :src="imgUrl" />
+            </div>
+            <div class="card-right">
+                <div class="content-top">
+                    <div class="title">{{ title }}</div>
+                    <div class="subTitle">{{ subTitle }}</div>
+                </div>
+                <div class="content-bottom">
+                    <div>{{ intro1 }}</div>
+                    <div>{{ intro2 }}</div>
+                </div>
+            </div>
+        </div>
+        <!-- 反转卡片 -->
+        <div class="card reverse-card" v-else>
+            <div class="card-left">
+                <img :src="imgUrl" />
+            </div>
+            <div class="card-right card-right-reverse">
+                <div class="content-top content-top-reverse">
+                    <div class="title">{{ title }}</div>
+                    <div class="subTitle">{{ subTitle }}</div>
+                </div>
+                <div class="content-bottom">
+                    <div>{{ intro1 }}</div>
+                    <div>{{ intro2 }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        imgUrl: {
+            require: true,
+            type: String
+        },
+        title: {
+            require: true,
+            type: String
+        },
+        subTitle: {
+            require: true,
+            type: String
+        },
+        intro1: {
+            require: true,
+            type: String
+        },
+        intro2: {
+            require: true,
+            type: String
+        },
+        reverse: {
+            type: Boolean,
+            default: false
+        }
+    }
+}
+</script>
+
+<style scoped>
+.card {
+    width: 1096px;
+    display: flex;
+    align-items: center;
+}
+.reverse-card {
+    flex-direction: row-reverse;
+}
+.card-right {
+    height: 405px;
+    margin-left: 33px;
+}
+.card-right-reverse {
+    margin-right: 33px;
+}
+.content-top {
+    display: flex;
+    align-items: center;
+}
+.content-top-reverse {
+    flex-direction: row-reverse;
+}
+.content-top-reverse > .title {
+    flex-direction: row-reverse;
+}
+.content-top-reverse > .subTitle {
+    text-indent: 0px;
+    padding-right: 8px;
+}
+.title {
+    background-color: #f24849;
+    border-radius: 0px 15px 0px 0px;
+    color: #ffffff;
+    padding: 7px 10px;
+    font-size: 20px;
+}
+.subTitle {
+    height: 39px;
+    line-height: 39px;
+    box-sizing: border-box;
+    color: #999;
+    font-size: 16px;
+    text-indent: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #999;
+}
+.content-bottom > div {
+    margin-top: 5px;
+    font-size: 20px;
+    text-indent: 40px;
+    color: #666;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+</style>

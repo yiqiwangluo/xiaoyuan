@@ -41,8 +41,8 @@ export default {
         return {
             component_list: [
                 { title: '首页', url: '/' },
-                { title: '产品介绍', url: '/' },
-                { title: '公司简介', url: '/intro' },
+                { title: '产品介绍', url: '/#/product' },
+                { title: '公司简介', url: '/#/intro' },
                 { title: '联系我们', url: '/' }
             ],
             // 功能列表集合是否展开
