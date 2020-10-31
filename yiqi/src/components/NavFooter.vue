@@ -1,6 +1,6 @@
 <template>
   <footer>
-  	<div class="main">
+  	<div id="main" class="main">
       <div class="footer_content">
         <div class="code_box">
           <img class="code" src="@/assets/images/code.png"></img>
@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="footer_link">
-          <div class="footer_link_left">
+          <div id="link_left" class="footer_link_left">
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_phone.png"></img>
             	<div class="link_body">
@@ -26,11 +26,11 @@
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_location.png"></img>
             	<div class="link_body">
-            		<div class="link_text" style="margin-top: 0;">广东省梅州市梅江区梅州联通大厦6楼整层</div>
+            		<div class="link_text last">广东省梅州市梅江区梅州联通大厦6楼整层</div>
             	</div>
             </div>
           </div>
-          <div class="footer_link_right">
+          <div id="link_right" class="footer_link_right">
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_yiyi.png"></img>
             	<div class="link_body">
@@ -40,19 +40,19 @@
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_url.png"></img>
             	<div class="link_body">
-            		<div class="link_text">Copyright (C)gd-yiqi.com, All Rights Reserved.</div>
+            		<div class="link_text last">Copyright (C)gd-yiqi.com, All Rights Reserved.</div>
             	</div>
             </div>
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_jubao.png"></img>
             	<div class="link_body">
-            		<div class="link_text">违法不良信息举报电话：0753-2395668</div>
+            		<div class="link_text last">违法不良信息举报电话：0753-2395668</div>
             	</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer_copy" style="padding-top: 39px;">广东伊起网络科技有限公司 提供服务支持</div>
+      <div class="footer_copy footer_copy_top">广东伊起网络科技有限公司 提供服务支持</div>
   		<div class="footer_copy">Copyright © 2018-2020  粤ICP备19045836号</div>
   	</div>
   </footer>
@@ -125,6 +125,9 @@
                   margin-top: 8px;
               		text-align: justify;
               	}
+                .last{
+                  margin-top: 0;
+                }
               }
             }
           }
@@ -168,6 +171,103 @@
         font-family: PingFang-SC-Medium;
         font-size: 18px;
       }
+      .footer_copy_top{
+        padding-top: 39px;
+      }
     }
 	}
+  @media screen and (min-width: 0px) and (max-width: 920px) {
+      footer{
+        height: 900px;
+      }
+      #main{
+        width: 100%;
+        .code_box{
+          float: none;
+          margin: 0 auto;
+        }
+        .footer_copy_top{
+            margin-top: 450px;
+            font-size: 18px;
+        }
+      }
+      #link_left{
+        width: 80%;
+        display: block;
+        height: 229px;
+        margin: 15px auto 0 auto;
+        padding-left: 10%;
+        .link_logo{
+          width: 45px;
+          height: 45px;
+        }
+        .link_text{
+          font-size: 18px;
+        }
+        .last{
+          margin-top: 8px;
+        }
+      }
+      #link_right{
+         width: 90%;
+         display: block;
+         height: 229px;
+         margin: 0 auto;
+         .link_body{
+           width: 300px;
+         }
+         .link_logo{
+           width: 45px;
+           height: 45px;
+         }
+         .link_text{
+           font-size: 18px;
+           width: 300px;
+         }
+         .last{
+           margin-top: 0;
+         }
+      }
+  }
+  @media screen and (min-width: 920px) and (max-width: 1200px) {
+      footer{
+        height: 720px;
+      }
+      #main{
+        width: 100%;
+        .code_box{
+          float: none;
+          margin: 0 auto;
+        }
+        .footer_link{
+          width: 100%;
+          float: none;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+        .link_logo{
+          width: 55px;
+          height: 55px;
+        }
+        .link_text{
+          font-size: 18px;
+          margin-top: 12px;
+        }
+        .footer_copy_top{
+            padding-top: 0;
+            font-size: 18px;
+        }
+      }
+      #link_left .last{
+        margin-top: 0;
+      }
+      #link_right{
+        width: 56%;
+        float: left;
+        padding-left: 0;
+        .link_body{
+          width: 400px;
+        }
+      }
+  }
 </style>

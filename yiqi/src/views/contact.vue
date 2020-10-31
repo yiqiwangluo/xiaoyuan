@@ -3,9 +3,9 @@
     <img class="banner" src="@/assets/images/contact.jpg">
     <div class="bg_box">
       <special-title title="联系我们" style="padding-top: 68px; padding-bottom: 83px" />
-      <div class="main">
+      <div id="main" class="main">
         <div class="link">
-          <div class="link_left">
+          <div id="link_left" class="link_left">
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_phone.png"></img>
             	<div class="link_body">
@@ -21,11 +21,11 @@
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_location.png"></img>
             	<div class="link_body">
-            		<div class="link_text" style="margin-top: 0;">广东省梅州市梅江区梅州联通大厦6楼整层</div>
+            		<div class="link_text last">广东省梅州市梅江区梅州联通大厦6楼整层</div>
             	</div>
             </div>
           </div>
-          <div class="link_right">
+          <div id="link_right" class="link_right">
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_yiyi.png"></img>
             	<div class="link_body">
@@ -35,7 +35,7 @@
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_url.png"></img>
             	<div class="link_body">
-            		<div class="link_text">Copyright (C)gd-yiqi.com, All Rights Reserved.</div>
+            		<div class="link_text last">Copyright (C)gd-yiqi.com, All Rights Reserved.</div>
             	</div>
             </div>
             <div class="link_content">
@@ -104,6 +104,8 @@
         		width: 55px;
         		height: 55px;
         		margin-right: 13px;
+            background-color: #fd5d5d;
+            border-radius: 50%;
         	}
           .link_body{
             width: 350px;
@@ -119,6 +121,9 @@
               margin-top: 12px;
           		text-align: justify;
           	}
+            .last{
+              margin-top: 0;
+            }
           }
         }
       }
@@ -136,6 +141,8 @@
         		width: 55px;
         		height: 55px;
         		margin-right: 13px;
+            background-color: #fd5d5d;
+            border-radius: 50%;
         	}
           .link_body{
             width: 560px;
@@ -193,6 +200,97 @@
     z-index: -100;
   }
 }
-
+@media screen and (min-width: 0px) and (max-width: 920px) {
+    #main{
+      width: 100%;
+      height: 1200px;
+      .code_box{
+            width: 133px;
+            height: 200px;
+            .code{
+              width: 130px;
+              height: 130px;
+            }
+            .word{
+              font-size: 14px;
+            }
+      }
+      .code_bottom_text{
+          width: 492px;
+          margin-top: 140px;
+          font-size: 15px;
+      }
+    }
+    #link_left{
+      width: 90%;
+      display: block;
+      height: 229px;
+      margin: 0 auto;
+      padding-left: 22%;
+      .link_logo{
+        width: 45px;
+        height: 45px;
+      }
+      .link_text{
+        font-size: 15px;
+        margin-top: 8px;
+      }
+      .last{
+        margin-top: 8px;
+      }
+    }
+    #link_right{
+       width: 78%;
+       display: block;
+       height: 229px;
+       margin: 0 auto;
+       .link_body{
+         width: 300px;
+       }
+       .link_logo{
+         width: 45px;
+         height: 45px;
+       }
+       .link_text{
+         font-size: 15px;
+         width: 300px;
+         margin-top: 8px;
+       }
+       .last{
+         margin-top: 0;
+       }
+    }
+}
+@media screen and (min-width: 920px) and (max-width: 1200px) {
+    #main{
+      width: 100%;
+      .link{
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+      }
+      .link_logo{
+        width: 55px;
+        height: 55px;
+      }
+      .link_text{
+        font-size: 18px;
+      }
+    }
+    #link_left{
+      margin-left: 26px;
+      .link_body{
+        width: 290px;
+      }
+    }
+    #link_right{
+      width: 56%;
+      float: left;
+      padding-left: 0;
+      .link_body{
+        width: 400px;
+      }
+    }
+}
 
 </style>

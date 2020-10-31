@@ -2,7 +2,7 @@
   <div>
     <img class="banner" src="@/assets/images/product.jpg">
     <special-title title="产品介绍" style="margin-top: 68px; margin-bottom: 83px" />
-    <div class="main">
+    <div id="main" class="main">
       <div class="intro_box">
         <div class="intro_number">
           <img src="@/assets/images/num1.png">
@@ -95,5 +95,9 @@
       }
     }
 }
-
+@media screen and (min-width: 0px) and (max-width: 1215px) {
+    .main{
+      width: 90%;
+    }
+}
 </style>
