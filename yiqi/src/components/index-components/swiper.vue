@@ -1,6 +1,6 @@
 <template>
     <div class="view">
-        <div class="swiper flex-align-center" ref="swiper" @mouseover="stopSwiper" @mouseout="continueSwiper">
+        <div class="swiper flex-align-center" ref="swiper" @mouseover="stopSwiper" @mouseout="continueSwiper" :style="{width: screenWidth * imgList.length + 'px'}">
             <img v-for="(item, index) in imgList" :key="index" :src="item" ref="imgList" :style="{ width: screenWidth + 'px' }" />
         </div>
         <ul class="btns flex-align-center" :style="{ width: (imgList.length - 1) * 15 + 25 + 'px' }" @mouseover="stopSwiper" @mouseout="continueSwiper">
