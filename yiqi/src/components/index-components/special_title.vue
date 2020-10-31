@@ -1,8 +1,8 @@
 <template>
-    <div class="title  flex-align-center">
-        <img src="@/assets/images/line1.png" />
+    <div class="title flex-align-center">
+        <img src="@/assets/images/line1.png" class="arrowImg" />
         <div class="msg">{{ title }}</div>
-        <img src="@/assets/images/line2.png" />
+        <img src="@/assets/images/line2.png" class="arrowImg" />
     </div>
 </template>
 
@@ -30,5 +30,6 @@ export default {
     font-weight: bold;
     color: #333333;
     letter-spacing: 2px;
+    transition: 0.5s;
 }
 </style>
