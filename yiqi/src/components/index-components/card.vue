@@ -41,6 +41,10 @@ export default {
     margin: 23px 0;
 }
 .intro {
+    /* -----------------兼容IE------------- */
+    width: 95%;
+    margin: 0px auto;
+    /* -----------------兼容IE------------- */
     font-size: 19px;
     color: #999999;
     padding-left: 16px;
