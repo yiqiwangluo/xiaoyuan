@@ -9,7 +9,7 @@
         <!-- 特殊标题 -->
         <special-title title="为用户提供完美的时间买卖服务" style="margin-top: 151px; margin-bottom: 71px" />
         <!-- 广告卡片列表 -->
-        <img-card-list style="margin-bottom: 168px" />
+        <img-card-list style="margin-bottom: 116px" />
     </div>
 </template>
 

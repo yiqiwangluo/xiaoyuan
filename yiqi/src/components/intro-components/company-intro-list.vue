@@ -59,7 +59,23 @@ export default {
 
 <style scoped>
 .content {
-    width: 1200px;
+    width: 62.5%;
     margin: 0px auto;
+    transition: 0.5s;
+}
+@media screen and (max-width: 1376px) {
+    .content {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1243px) {
+    .content {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1175px) {
+    .content {
+        width: 95%;
+    }
 }
 </style>
