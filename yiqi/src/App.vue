@@ -5,7 +5,7 @@
         <!-- 页面内容 -->
         <router-view />
         <!-- 页尾 -->
-        <!-- <nav-footer /> -->
+        <nav-footer />
     </div>
 </template>
 <script>
