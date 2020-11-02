@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 .card {
-    width: 1096px;
+    width: 100%;
 }
 .reverse-card {
     flex-direction: row-reverse;
@@ -122,5 +122,20 @@ export default {
     color: #666666;
     line-height: 40px;
     letter-spacing: 1px;
+}
+@media screen and (max-width: 1150px) {
+    .card {
+        flex-direction: column;
+        width: 95%;
+        margin: 0px auto;
+    }
+    .card-right {
+        margin-left: 0px;
+        margin-right: 0px;
+        height: auto;
+    }
+    img {
+        width:100%;
+    }
 }
 </style>

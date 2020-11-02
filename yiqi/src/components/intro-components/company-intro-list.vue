@@ -59,26 +59,24 @@ export default {
 
 <style scoped>
 .content {
-    width: 62.5%;
+    width: 57.5%;
     margin: 0px auto;
     transition: 0.5s;
 }
 .intro-card:not(:first-child) {
     margin-top: 140px;
 }
-@media screen and (max-width: 1376px) {
-    .content {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 1243px) {
+@media screen and (max-width: 1400px) {
     .content {
         width: 90%;
     }
 }
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1150px) {
     .content {
-        width: 95%;
+        width: 100%;
+    }
+    .intro-card:not(:first-child) {
+        margin-top: 50px;
     }
 }
 </style>
