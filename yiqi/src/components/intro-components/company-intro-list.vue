@@ -2,7 +2,7 @@
     <div>
         <div class="content">
             <company-intro-card
-            style="margin-top:140px"
+                class="intro-card"
                 v-for="(item, index) in list"
                 :key="index"
                 :imgUrl="item.imgUrl"
@@ -62,6 +62,9 @@ export default {
     width: 62.5%;
     margin: 0px auto;
     transition: 0.5s;
+}
+.intro-card:not(:first-child) {
+    margin-top: 140px;
 }
 @media screen and (max-width: 1376px) {
     .content {
