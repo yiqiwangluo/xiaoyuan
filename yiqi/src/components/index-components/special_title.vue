@@ -27,7 +27,7 @@ export default {
 }
 .msg {
     margin: 0 25px;
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: bold;
     color: #333333;
     letter-spacing: 2px;
@@ -42,11 +42,15 @@ export default {
     }
     .msg {
         margin: 0px;
+        font-size: 26px;
     }
 }
 @media screen and (max-width: 560px) {
     .arrowImg {
         transform: scale(0.7);
+    }
+    .msg {
+        font-size: 20px;
     }
 }
 </style>
