@@ -9,7 +9,7 @@
             <span>关注伊伊同行公众号</span>
           </div>
         </div>
-        <div class="footer_link">
+        <div id="footer_link" class="footer_link">
           <div id="link_left" class="footer_link_left">
             <div class="link_content">
             	<img class="link_logo" src="@/assets/images/bottom_phone.png"></img>
@@ -176,12 +176,145 @@
       }
     }
 	}
-  @media screen and (min-width: 0px) and (max-width: 920px) {
+  @media screen and (min-width: 0px) and (max-width: 300px) {
+    footer{
+      height: 900px;
+    }
+    #main{
+      width: 100%;
+      height: 750px;
+      margin: 0 auto;
+      font-size: 15px;
+      text-align: center;
+      .code_box{
+        float: none;
+        margin: 0 auto;
+      }
+      .footer_copy_top{
+          margin-top: 430px;
+      }
+      .footer_copy{
+        font-size: 15px;
+      }
+    }
+    #footer_link{
+      width: 100%;
+    }
+    #link_left{
+      width: 100%;
+      height: 229px;
+      margin: 0 auto;
+      .link_logo{
+        width: 30px;
+        height: 30px;
+      }
+      .link_body{
+        width: 210px;
+      }
+      .link_text{
+        width: 210px;
+        font-size: 15px;
+        margin-top: 0;
+      }
+      .last{
+        margin-top: 0;
+      }
+    }
+    #link_right{
+       width: 100%;
+       height: 229px;
+       margin: -20px auto 30px auto;
+       .link_body{
+         width: 210px;
+       }
+       .link_logo{
+         width: 30px;
+         height: 30px;
+       }
+       .link_text{
+         font-size: 15px;
+         width: 210px;
+         margin-top: 0;
+       }
+       .last{
+         margin-top: 0;
+       }
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 650px) {
+    footer{
+      height: 900px;
+    }
+    #main{
+      width: 80%;
+      height: 750px;
+      margin: 0 auto;
+      font-size: 15px;
+      text-align: center;
+      .code_box{
+        float: none;
+        margin: 0 auto;
+      }
+      .footer_copy_top{
+          margin-top: 430px;
+      }
+      .footer_copy{
+        font-size: 15px;
+      }
+    }
+    #footer_link{
+      width: 100%;
+    }
+    #link_left{
+      width: 100%;
+      height: 229px;
+      margin: 0 auto;
+      .link_logo{
+        width: 30px;
+        height: 30px;
+      }
+      .link_body{
+        width: 210px;
+      }
+      .link_text{
+        width: 210px;
+        font-size: 15px;
+        margin-top: 0;
+      }
+      .last{
+        margin-top: 0;
+      }
+    }
+    #link_right{
+       width: 100%;
+       height: 229px;
+       margin: -20px auto 30px auto;
+       .link_body{
+         width: 210px;
+       }
+       .link_logo{
+         width: 30px;
+         height: 30px;
+       }
+       .link_text{
+         font-size: 15px;
+         width: 210px;
+         margin-top: 0;
+       }
+       .last{
+         margin-top: 0;
+       }
+    }
+  }
+  @media screen and (min-width: 650px) and (max-width: 920px) {
       footer{
         height: 900px;
       }
       #main{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
         .code_box{
           float: none;
           margin: 0 auto;
@@ -191,12 +324,13 @@
             font-size: 18px;
         }
       }
+      #footer_link{
+        width: 100%;
+      }
       #link_left{
         width: 80%;
-        display: block;
         height: 229px;
         margin: 15px auto 0 auto;
-        padding-left: 10%;
         .link_logo{
           width: 45px;
           height: 45px;
@@ -209,8 +343,7 @@
         }
       }
       #link_right{
-         width: 90%;
-         display: block;
+         width: 100%;
          height: 229px;
          margin: 0 auto;
          .link_body{
@@ -231,7 +364,7 @@
   }
   @media screen and (min-width: 920px) and (max-width: 1200px) {
       footer{
-        height: 720px;
+        height: 1420px;
       }
       #main{
         width: 100%;

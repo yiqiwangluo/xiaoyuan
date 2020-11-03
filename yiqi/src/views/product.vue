@@ -10,7 +10,7 @@
         <div class="intro_title">
           项目来源
         </div>
-        <div class="intro_text">
+        <div id="intro_text" class="intro_text">
           互联网的发展，生机勃勃，这是属于“互联网+”的时代，互联网行业讲得最多的是风口、机会，“内容经济+用户场景+服务体验”或将成为下一个风口。伊伊同行APP，其特色功能就是瞄准“内容经济+用户场景+服务体验”，用互联网来连接内容、场景、服务。
         </div>
       </div>
@@ -21,7 +21,7 @@
         <div class="intro_title">
           产品的用处
         </div>
-        <div class="intro_text">
+        <div id="intro_text" class="intro_text">
           随着业余时间的越来越多，自由职业者网赚职业兴起，解决自由职业者需要系统化平台问题；解决社交软件众多，但线下约见难问题，帮助内心孤寂缺少交际的人实现社交；解决商旅途中到异地的不习惯以及行程安排等问题。
         </div>
       </div>
@@ -32,7 +32,7 @@
         <div class="intro_title">
           产品形式
         </div>
-        <div class="intro_text">
+        <div id="intro_text" class="intro_text">
           （1）自有团队自发自研，有核心技术支持的手机APP软件端；（2）电脑终端管理系统，全国情况一目了然；（3）设立全国5大区域运营中心，四种合伙模式，实现推广管理制度化。
         </div>
       </div>
@@ -98,6 +98,20 @@
 @media screen and (min-width: 0px) and (max-width: 1215px) {
     .main{
       width: 90%;
+      .intro_box > .intro_number{
+        width: 151px;
+        height: 139px;
+        margin: 0 auto;
+      }
+      .intro_box > .intro_title{
+        width: 204px;
+        height: 54px;
+        line-height: 54px;
+        font-size: 25px;
+      }
+      #intro_text{
+        font-size: 18px;
+      }
     }
 }
 </style>
