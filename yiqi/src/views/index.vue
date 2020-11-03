@@ -22,6 +22,8 @@ import specialTitle from '@/components/index-components/special_title'
 import cardList from '@/components/index-components/card-list'
 // 引入图片卡片列表组件
 import imgCardList from '@/components/index-components/img-card-list'
+// 引入公共生命周期
+import mixinsIndex from '@/mixins/index'
 export default {
     components: {
         swiper,
@@ -29,6 +31,7 @@ export default {
         cardList,
         imgCardList
     },
+    mixins: [mixinsIndex],
     data() {
         return {
             // 轮播图的图片列表

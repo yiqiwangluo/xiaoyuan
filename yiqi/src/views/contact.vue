@@ -62,10 +62,13 @@
 
 <script>
  import specialTitle from '@/components/index-components/special_title'
+ // 引入公共生命周期
+ import mixinsIndex from '@/mixins/index'
  export default {
      components: {
          specialTitle
      },
+    mixins:[mixinsIndex],
      data() {
          return {
 

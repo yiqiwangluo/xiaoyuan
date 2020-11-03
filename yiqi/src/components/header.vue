@@ -23,8 +23,8 @@
                     </div>
                     <div class="pull-down-list" ref="pull_down_list">
                         <ul>
-                            <li v-for="(item, index) in component_list" :key="index" ref="li">
-                                <router-link :to="item.url">{{ item.title }}</router-link>
+                            <li v-for="(item, index) in component_list" :key="index" ref="li" @click="navigationTosomeWhere">
+                                <router-link  :to="item.url">{{ item.title }}</router-link>
                             </li>
                         </ul>
                     </div>
@@ -50,6 +50,9 @@ export default {
         }
     },
     methods: {
+        navigationTosomeWhere(){
+            this.styleChange()
+        },
         // 展开或收起功能列表
         styleChange() {
             if (this.flag) {
